@@ -181,7 +181,6 @@
     .news {
       display:flex;
       flex-flow:column;
-      flex-direction: column-reverse;
     }
 
     .news > li {
@@ -272,7 +271,7 @@ _/_/_/      _/    _/_/_/_/  _/_/_/    _/_/_/_/  _/_/_/_/</pre>
     let xmlhttp = new XMLHttpRequest();
     
     const handleData = data => {
-      data.forEach(post => {
+      data.reverse().forEach(post => {
         const { title, date, changes } = post;
         const $post = document.createElement('li');
         const $title = document.createElement('h1');
