@@ -112,7 +112,7 @@
 
     main {
       display:grid;
-      grid-template:"news info";
+      grid-template:"info news";
       grid-template-columns:1fr 1fr;
     }
 
@@ -128,7 +128,7 @@
       animation:m 0.33s linear infinite alternate;
     }
 
-    .left {
+    .news {
       padding: 0 1.5em 1.5em 1.5em;
       box-sizing: border-box;
       grid-area:news;
@@ -179,7 +179,7 @@
       margin:0
     }
 
-    .right {
+    .info {
       grid-area:info;
       flex-flow:column;
       user-select:none;
@@ -188,7 +188,7 @@
     .stick {
       position: fixed;
       top: 2em;
-      right: 2em;
+      left: 2em;
       width: 550px;
     }
 
@@ -315,7 +315,7 @@
         width:auto;
       }
 
-      .left {
+      .news {
         padding:0;
       }
 
@@ -349,7 +349,7 @@
 </head>
 <body>
   <main>
-      <section class="right">
+      <section class="info">
         <div class="stick">
         <header>
           <pre>
@@ -381,7 +381,7 @@
           <img src="image.png" style="height: 100%;width: 100%;" />
         </div>
       </section>
-      <section class="left">
+      <section class="news">
         <ul id="news" class="news"></ul>
       </section>
     </div>
