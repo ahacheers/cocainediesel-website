@@ -1,0 +1,188 @@
+[
+	{
+		"title": "0.0.0.1 released",
+		"date": "Nov 8, 2018",
+		"changes": [
+			"wow it's finally out (linux only)"
+		]
+	},
+	{
+		"title": "0.0.0.2 released",
+		"date": "Nov 8, 2018",
+		"changes": [
+			"fixed missing sdl dll"
+		]
+	},
+	{
+		"title": "0.0.0.3 released",
+		"date": "Nov 8, 2018",
+		"changes": [
+			"this is the real deal"
+		]
+	},
+	{
+		"title": "0.0.0.4 released",
+		"date": "Nov 8, 2018",
+		"changes": [
+			"was some bugfixe",
+			"fixed the linux build",
+			"i don't remember what else went in"
+		]
+	},
+	{
+		"title": "0.0.0.5 released",
+		"date": "Nov 9, 2018",
+		"changes": [
+			"made some assets smaller and fixed a launcher bug iirc"
+		]
+	},
+	{
+		"title": "0.0.0.6 released",
+		"date": "Nov 9, 2018",
+		"changes": [
+			"no team blocking and team knockback",
+			"added moto maps",
+			"normalize health to 100",
+			"fixed the texture bug revealed by 0.0.0.5"
+		]
+	},
+	{
+		"title": "0.0.0.7 released",
+		"date": "Nov 9, 2018",
+		"changes": [
+			"chat fix"
+		]
+	},
+	{
+		"title": "0.0.1.0 released",
+		"date": "Nov 10, 2018",
+		"changes": [
+			"new hud",
+			"new grenades",
+			"new menu background",
+			"fixed lava texture",
+			"readded missing sounds",
+			"nuked a bunch of trash"
+		]
+	},
+	{
+		"title": "0.0.1.1 released",
+		"date": "Nov 11, 2018",
+		"changes": [
+			"fixed lots of ui shit",
+			"fixed server browser",
+			"drained the swamp some more"
+		]
+	},
+	{
+		"title": "0.0.1.2 released",
+		"date": "Nov 12, 2018",
+		"changes": [
+			"fresh weapon icons",
+			"upped the font game",
+			"removed mg and strong gb from shop",
+			"more ui fixes",
+			"daily trash removal"
+		]
+	},
+	{
+		"title": "0.0.1.3 released",
+		"date": "Nov 13, 2018",
+		"changes": [
+			"increased max name length",
+			"dropped snd_qf and added hrtf positional sound",
+			"added option to disable bicubic filtering",
+			"fixed obituaries misalignment",
+			"remade levelshots",
+			"removed delay on kill command",
+			"removed chat beep",
+			"removed more unused crap"
+		]
+	},
+	{
+		"title": "0.0.1.4 released",
+		"date": "Nov 13, 2018",
+		"changes": [
+			"removed stun",
+			"better player shadows",
+			"removed pointless vsays",
+			"fixed drug fueled doppler effect",
+			"fixed menu stuff",
+			"fixed round timer",
+			"added team colored gibs",
+			"the trash purge is still on"
+		]
+	},
+	{
+		"title": "0.0.1.5 released",
+		"date": "Nov 14, 2018",
+		"changes": [
+			"illuminati gibs trashed",
+			"vsay shutup readded",
+			"banding fixed. shit is smooth as lard now",
+			"top secret lg beam cvars! expect more news soon!",
+			"some callvotes stuff",
+			"misc fixes",
+			"ofc we removed more trash. like & subscribe"
+		]
+	},
+	{
+		"title": "0.0.1.6 released",
+		"date": "Nov 15, 2018",
+		"changes": [
+			"put the shop back in esc menu",
+			"added opengl 2 support",
+			"fixed crosshair. now draws on top of other hud elements",
+			"fixed server browser",
+			"added new bomb site indicator"
+		]
+	},
+	{
+		"title": "0.0.1.7 released",
+		"date": "Nov 15, 2018",
+		"changes": [
+			"bugfix release"
+		]
+	},
+	{
+		"title": "0.0.1.8 released",
+		"date": "Nov 15, 2018",
+		"changes": [
+			"renamed maps",
+			"added carentan",
+			"removed emwarehouse"
+		]
+	},
+	{
+		"title": "0.0.1.9 released",
+		"date": "Nov 15, 2018",
+		"changes": [
+			"fixed linux cgame/game modules"
+		]
+	},
+	{
+		"title": "0.0.1.10 released",
+		"date": "Nov 16, 2018",
+		"changes": [
+			"revert walljump to warsow 2.1 state",
+			"add cg_crosshair_size. cg_crosshair_size 0 for a dot",
+			"remove randomness from rg spread",
+			"game remembers your loadout",
+			"stop bombsite indicator from tricking people",
+			"fix glsl version detection for opengl2 losers",
+			"removed reactors"
+		]
+	},
+	{
+		"title": "0.0.1.11 released",
+		"date": "Nov 17, 2018",
+		"changes": [
+			"fix for rockets/plasma",
+			"server tweaks that might help a bit or might fuck up the whole game",
+			"explosion fx tweaks",
+			"another GL2 fix",
+			"rolled back to 2.1 lg beam",
+			"just kidding cheers"
+		]
+	},
+]

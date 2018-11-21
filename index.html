@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>aha cheers!</title>
+  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.js"></script>
+</head>
+<body>
+  <main>
+    <section class="left">
+      <ul id="news" class="news"></ul>
+    </section>
+      <section class="right">
+        <div class="stick">
+        <header>
+          <pre>
+    _/_/_/     _/_/     _/_/_/     _/_/      _/    _/      _/  _/_/_/_/   
+  _/        _/    _/  _/        _/    _/    _/    _/_/    _/  _/          
+_/        _/    _/  _/        _/_/_/_/    _/    _/  _/  _/  _/_/_/       
+_/        _/    _/  _/        _/    _/    _/    _/    _/_/  _/            
+_/_/_/    _/_/      _/_/_/  _/    _/    _/    _/      _/  _/_/_/_/</pre>
+          <pre>
+  _/_/_/      _/    _/_/_/_/    _/_/_/  _/_/_/_/  _/     
+  _/    _/    _/    _/        _/        _/        _/      
+_/    _/    _/    _/_/_/      _/_/    _/_/_/    _/       
+_/    _/    _/    _/              _/  _/        _/        
+_/_/_/      _/    _/_/_/_/  _/_/_/    _/_/_/_/  _/_/_/_/</pre>
+        </header>
+        <pre class="links">
+          <span>download:  <a href="">windows</a> _ <a href="">linux</a></span>
+          <span>github:    <a href="">engine</a> _ <a href="">assets</a> _ <a href="">launcher</a> _ <a href="">libs</a></span>
+          <span>contact:   <a href="https://discord.gg/g8mvhu3">https://discord.gg/5ZbV4mF</a></span>
+          <span>pickup:    <a href="https://discord.gg/g8mvhu3">https://discord.gg/g8mvhu3</a></span></pre>
+        <p class="text">
+          <span><b>Cocaine Diesel</b> is a multiplayer first person shooter with an emphasis on drug promotion and criminal lifestyles.</span>
+          <span>meet the absoulute scum of the internet on your traumatizing adventure through the most squalid corner of the dark web formely known as <b>warsow pickup</b>.</span>
+          <ul class="features">
+            <li>team-based tactical hooliganism webnovela</li>
+            <li>optimized for esports and aesthetics</li>
+            <li>art of respect codex</li>
+            <li>meet fun and interesting people</li>
+            <li>completely free</li>
+          </ul>
+          <span class="smash"><em>“If I ever meet you in real life I will smash your face to pieces cu @ lan nerd.”</em></span>
+          <span class="smash">- Huksi
+        </p>
+        <div class="screenshots">
+          <div>screenshot</div>
+          <div>screenshot</div>
+          <div>screenshot</div>
+          <div>screenshot</div>
+          <div>screenshot</div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script>
+    (() => {
+      const t = "aha cheers!";
+      const t2 = "thanks again!";
+      setInterval( () => document.title = document.title == t ? t2 : t, 500);
+    })();
+
+    const $news = document.getElementById('news');
+    let xmlhttp = new XMLHttpRequest();
+    
+    const handleData = data => {
+      data.forEach(post => {
+        const { title, date, changes } = post;
+        const $post = document.createElement('li');
+        const $title = document.createElement('h1');
+        const $date = document.createElement('span');
+        const $changes = document.createElement('ul');
+
+        $title.textContent = title;
+        $date.textContent = date;
+        
+        $date.className = "date";
+
+        changes.forEach(change => {
+          const $change = document.createElement('li');
+          $change.textContent = change;
+          $change.className = "change";
+          $changes.appendChild($change)
+        });
+
+        $post.appendChild($title);
+        $post.appendChild($date);
+        $post.appendChild($changes);
+
+        $news.appendChild($post);
+      })
+    }
+
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200)  {
+        handleData(JSON.parse(this.responseText));
+      }
+    };
+
+    xmlhttp.open("GET", "news.json", true);
+    xmlhttp.send();
+  </script>
+</body>
+</html>
