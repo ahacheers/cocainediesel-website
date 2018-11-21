@@ -9,6 +9,208 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="favicon.ico" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.js"></script>
+  <style>
+    body {
+      background:#000;
+      color:#fff;
+      font-family: 'Anonymous Pro', monospace;
+      margin:0;
+      text-transform:lowercase;
+    }
+
+    pre, p {
+      margin:0;
+      font-family:inherit;
+    }
+
+    ul, li {
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+
+    ul {
+      display: flex;
+      flex-flow: column;
+    }
+
+    a {
+      color:#0f0;
+      text-decoration: none;
+    }
+
+    a:hover { 
+      font-weight:700;
+      animation:f 0.1s linear infinite;
+    }
+
+    b {
+      color: #ff0;
+      text-transform: uppercase;
+      font-style: italic;
+    }
+
+    h1 {
+      font-family: 'Inconsolata', monospace;
+      color:#0ff;
+      text-transform: uppercase;
+      margin:0;
+      font-size:1em;
+    }
+
+    main,
+    header,
+    main > section,
+    .screenshots,
+    .text,
+    .links  {
+      display:flex;
+    }
+
+    main {
+      display:grid;
+      grid-template:"news info";
+      grid-template-columns:1fr 500px;
+      grid-gap:4em;
+    }
+
+    header {
+      line-height:0.5em;
+      letter-spacing:-2.4px;
+      font-weight:700;
+      font-size:10px;
+      transform:translateX(-4px);
+    }
+
+    header > pre {
+      color:#f0f;
+      animation:m 0.33s linear infinite alternate;
+    }
+
+    .left {
+      padding: 0 1.5em 1.5em 1.5em;
+      box-sizing: border-box;
+      grid-area:news;
+    }
+
+    .date {
+      margin-bottom:1em;
+      color:#666;
+      font-size: 0.75em;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .change {
+      list-style:none;
+      margin-bottom: 0.5em;
+      line-height: 1em;
+    }
+
+    .features > li:before,
+    .change:before  {
+      content: "\2192";
+      margin-right: 8px;
+      color:#ff0;
+    }
+
+    .change:last-child {
+      margin:0
+    }
+
+    .right {
+      grid-area:info;
+      flex-flow:column;
+      user-select:none;
+      line-height:1.5em;
+    }
+
+    .stick {
+      position: fixed;
+      top: 2em;
+      right: 2em;
+      width: 500px;
+    }
+
+    .text {
+      flex-flow:column;
+    }
+
+    .links {
+      margin:2em 0;
+      flex-flow:column;
+    }
+
+    .features {
+      margin:2em 0;
+    }
+
+    .features > li {
+      margin:0 0 0.1em 1.5em;
+    }
+
+    .screenshots {
+      margin:2em 0;
+    }
+
+    /*div -> img*/
+    .screenshots > div {
+      width:80px;
+      height:45px;
+      background:#ff0;
+      margin-right:1em;
+      cursor:pointer;
+      color:#000;
+      font-size:12px;
+      display:inherit;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .screenshots > div:hover {
+      background:#0ff;
+    }
+
+    .smash {
+        font-size:1em;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #666;
+    }
+
+    .news {
+      display:flex;
+      flex-flow:column;
+      flex-direction: column-reverse;
+    }
+
+    .news > li {
+      display: flex;
+      flex-flow: column;
+      padding: 2em 0;
+      border-bottom: 1px dashed #222;
+      box-sizing: border-box;
+    }
+
+    .news > li:first-child {
+      padding-top:0;
+    }
+
+    @keyframes f {
+      0%    { color:#f00 }
+      100%  { color:#ff0 }
+    }
+
+    @keyframes m {
+      0%    { color:#c0c; text-shadow: -3px 0 #0ff }
+      50% { color:#f0f; text-shadow: 0px 0 #0cc }
+      100%  { color:#c0c; text-shadow: 3px 0 #0ff }
+    }
+
+    @media (max-width:1150px) {
+
+    }
+  </style>
 </head>
 <body>
   <main>
