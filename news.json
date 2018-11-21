@@ -206,5 +206,12 @@
 			"instagibbed instagib",
 			"a lot of trash taking out"
 		]
+	},
+	{
+		"title": "0.0.1.13 released",
+		"date": "Nov 21, 2018",
+		"changes": [
+			"you're now able change your weapons with mousewheel and set your name in the menu. wow!"
+		]
 	}
 ]
