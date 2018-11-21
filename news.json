@@ -184,5 +184,18 @@
 			"rolled back to 2.1 lg beam",
 			"just kidding cheers"
 		]
+	},
+	{
+		"title": "0.0.1.12 released",
+		"date": "Nov 21, 2018",
+		"changes": [
+			"buffed rg",
+			"slightly better lg/pg/blood effects",
+			"rolled back yolo server changes",
+			"fixed rockets going through the floor",
+			"next level obituaries",
+			"instagibbed instagib",
+			"a lot of trash taking out"
+		]
 	}
 ]
