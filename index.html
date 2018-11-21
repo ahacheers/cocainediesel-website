@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script type="aha/cheers">
+     _____  ____   ____   _____ _    _ _____ ______ 
+    / ____|/ __ \ / __ \ / ____| |  | |_   _|  ____|
+   | |  __| |  | | |  | | |    | |__| | | | | |__   
+   | | |_ | |  | | |  | | |    |  __  | | | |  __|  
+   | |__| | |__| | |__| | |____| |  | |_| |_| |____ 
+    \_____|\____/ \____/ \_____|_|  |_|_____|______|
+    
+  </script>
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#000" />
+  <meta name="msapplication-navbutton-color" content="#000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="COCAINE DIESEL" />
+  <meta property="og:url" content="http://193.235.147.223/cocaine_diesel/" />
+  <meta property="og:image" content="http://193.235.147.223/cocaine_diesel/mwaga.png" />
+  <meta property="og:image:width" content="32" />
+  <meta property="og:image:height" content="32" />
+  <meta property="og:description" content="... is a multiplayer first person shooter with an emphasis on drug promotion and criminal lifestyles. meet the absoulute scum of the internet on your traumatizing adventure through the most squalid corner of the dark web formely known as Warsow Pickup" />
   <title>aha cheers!</title>
   <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.js"></script>
+  <link rel="shortcut icon" href="favicon.ico" />
   <style>
+    :root {
+      --red: #f00;
+      --red-dark: #700;
+      --green: #62ff00;
+      --yellow:#ff0;
+      --cyan: #00c4ff;
+      --cyan-dark: #0cc;
+      --magenta: #ff2300;
+      --magenta-temp: #ff2300;
+      --magenta-dark: #c0c;
+      --black: #000;
+      --gray: #666;
+      --gray-dark: #222;
+      --white: #fff;
+    }
+
     body {
-      background:#000;
-      color:#fff;
+      background:var(--black);
+      color:var(--white);
       font-family: 'Anonymous Pro', monospace;
       margin:0;
       text-transform:lowercase;
+      user-select:none;
     }
 
     pre, p {
@@ -29,12 +64,11 @@
     }
 
     ul {
-      display: flex;
       flex-flow: column;
     }
 
     a {
-      color:#0f0;
+      color:var(--green);
       text-decoration: none;
     }
 
@@ -44,45 +78,53 @@
     }
 
     b {
-      color: #ff0;
+      color: var(--magenta-temp);
       text-transform: uppercase;
       font-style: italic;
+      letter-spacing: -1px;
     }
 
     h1 {
-      font-family: 'Inconsolata', monospace;
-      color:#0ff;
-      text-transform: uppercase;
+      color:var(--cyan);
       margin:0;
-      font-size:1em;
+      text-transform: uppercase;
+      font-family: 'Inconsolata', monospace;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 1.1em;
     }
 
+    ul,
     main,
     header,
     main > section,
     .screenshots,
+    .screenshot,
     .text,
-    .links  {
+    .change,
+    .features > li,
+    .news > li,
+    .news,
+    .smash,
+    .trailer  {
       display:flex;
     }
 
     main {
       display:grid;
       grid-template:"news info";
-      grid-template-columns:1fr 500px;
-      grid-gap:4em;
+      grid-template-columns:1fr 1fr;
     }
 
     header {
-      line-height:0.5em;
-      letter-spacing:-2.4px;
       font-weight:700;
-      font-size:10px;
+      font-size:6px;
       transform:translateX(-4px);
+      justify-content: center;
     }
 
     header > pre {
-      color:#f0f;
+      color:var(--magenta);
       animation:m 0.33s linear infinite alternate;
     }
 
@@ -90,27 +132,47 @@
       padding: 0 1.5em 1.5em 1.5em;
       box-sizing: border-box;
       grid-area:news;
+      max-width:600px;
     }
 
     .date {
+      font-family: 'Inconsolata', monospace;
+      margin-top: 0.5em;
       margin-bottom:1em;
-      color:#666;
-      font-size: 0.75em;
+      color:var(--gray);
+      font-size: 0.8em;
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
 
+    .newspost,
     .change {
       list-style:none;
-      margin-bottom: 0.5em;
       line-height: 1em;
     }
 
-    .features > li:before,
+    .change {
+      margin-bottom: 0.5em;
+    }
+
+    .feature:before,
+    .newspost:before,
     .change:before  {
-      content: "\2192";
-      margin-right: 8px;
-      color:#ff0;
+      content: "\00d7";
+      margin-right: 1em;
+    }
+
+    .feature:before {
+      color:var(--magenta-temp);
+    }
+
+    .newspost:before {
+      content: "\2605";
+      color:var(--magenta);
+    }
+
+    .change:before {
+      color:var(--cyan);
     }
 
     .change:last-child {
@@ -121,7 +183,6 @@
       grid-area:info;
       flex-flow:column;
       user-select:none;
-      line-height:1.5em;
     }
 
     .stick {
@@ -138,129 +199,200 @@
     .links {
       margin:2em 0;
       flex-flow:column;
+      color:var(--cyan);
+      text-transform: uppercase;
+      font-family: 'Inconsolata', monospace;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 1.1em;
     }
 
     .features {
       margin:2em 0;
     }
 
-    .features > li {
-      margin:0 0 0.1em 1.5em;
-    }
-
     .screenshots {
-      margin:2em 0;
+      margin: 2em 0 1em 0;
+      justify-content: space-between;
     }
 
     /*div -> img*/
-    .screenshots > div {
-      width:80px;
-      height:45px;
-      background:#ff0;
-      margin-right:1em;
+    .screenshot {
+      width:100%;
+      height:32px;
+      position:relative;
+      margin:0 1em 1em 1em;
       cursor:pointer;
-      color:#000;
-      font-size:12px;
-      display:inherit;
-      justify-content:center;
-      align-items:center;
     }
 
-    .screenshots > div:hover {
-      background:#0ff;
+    .screenshot:first-child {
+      margin-left:0;
+    }
+
+    .screenshot:last-child {
+      margin-right:0;
+    }
+
+    .screenshot:hover {
+      background:var(--cyan);
     }
 
     .smash {
+        flex-flow:column;
+        line-height: 1em;
         font-size:1em;
         letter-spacing: 0.5px;
         text-transform: uppercase;
-        color: #666;
+        color: var(--gray);
     }
 
-    .news {
-      display:flex;
-      flex-flow:column;
-      margin-top:32px;
+    .video {
+      width:100%;
+      position:relative;
+      padding-top:56.25%;
     }
 
-    .news > li {
-      display: flex;
-      flex-flow: column;
-      padding: 2em 0;
-      border-bottom: 1px dashed #222;
+    .trailer {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
+
+    .screenshot,
+    .trailer {
+      justify-content:center;
+      align-items:center; 
+      color: var(--magenta-temp);
+      font-size: 12px;
+      border: 1px solid var(--magenta-temp);
       box-sizing: border-box;
     }
 
-    .news > li:first-child {
-      padding-top:0;
+    .news {
+      flex-flow:column;
+    }
+
+    .news > li {
+      flex-flow: column;
+      padding: 2em 0;
+      border-bottom: 1px dashed var(--gray-dark);
+      box-sizing: border-box;
+      user-select:text;
+    }
+
+    .old {
+      position:fixed;
+      bottom:0;
+      right:0;
+    }
+
+    .old > a {
+      color:#333;
     }
 
     @keyframes f {
-      0%    { color:#f00 }
-      100%  { color:#ff0 }
+      0%    { color:var(--red) }
+      100%  { color:var(--yellow) }
     }
 
     @keyframes m {
-      0%    { color:#c0c; text-shadow: -3px 0 #0ff }
-      50% { color:#f0f; text-shadow: 0px 0 #0cc }
-      100%  { color:#c0c; text-shadow: 3px 0 #0ff }
+      0%    { color:var(--magenta-dark); text-shadow: -3px 0 var(--cyan) }
+      50%   { color:var(--magenta);      text-shadow:  0px 0 var(--cyan-dark) }
+      100%  { color:var(--magenta-dark); text-shadow:  3px 0 var(--cyan) }
     }
 
     @media (max-width:1150px) {
+      main {
+        grid-template: "info" "news";
+        justify-content: center;
+        padding: 2em;
+      }
 
+      .stick {
+        position:static;
+        width:auto;
+      }
+
+      .left {
+        padding:0;
+      }
+
+      .screenshot {
+        margin:0 0.5em;
+      }
+    }
+
+    @media (max-width:500px) {
+      body {
+        font-size: 12px;
+      }
+
+      header {
+        font-size:0.4em;
+      }
+
+      .links {
+        letter-spacing:0;
+      }
+
+      .screenshot:nth-child(n+4) {
+        display:none
+      }
+      
+      .screenshot:nth-child(3) {
+        margin-right:0;
+      }
     }
   </style>
 </head>
 <body>
   <main>
-    <section class="left">
-      <ul id="news" class="news"></ul>
-    </section>
       <section class="right">
         <div class="stick">
         <header>
           <pre>
-    _/_/_/     _/_/     _/_/_/     _/_/      _/    _/      _/  _/_/_/_/   
-  _/        _/    _/  _/        _/    _/    _/    _/_/    _/  _/          
-_/        _/    _/  _/        _/_/_/_/    _/    _/  _/  _/  _/_/_/       
-_/        _/    _/  _/        _/    _/    _/    _/    _/_/  _/            
-_/_/_/    _/_/      _/_/_/  _/    _/    _/    _/      _/  _/_/_/_/</pre>
-          <pre>
-  _/_/_/      _/    _/_/_/_/    _/_/_/  _/_/_/_/  _/     
-  _/    _/    _/    _/        _/        _/        _/      
-_/    _/    _/    _/_/_/      _/_/    _/_/_/    _/       
-_/    _/    _/    _/              _/  _/        _/        
-_/_/_/      _/    _/_/_/_/  _/_/_/    _/_/_/_/  _/_/_/_/</pre>
+               _/_/_/    _/_/      _/_/_/    _/_/      _/    _/      _/  _/_/_/_/  _/_/_/      _/    _/_/_/_/    _/_/_/  _/_/_/_/  _/     
+            _/        _/    _/  _/        _/    _/    _/    _/_/    _/  _/        _/    _/    _/    _/        _/        _/        _/      
+           _/        _/    _/  _/        _/_/_/_/    _/    _/  _/  _/  _/_/_/    _/    _/    _/    _/_/_/      _/_/    _/_/_/    _/       
+          _/        _/    _/  _/        _/    _/    _/    _/    _/_/  _/        _/    _/    _/    _/              _/  _/        _/        
+           _/_/_/    _/_/      _/_/_/  _/    _/    _/    _/      _/  _/_/_/_/  _/_/_/      _/    _/_/_/_/  _/_/_/    _/_/_/_/  _/_/_/_/</pre>
         </header>
         <pre class="links">
-          <span>download:  <a href="cocaine_diesel_launcher_windows.zip">windows</a> _ <a href="cocaine_diesel_launcher_linux.zip">linux</a></span>
-          <span>support:   <a href="https://discord.gg/5ZbV4mF">discord.gg/5ZbV4mF</a></span>
-          <span>pickup:    <a href="https://discord.gg/g8mvhu3">discord.gg/g8mvhu3</a></span>
-          <span>github:    <a href="https://github.com/mikejsavage/forksow">engine</a> _ <a href="https://github.com/mikejsavage/forksow-assets">assets</a> _ <a href="https://github.com/mikejsavage/forksow-launcher">launcher</a> _ <a href="https://github.com/mikejsavage/forksow-libs">libs</a></span>
-        </pre>
+<span>download:  <a href="cocaine_diesel_launcher_windows.zip">windows</a> | <a href="cocaine_diesel_launcher_linux.zip">linux</a></span>
+<span>support:   <a href="https://discord.gg/5ZbV4mF">discord.gg/5ZbV4mF</a></span>
+<span>pickup:    <a href="https://discord.gg/g8mvhu3">discord.gg/g8mvhu3</a></span>
+<span>source:    <a href="https://github.com/mikejsavage/forksow/">engine</a> | <a href="https://github.com/mikejsavage/forksow-assets">assets</a> | <a href="https://github.com/mikejsavage/forksow-launcher">launcher</a> | <a href="https://github.com/mikejsavage/forksow-libs">libs</a></span></pre>
         <p class="text">
-          <span><b>Cocaine Diesel</b> is a multiplayer first person shooter with an emphasis on drug promotion and criminal lifestyles.</span>
-          <span>meet the absoulute scum of the internet on your traumatizing adventure through the most squalid corner of the dark web formely known as <b>warsow pickup</b>.</span>
+          <span><b>Cocaine Diesel</b> is a social first person shooter with an emphasis on drug promotion and criminal lifestyles.</span>
+          <span>meet the absoulute scum of the internet on your traumatizing adventure through the most squalid corner of the web formely known as <b>warsow pickup</b></span>
           <ul class="features">
-            <li>team-based tactical hooliganism webnovela</li>
-            <li>optimized for esports and aesthetics</li>
-            <li>art of respect codex</li>
-            <li>meet fun and interesting people</li>
-            <li>completely free</li>
+            <li class="feature">team-based tactical hooliganism webnovela</li>
+            <li class="feature">optimized for esports and aesthetics</li>
+            <li class="feature">art of respect codex</li>
+            <li class="feature">meet fun and interesting people</li>
+            <li class="feature">completely free</li>
           </ul>
           <span class="smash"><em>“What I love is to eat a bowl of warm shit for breakfast.”</em></span>
           <span class="smash">- Mwaga
         </p>
         <div class="screenshots">
-          <img src="image.png" style="height: 100%;width: 100%;filter: saturate(1.5) contrast(1.2) hue-rotate(-50deg)" />
+          <img src="image.png" style="height: 100%;width: 100%;" />
         </div>
+      </section>
+      <section class="left">
+        <ul id="news" class="news"></ul>
       </section>
     </div>
   </main>
+  <div class="old">
+    <a href="../cocaine_diesel_old/">$</a>
+  </div>
   <script>
     (() => {
-      const t = "aha cheers!";
-      const t2 = "thanks again!";
+      const t = "aha cheers !";
+      const t2 = "thanks again !";
       setInterval( () => document.title = document.title == t ? t2 : t, 500);
     })();
 
@@ -269,7 +401,7 @@ _/_/_/      _/    _/_/_/_/  _/_/_/    _/_/_/_/  _/_/_/_/</pre>
     
     const handleData = data => {
       data.reverse().forEach(post => {
-        const { title, date, changes } = post;
+        const { title, date, changes, news } = post;
         const $post = document.createElement('li');
         const $title = document.createElement('h1');
         const $date = document.createElement('span');
@@ -283,7 +415,7 @@ _/_/_/      _/    _/_/_/_/  _/_/_/    _/_/_/_/  _/_/_/_/</pre>
         changes.forEach(change => {
           const $change = document.createElement('li');
           $change.textContent = change;
-          $change.className = "change";
+          $change.className = news ? "newspost" : "change";
           $changes.appendChild($change)
         });
 

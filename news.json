@@ -161,15 +161,23 @@
 		]
 	},
 	{
+		"title": "new website",
+		"date": "Nov 16, 2018",
+		"changes": [
+			"canned the gif-laden 90s site for a leet 90s site built from scratch. posts are stored in json now despite mike and msc recommending a shitty markdown approach, but screw them. website is responsive so you can download the launcher on your android phone and use the claw grip technique to fail miserably. aha cheers! use tor!"
+		],
+		"news": true
+	},
+	{
 		"title": "0.0.1.10 released",
 		"date": "Nov 16, 2018",
 		"changes": [
-			"revert walljump to warsow 2.1 state",
-			"add cg_crosshair_size. cg_crosshair_size 0 for a dot",
-			"remove randomness from rg spread",
+			"reverted walljump to warsow 2.1 state",
+			"added cg_crosshair_size, cg_crosshair_size 0 for a dot",
+			"removed randomness from rg spread",
+			"stopped bombsite indicator from tricking people",
+			"fixed glsl version detection for opengl2 losers",
 			"game remembers your loadout",
-			"stop bombsite indicator from tricking people",
-			"fix glsl version detection for opengl2 losers",
 			"removed reactors"
 		]
 	},
@@ -177,12 +185,13 @@
 		"title": "0.0.1.11 released",
 		"date": "Nov 17, 2018",
 		"changes": [
-			"fix for rockets/plasma",
+			"fixed rockets and plasma magic",
 			"server tweaks that might help a bit or might fuck up the whole game",
 			"explosion fx tweaks",
 			"another GL2 fix",
 			"rolled back to 2.1 lg beam",
-			"just kidding cheers"
+			"just kidding cheers",
+			"mike's a funny boi"
 		]
 	},
 	{
