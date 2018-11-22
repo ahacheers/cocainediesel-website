@@ -213,5 +213,20 @@
 		"changes": [
 			"you're now able change your weapons with mousewheel and set your name in the menu. wow!"
 		]
+	},
+	{
+		"title": "0.0.1.14 released",
+		"date": "Nov 22, 2018",
+		"changes": [
+			"broken release. gg mike"
+		]
+	},
+	{
+		"title": "0.0.1.15 released",
+		"date": "Nov 22, 2018",
+		"changes": [
+			"launcher retries failed downloads",
+			"some menu tweaks that don't matter"
+		]
 	}
 ]
