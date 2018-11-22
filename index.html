@@ -126,7 +126,7 @@
 
     header > pre {
       color:var(--magenta);
-      animation:m 0.33s linear infinite alternate;
+      animation: m 0.33s cubic-bezier(0.6, -0.28, 0.74, 0.05) infinite alternate;
     }
 
     .news {
@@ -299,9 +299,9 @@
     }
 
     @keyframes m {
-      0%    { color:var(--magenta-dark); text-shadow: -3px 0 var(--cyan) }
-      50%   { color:var(--magenta);      text-shadow:  0px 0 var(--cyan-dark) }
-      100%  { color:var(--magenta-dark); text-shadow:  3px 0 var(--cyan) }
+      0%    { color:var(--magenta-temp); text-shadow: -3px 0 var(--cyan) }
+      50%   { color:var(--cyan);      text-shadow:  0px 0 var(--yellow) }
+      100%  { color:var(--cyan); text-shadow:  3px 0 var(--magenta-temp) }
     }
 
     @media (max-width:1150px) {
