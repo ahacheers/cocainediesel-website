@@ -225,6 +225,13 @@
 		"title": "0.0.1.15 released",
 		"date": "Nov 22, 2018",
 		"changes": [
+			"was toast too"
+		]
+	},
+	{
+		"title": "0.0.1.16 released",
+		"date": "Nov 22, 2018",
+		"changes": [
 			"launcher retries failed downloads",
 			"some menu tweaks that don't matter"
 		]
