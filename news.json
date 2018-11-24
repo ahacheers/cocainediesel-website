@@ -235,5 +235,19 @@
 			"launcher retries failed downloads",
 			"some menu tweaks that don't matter"
 		]
+	},
+	{
+		"title": "0.0.1.16 released",
+		"date": "Nov 22, 2018",
+		"changes": [
+			"what happened to 0.0.1.17?",
+			"tweaked rocket launcher model and muzzle flash",
+			"site indicators are always visible and guide you to the site",
+			"this is the first iteration and we plan to expand on this a lot!",
+			"add match point/overtime to the HUD",
+			"show dead players on the hud",
+			"don't award bongos when people leave"
+		]
 	}
+
 ]
