@@ -248,6 +248,24 @@
 			"show dead players on the hud",
 			"don't award bongos when people leave"
 		]
+	},
+	{
+		"title": "0.0.1.19 released",
+		"date": "Nov 27, 2018",
+		"changes": [
+			"bomb site indicators should be more stable",
+			"removed most awards and some hud text from bomb",
+			"removed black bars when speccing a dead gay",
+			"fixed one of the window resizing bugs",
+			"try opengl 3.3 before falling back to 2.1 because it makes my life easier",
+			"also segfaults at launch on linux heh"
+		]
+	},
+	{
+		"title": "0.0.1.20 released",
+		"date": "Nov 27, 2018",
+		"changes": [
+			"fixed crash at startup"
+		]
 	}
-
 ]
