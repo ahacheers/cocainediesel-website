@@ -267,5 +267,13 @@
 		"changes": [
 			"fixed crash at startup"
 		]
+	},
+	{
+		"title": "0.0.1.21 released",
+		"date": "Nov 27, 2018",
+		"changes": [
+			"better bomb carrier assignment",
+			"don't bongo for less than 3 kills"
+		]
 	}
 ]
