@@ -275,5 +275,29 @@
 			"better bomb carrier assignment",
 			"don't bongo for less than 3 kills"
 		]
+	},
+	{
+		"title": "0.0.1.22 released",
+		"date": "Nov 28, 2018",
+		"changes": [
+			"add instructions to bomb site indicators",
+			"add a bomb indicator",
+			"fix bomb spinning forever if it ever gets dropped",
+			"fix map change crash"
+		]
+	},
+	{
+		"title": "0.0.1.23 released",
+		"date": "Nov 28, 2018",
+		"changes": [
+			"fix startup crash on windows"
+		]
+	},
+	{
+		"title": "0.0.1.24 released",
+		"date": "Nov 28, 2018",
+		"changes": [
+			"indicator tweaks"
+		]
 	}
 ]
