@@ -295,9 +295,28 @@
 	},
 	{
 		"title": "0.0.1.24 released",
-		"date": "Nov 28, 2018",
+		"date": "Nov 29, 2018",
 		"changes": [
 			"indicator tweaks"
+		]
+	},
+	{
+		"title": "0.0.1.25 released",
+		"date": "Nov 28, 2018",
+		"changes": [
+			"shitty wip discord integration in the launcher",
+			"install the game over https"
+		]
+	},
+	{
+		"title": "0.0.1.26 released",
+		"date": "Nov 29, 2018",
+		"changes": [
+			"damage numbers when you shoot someone",
+			"respawn sound removed",
+			"nerfed chat protection penalty",
+			"don't show who has the bomb on the scoreboard",
+			"maybe fix alt + enter"
 		]
 	}
 ]
