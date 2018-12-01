@@ -302,7 +302,7 @@
 	},
 	{
 		"title": "0.0.1.25 released",
-		"date": "Nov 28, 2018",
+		"date": "Nov 29, 2018",
 		"changes": [
 			"shitty wip discord integration in the launcher",
 			"install the game over https"
@@ -317,6 +317,17 @@
 			"nerfed chat protection penalty",
 			"don't show who has the bomb on the scoreboard",
 			"maybe fix alt + enter"
+		]
+	},
+	{
+		"title": "0.0.1.27 released",
+		"date": "Dec 1, 2018",
+		"changes": [
+			"fix the console ^ bug, germans rejoice",
+			"floating mini obituaries when you kill someone",
+			"remove autoswitch when you run out of ammo cuz it's cheesy",
+			"scr_conspeed 0 for instant console",
+			"unspecified combat changes"
 		]
 	}
 ]
