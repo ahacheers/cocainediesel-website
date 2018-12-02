@@ -329,5 +329,18 @@
 			"scr_conspeed 0 for instant console",
 			"unspecified combat changes"
 		]
+	},
+	{
+		"title": "0.0.1.28 released",
+		"date": "Dec 1, 2018",
+		"changes": [
+			"new lg model",
+			"new weapon icons",
+			"remove carrier frag messages",
+			"remove scoreboard loadouts",
+			"remove lg shooting through people",
+			"diesel:// handler so you can click links to start the game. run the installer to get it, no need to uninstall",
+			"fixed mini obituary colour for beta players"
+		]
 	}
 ]
