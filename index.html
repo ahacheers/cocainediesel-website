@@ -365,23 +365,15 @@
     <a href="https://ahacheers.github.io/cocaine-diesel-website-old">$</a>
   </div>
   <script>
-    (function() {
-      const t = "aha cheers !";
-      const t2 = "thanks again !";
-      setInterval(() => document.title = document.title == t ? t2 : t, 500);
-    })();
-
     const $news = document.getElementById('news');
     let xmlhttp = new XMLHttpRequest();
 
     const handleData = function(data) {
       data.reverse().forEach(function(post) {
-        const {
-          title,
-          date,
-          changes,
-          news
-        } = post;
+        const title = post.title;
+        const date = post.date;
+        const changes = post.changes;
+        const news = post.news;
         const $post = document.createElement('li');
         const $title = document.createElement('h1');
         const $date = document.createElement('span');
@@ -415,6 +407,12 @@
 
     xmlhttp.open("GET", "news.json", true);
     xmlhttp.send();
+
+    window.onload = function() {
+      const t = "aha cheers !";
+      const t2 = "thanks again !";
+      setInterval(function() { document.title = document.title == t ? t2 : t }, 500);
+    };
   </script>
 </body>
 
