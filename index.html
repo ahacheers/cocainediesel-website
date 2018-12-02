@@ -157,10 +157,8 @@
     }
 
     .info {
+      flex-flow:column;
       user-select: none;
-    }
-
-    .stick {
       width: 550px;
     }
 
@@ -268,8 +266,8 @@
       }
     }
 
-    @media (max-width:1150px),
-    (max-height:970px) {
+    @media (max-width:1150px)
+    {
       main {
         flex-flow: column;
         align-items: center;
@@ -277,10 +275,9 @@
         max-width: 600px;
         margin: 0 auto;
       }
-
-      .stick {
-        position: static;
-        width: auto;
+      
+      .info {
+        width:auto;
       }
 
       .news {
@@ -320,9 +317,8 @@
 <body>
   <main>
     <section class="info">
-      <div class="stick">
-        <header>
-          <pre>
+      <header>
+        <pre>
 .eeeee..eeeeee...eeeee..eeeeee..eee.eeeeeee..eeeeee.eeeeeee..eee.eeeeee..eeeeee.eeeeee.eee....
 @@@@@@:@@@@@@@@:@@@@@@:@@@@@@@@:@@@:@@@@@@@@:@@@@@@:@@@@@@@@:@@@:@@@@@@:@@@@@@@:@@@@@@:@@@::::
 %%%----%%%--%%%-%%%----%%%--%%%-%%%-%%%--%%%-%%%----%%%--%%%-%%%-%%%----%%%-----%%%----%%%----
@@ -331,32 +327,32 @@
 !!!====!!!==!!!=!!!====!!!==!!!=!!!=!!!==!!!=!!!====!!!==!!!=!!!=!!!========!!!=!!!====!!!====
 ::::::#::::::::#::::::#:::##:::#:::#:::##:::#::::::#::::::::#:::#::::::#:::::::#::::::#::::::#
 @.....@@......@@@.....@...@@...@...@...@@...@......@.......@@...@......@......@@......@......@</pre>
-        </header>
-        <pre class="links">
+      </header>
+      <pre class="links">
 <span>download:  <a href="CocaineDieselInstaller.exe">windows</a> | <a href="cocaine_diesel_launcher_linux.zip">linux</a></span>
 <span>support:   <a href="https://discord.gg/5ZbV4mF">discord.gg/5ZbV4mF</a></span>
 <span>pickup:    <a href="https://discord.gg/g8mvhu3">discord.gg/g8mvhu3</a></span>
 <span>source:    <a href="https://github.com/mikejsavage/forksow/">engine</a> | <a href="https://github.com/mikejsavage/forksow-assets">assets</a> | <a href="https://github.com/mikejsavage/forksow-launcher">launcher</a> | <a href="https://github.com/mikejsavage/forksow-libs">libs</a></span></pre>
-        <p class="text">
-          <span><b>Cocaine Diesel</b> is a social first person shooter with an emphasis on drug promotion and criminal
-            lifestyles.</span>
-          <span>meet the absoulute scum of the internet on your traumatizing adventure through the most squalid corner
-            of the web formely known as <b>warsow pickup</b></span>
-          <ul class="features">
-            <li class="feature">team-based tactical hooliganism webnovela</li>
-            <li class="feature">optimized for esports and aesthetics</li>
-            <li class="feature">art of respect codex</li>
-            <li class="feature">meet fun and interesting people</li>
-            <li class="feature">completely free</li>
-          </ul>
-          <span class="smash"><em>“What I love is to eat a bowl of warm shit for breakfast.”</em></span>
-          <span class="smash" style="margin-bottom:8px">- MWAGA</span>
-          <span class="smash"><em>“If I ever meet you in real life I will smash your face to pieces cu @ lan nerd.”</em></span>
-          <span class="smash">- Huksi</span>
-        </p>
-        <div class="screenshots">
-          <img src="image.jpg" style="height: 100%;width: 100%;" />
-        </div>
+      <p class="text">
+        <span><b>Cocaine Diesel</b> is a social first person shooter with an emphasis on drug promotion and criminal
+          lifestyles.</span>
+        <span>meet the absoulute scum of the internet on your traumatizing adventure through the most squalid corner
+          of the web formely known as <b>warsow pickup</b></span>
+        <ul class="features">
+          <li class="feature">team-based tactical hooliganism webnovela</li>
+          <li class="feature">optimized for esports and aesthetics</li>
+          <li class="feature">art of respect codex</li>
+          <li class="feature">meet fun and interesting people</li>
+          <li class="feature">completely free</li>
+        </ul>
+        <span class="smash"><em>“What I love is to eat a bowl of warm shit for breakfast.”</em></span>
+        <span class="smash" style="margin-bottom:8px">- MWAGA</span>
+        <span class="smash"><em>“If I ever meet you in real life I will smash your face to pieces cu @ lan nerd.”</em></span>
+        <span class="smash">- Huksi</span>
+      </p>
+      <div class="screenshots">
+        <img src="image.jpg" style="height: 100%;width: 100%;" />
+      </div>
     </section>
     <section class="news">
       <ul id="news" class="news"></ul>
