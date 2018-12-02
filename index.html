@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script type="aha/cheers">
-     _____  ____   ____   _____ _    _ _____ ______ 
+    _____  ____   ____   _____ _    _ _____ ______ 
     / ____|/ __ \ / __ \ / ____| |  | |_   _|  ____|
    | |  __| |  | | |  | | |    | |__| | | | | |__   
    | | |_ | |  | | |  | | |    |  __  | | | |  __|  
@@ -25,43 +26,29 @@
   <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <style>
-    :root {
-      --red: #f00;
-      --red-dark: #700;
-      --green: #62ff00;
-      --yellow:#ff0;
-      --cyan: #00c4ff;
-      --cyan-dark: #0cc;
-      --magenta: #ff2300;
-      --magenta-temp: #e8133b;
-      --magenta-dark: #c0c;
-      --black: #000;
-      --gray: #666;
-      --gray-dark: #222;
-      --white: #fff;
-    }
-
     body {
-      background:var(--black);
-      color:var(--white);
+      background: #000;
+      color: #fff;
       font-family: 'Anonymous Pro', monospace;
-      margin:0;
-      text-transform:lowercase;
-      user-select:none;
+      margin: 0;
+      text-transform: lowercase;
+      user-select: none;
     }
 
-    pre, p {
-      margin:0;
-      font-family:inherit;
+    pre,
+    p {
+      margin: 0;
+      font-family: inherit;
     }
 
-    ul, li {
-      margin:0;
-      padding:0;
-      list-style:none;
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
     }
 
     ul {
@@ -69,25 +56,25 @@
     }
 
     a {
-      color:var(--green);
+      color: #62ff00;
       text-decoration: none;
     }
 
-    a:hover { 
-      font-weight:700;
-      animation:f 0.1s linear infinite;
+    a:hover {
+      font-weight: 700;
+      animation: f 0.1s linear infinite;
     }
 
     b {
-      color: var(--magenta-temp);
+      color: #e8133b;
       text-transform: uppercase;
       font-style: italic;
       letter-spacing: -1px;
     }
 
     h1 {
-      color:var(--cyan);
-      margin:0;
+      color: #00c4ff;
+      margin: 0;
       font-family: 'VT323', monospace;
       letter-spacing: 2px;
       font-weight: 400;
@@ -97,49 +84,47 @@
     ul,
     main,
     header,
-    main > section,
+    main>section,
     .screenshots,
     .screenshot,
     .text,
     .change,
-    .features > li,
-    .news > li,
+    .features>li,
+    .news>li,
     .news,
     .smash,
-    .trailer  {
-      display:flex;
+    .trailer {
+      display: flex;
     }
 
     main {
-      display:grid;
-      grid-template:"info news";
-      grid-template-columns:1fr 1fr;
+      padding: 48px 32px;
+      box-sizing: border-box;
     }
 
     header {
-      font-weight:700;
-      font-size:8px;
-      transform:translateX(-4px);
+      font-weight: 700;
+      font-size: 8px;
+      transform: translateX(-4px);
       justify-content: center;
     }
 
-    header > pre {
-      color:var(--magenta);
+    header>pre {
       animation: m 0.33s cubic-bezier(0.6, -0.28, 0.74, 0.05) infinite alternate;
     }
 
     .news {
       padding: 0 1.5em 1.5em 1.5em;
       box-sizing: border-box;
-      grid-area:news;
-      max-width:600px;
+      grid-area: news;
+      max-width: 600px;
     }
 
     .date {
       font-family: 'VT323', monospace;
       margin-top: 0.5em;
-      margin-bottom:1em;
-      color:var(--gray);
+      margin-bottom: 1em;
+      color: #333;
       font-size: 0.8em;
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -147,7 +132,7 @@
 
     .newspost,
     .change {
-      list-style:none;
+      list-style: none;
       line-height: 1em;
     }
 
@@ -157,170 +142,153 @@
 
     .feature:before,
     .newspost:before,
-    .change:before  {
+    .change:before {
       content: "\00d7";
       margin-right: 1em;
-    }
-
-    .feature:before {
-      color:var(--magenta-temp);
+      color: #e8133b;
     }
 
     .newspost:before {
       content: "\2605";
-      color:var(--magenta-temp);
-    }
-
-    .change:before {
-      color:var(--magenta-temp);
     }
 
     .change:last-child {
-      margin:0
+      margin: 0
     }
 
     .info {
-      grid-area:info;
-      flex-flow:column;
-      user-select:none;
+      user-select: none;
     }
 
     .stick {
-      position: fixed;
-      top: 2em;
-      left: 2em;
       width: 550px;
     }
 
     .text {
-      flex-flow:column;
+      flex-flow: column;
     }
 
     .links {
-      margin:2em 0;
-      flex-flow:column;
-      color:var(--cyan);
+      margin: 2em 0;
+      flex-flow: column;
+      color: #00c4ff;
       font-family: 'VT323', monospace;
       letter-spacing: 2px;
       font-size: 1.5em;
     }
 
     .features {
-      margin:2em 0;
+      margin: 2em 0;
     }
 
     .screenshots {
-      margin: 2em 0 1em 0;
+      margin: 2em 0 0 0;
       justify-content: space-between;
     }
 
-    /*div -> img*/
-    .screenshot {
-      width:100%;
-      height:32px;
-      position:relative;
-      margin:0 1em 1em 1em;
-      cursor:pointer;
-    }
-
-    .screenshot:first-child {
-      margin-left:0;
-    }
-
-    .screenshot:last-child {
-      margin-right:0;
-    }
-
-    .screenshot:hover {
-      background:var(--cyan);
-    }
-
     .smash {
-        flex-flow:column;
-        line-height: 1em;
-        font-size:1em;
-        letter-spacing: 0.5px;
-        color: var(--gray);
-        text-transform:none;
+      flex-flow: column;
+      line-height: 1em;
+      font-size: 1em;
+      letter-spacing: 0.5px;
+      color: #333;
+      text-transform: none;
     }
 
     .video {
-      width:100%;
-      position:relative;
-      padding-top:56.25%;
+      width: 100%;
+      position: relative;
+      padding-top: 56.25%;
     }
 
     .trailer {
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 
     .screenshot,
     .trailer {
-      justify-content:center;
-      align-items:center; 
-      color: var(--magenta-temp);
+      justify-content: center;
+      align-items: center;
+      color: #e8133b;
       font-size: 12px;
-      border: 1px solid var(--magenta-temp);
+      border: 1px solid #e8133b;
       box-sizing: border-box;
     }
 
     .news {
-      flex-flow:column;
+      flex-flow: column;
     }
 
-    .news > li {
+    .news>li {
       flex-flow: column;
       padding: 2em 0;
-      border-bottom: 1px dashed var(--gray-dark);
+      border-bottom: 1px dashed #666;
       box-sizing: border-box;
-      user-select:text;
+      user-select: text;
     }
 
     .old {
-      position:fixed;
-      bottom:0;
-      right:0;
+      position: fixed;
+      bottom: 0;
+      right: 0;
     }
 
-    .old > a {
-      color:#333;
+    .old>a {
+      color: #333;
     }
 
     @keyframes f {
-      0%    { color:var(--red) }
-      100%  { color:var(--yellow) }
+      0% {
+        color: #f00
+      }
+
+      100% {
+        color: #ff0
+      }
     }
 
     @keyframes m {
-      0%    { color:var(--magenta-temp); text-shadow: -3px 0 var(--cyan) }
-      50%   { color:var(--cyan);      text-shadow:  0px 0 var(--yellow) }
-      100%  { color:var(--cyan); text-shadow:  3px 0 var(--magenta-temp) }
+      0% {
+        color: #e8133b;
+        text-shadow: -3px 0 #00c4ff
+      }
+
+      50% {
+        color: #00c4ff;
+        text-shadow: 0px 0 #ff0
+      }
+
+      100% {
+        color: #00c4ff;
+        text-shadow: 3px 0 #e8133b
+      }
     }
 
-    @media (max-width:1150px), (max-height:970px) {
+    @media (max-width:1150px),
+    (max-height:970px) {
       main {
-        grid-template: "info" "news";
-        justify-content: center;
+        flex-flow: column;
+        align-items: center;
         padding: 2em;
         max-width: 600px;
         margin: 0 auto;
       }
 
       .stick {
-        position:static;
-        width:auto;
+        position: static;
+        width: auto;
       }
 
       .news {
-        padding:0;
+        padding: 0;
       }
 
       .screenshot {
-        margin:0 0.5em;
+        margin: 0 0.5em;
       }
     }
 
@@ -330,28 +298,29 @@
       }
 
       header {
-        font-size:0.4em;
+        font-size: 0.4em;
       }
 
       .links {
-        letter-spacing:0;
+        letter-spacing: 0;
         font-size: 1.2em;
       }
 
       .screenshot:nth-child(n+4) {
-        display:none
+        display: none
       }
-      
+
       .screenshot:nth-child(3) {
-        margin-right:0;
+        margin-right: 0;
       }
     }
   </style>
 </head>
+
 <body>
   <main>
-      <section class="info">
-        <div class="stick">
+    <section class="info">
+      <div class="stick">
         <header>
           <pre>
 .eeeee..eeeeee...eeeee..eeeeee..eee.eeeeeee..eeeeee.eeeeeee..eee.eeeeee..eeeeee.eeeeee.eee....
@@ -369,8 +338,10 @@
 <span>pickup:    <a href="https://discord.gg/g8mvhu3">discord.gg/g8mvhu3</a></span>
 <span>source:    <a href="https://github.com/mikejsavage/forksow/">engine</a> | <a href="https://github.com/mikejsavage/forksow-assets">assets</a> | <a href="https://github.com/mikejsavage/forksow-launcher">launcher</a> | <a href="https://github.com/mikejsavage/forksow-libs">libs</a></span></pre>
         <p class="text">
-          <span><b>Cocaine Diesel</b> is a social first person shooter with an emphasis on drug promotion and criminal lifestyles.</span>
-          <span>meet the absoulute scum of the internet on your traumatizing adventure through the most squalid corner of the web formely known as <b>warsow pickup</b></span>
+          <span><b>Cocaine Diesel</b> is a social first person shooter with an emphasis on drug promotion and criminal
+            lifestyles.</span>
+          <span>meet the absoulute scum of the internet on your traumatizing adventure through the most squalid corner
+            of the web formely known as <b>warsow pickup</b></span>
           <ul class="features">
             <li class="feature">team-based tactical hooliganism webnovela</li>
             <li class="feature">optimized for esports and aesthetics</li>
@@ -386,10 +357,10 @@
         <div class="screenshots">
           <img src="image.jpg" style="height: 100%;width: 100%;" />
         </div>
-      </section>
-      <section class="news">
-        <ul id="news" class="news"></ul>
-      </section>
+    </section>
+    <section class="news">
+      <ul id="news" class="news"></ul>
+    </section>
     </div>
   </main>
   <div class="old">
@@ -400,15 +371,20 @@
       console.log(location.href);
       const t = "aha cheers !";
       const t2 = "thanks again !";
-      setInterval( () => document.title = document.title == t ? t2 : t, 500);
+      setInterval(() => document.title = document.title == t ? t2 : t, 500);
     })();
 
     const $news = document.getElementById('news');
     let xmlhttp = new XMLHttpRequest();
-    
+
     const handleData = data => {
       data.reverse().forEach(post => {
-        const { title, date, changes, news } = post;
+        const {
+          title,
+          date,
+          changes,
+          news
+        } = post;
         const $post = document.createElement('li');
         const $title = document.createElement('h1');
         const $date = document.createElement('span');
@@ -416,7 +392,7 @@
 
         $title.textContent = title;
         $date.textContent = date;
-        
+
         $date.className = "date";
 
         changes.forEach(change => {
@@ -434,8 +410,8 @@
       })
     }
 
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200)  {
+    xmlhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
         handleData(JSON.parse(this.responseText));
       }
     };
@@ -444,4 +420,5 @@
     xmlhttp.send();
   </script>
 </body>
+
 </html>
