@@ -365,8 +365,7 @@
     <a href="https://ahacheers.github.io/cocaine-diesel-website-old">$</a>
   </div>
   <script>
-    (() => {
-      console.log(location.href);
+    (function() {
       const t = "aha cheers !";
       const t2 = "thanks again !";
       setInterval(() => document.title = document.title == t ? t2 : t, 500);
@@ -375,8 +374,8 @@
     const $news = document.getElementById('news');
     let xmlhttp = new XMLHttpRequest();
 
-    const handleData = data => {
-      data.reverse().forEach(post => {
+    const handleData = function(data) {
+      data.reverse().forEach(function(post) {
         const {
           title,
           date,
@@ -393,7 +392,7 @@
 
         $date.className = "date";
 
-        changes.forEach(change => {
+        changes.forEach(function(change) {
           const $change = document.createElement('li');
           $change.textContent = change;
           $change.className = news ? "newspost" : "change";
