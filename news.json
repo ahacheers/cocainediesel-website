@@ -342,5 +342,46 @@
 			"diesel:// handler so you can click links to start the game. run the installer to get it, no need to uninstall",
 			"fixed mini obituary color for beta players"
 		]
+	},
+	{
+		"title": "0.0.1.29 released",
+		"date": "Dec 2, 2018",
+		"changes": [
+			"fix 0 ammo bug",
+			"rename cg_teamALPHAcolor etc cvars to cg_ally* and cg_enemy*. so you need to set teamcolours again",
+			"force models by default, shoot at pigs",
+			"show 'press b to change loadout prompt'",
+			"allow loadout changes during warmup"
+		]
+	},
+	{
+		"title": "0.0.1.30 released",
+		"date": "Dec 3, 2018",
+		"changes": [
+			"cg_damageNumbers so you can turn them off",
+			"fix future of europe after changing maps",
+			"rename sites to A/B",
+			"fix teamcolours while spectating",
+			"add 'weapon #' command to select weapons by slot, now bound to 1-4 by default",
+			"tweak explosive knockback a bit"
+		]
+	},
+	{
+		"title": "0.0.1.31 released",
+		"date": "Dec 4, 2018",
+		"changes": [
+			"add a headless updater for servers",
+			"fs_usehomedir 0 by default for servers",
+			"remove coaches"
+		]
+	},
+	{
+		"title": "0.0.1.32 released",
+		"date": "Dec 4, 2018",
+		"changes": [
+			"don't wait 5mins for first server heartbeat",
+			"headlessupdater compatibility fixes for older Linux systems"
+		]
 	}
+]
 ]
