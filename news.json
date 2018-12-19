@@ -382,5 +382,53 @@
 			"don't wait 5mins for first server heartbeat",
 			"headlessupdater compatibility fixes for older Linux systems"
 		]
+	},
+	{
+		"title": "0.0.1.33 released",
+		"date": "Dec 13, 2018",
+		"changes": [
+			"delete callvote announcer",
+			"game should feel smoother now (this got added silently a few releases ago, people noticed so I guess it worked heh)",
+			"RG nerfed",
+			"LG tweaked",
+			"fix bicubic lightmaps being offset slightly"
+		]
+	},
+	{
+		"title": "0.0.1.34 released",
+		"date": "Dec 14, 2018",
+		"changes": [
+			"revert to 2.1 lg beam",
+			"paintball eb impact decal"
+		]
+	},
+	{
+		"title": "0.0.1.35 released",
+		"date": "Dec 16, 2018",
+		"changes": [
+			"autoplant removed",
+			"plant stops and you get the bomb back if you move too far away",
+			"defuse resets if you move too far away",
+			"corpses don't block projectiles"
+		]
+	},
+	{
+		"title": "0.0.1.36 released",
+		"date": "Dec 16, 2018",
+		"changes": [
+			"fix explosions",
+			"fix saving loadout in warmup",
+			"remove callvote rebalance/restart/shuffle"
+		]
+	},
+	{
+		"title": "0.0.1.37 released",
+		"date": "Dec 19, 2018",
+		"changes": [
+			"possible fix for terrible gl drivers",
+			"show chat messages for longer",
+			"fix callvotes with g_inactivity_maxtime 0",
+			"plant time reduced to 5s"
+		]
 	}
 ]
