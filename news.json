@@ -430,5 +430,25 @@
 			"fix callvotes with g_inactivity_maxtime 0",
 			"plant time reduced to 5s"
 		]
-	}
+	},
+	{
+		"title": "0.0.1.38 released",
+		"date": "Dec 21, 2018",
+		"changes": [
+			"fix LG sound bug",
+			"try out a new visual style. we are rushing this out so we can try it and revert if it sucks. lots of stuff is ugly",
+			"plant time 5s -> 1s, round time 30s -> 45s. nobody likes carrying the bomb in warsow, this should help remedy that",
+			"play a noise when you start planting",
+			"unspecified weapon changes",
+			"remove the ugly grate on town A spot"
+		]
+	},
+	{
+		"title": "0.0.1.39 released",
+		"date": "Dec 21, 2018",
+		"changes": [
+			"graphical fixes",
+			"fix respawning if you change loadouts while dead in warmup"
+		]
+	},
 ]
