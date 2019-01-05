@@ -450,5 +450,44 @@
 			"graphical fixes",
 			"fix respawning if you change loadouts while dead in warmup"
 		]
+	},
+	{
+		"title": "0.0.1.40 released",
+		"date": "Dec 22, 2018",
+		"changes": [
+			"lock down r_wall/floorcolor"
+		]
+	},
+	{
+		"title": "0.0.1.41 released",
+		"date": "Dec 23, 2018",
+		"changes": [
+			"fog nerfed",
+			"callvotes expire after 20s, down from 40s"
+		]
+	},
+	{
+		"title": "0.0.1.42 released",
+		"date": "Dec 23, 2018",
+		"changes": [
+			"fix projectile models",
+			"50th cd release in 46 days"
+		]
+	},
+	{
+		"title": "0.0.2.0 released",
+		"date": "Jan 05, 2019",
+		"changes": [
+			"This release took longer than usual thanks to Christmas and the 2.2 beta, and some larger changes. Unfortunately one project was unsuccessful and is not being shipped today, but we will get around to it.",
+			"NEW UI. librocket is in the dumpster where it belongs. the new UI looks like the default skin for some developer tool because that's exactly what it is. it's not pretty yet and some non-critical stuff is missing",
+			"SHOP HOTKEYS. b26 picks RL/LG/GL",
+			"SOUND FIX? the code behind looping sounds has been simplified a little. this one is a little tricky because it doesn't seem to happen with low ping, e.g. when testing locally on my machine. fingers crossed things have improved",
+			"VIDEO MODE CLEANUP. the vid_ cvars got merged into one vid_mode cvar. the video mode gets reset when you exit the game. the video mode code is a lot more robust overall, but you should still restart after changing resolution",
+			"SCREENSHOTS HAVE BEEN MOVED from CD/base/screenshots to CD/screenshots. same with demos/demoavi/etc",
+			"MOST DLLS REMOVED. cgame/angelwrap/ui are now just part of client.exe",
+			"MANY CVARS REMOVED. I forgot the list I just went and deleted some easy ones",
+			"160K LINES OF CODE. more than half of the qfusion codebase has been nuked. this is important and good because it's less work for us to maintain and makes it easier for hypothetical new contributors to get up to speed",
+			"LOTS OF RANDOM STUFF. misc cleanup, updates should be smaller now, ..."
+		]
 	}
 ]
