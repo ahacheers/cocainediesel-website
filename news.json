@@ -475,7 +475,7 @@
 		]
 	},
 	{
-		"title": "0.0.2.0 released",
+		"title": "0.0.2.0 released (#raceto2.2)",
 		"date": "Jan 05, 2019",
 		"changes": [
 			"This release took longer than usual thanks to Christmas and the 2.2 beta, and some larger changes. Unfortunately one project was unsuccessful and is not being shipped today, but we will get around to it.",
@@ -488,6 +488,43 @@
 			"MANY CVARS REMOVED. I forgot the list I just went and deleted some easy ones",
 			"160K LINES OF CODE. more than half of the qfusion codebase has been nuked. this is important and good because it's less work for us to maintain and makes it easier for hypothetical new contributors to get up to speed",
 			"LOTS OF RANDOM STUFF. misc cleanup, updates should be smaller now, ..."
+		]
+	},
+	{
+		"title": "0.0.2.1 released",
+		"date": "Jan 05, 2019",
+		"changes": [
+			"fix config path on Windows"
+		]
+	},
+	{
+		"title": "0.0.2.2 released",
+		"date": "Jan 05, 2019",
+		"changes": [
+			"fix the game for opengl2",
+			"fix kukumene sky",
+			"mwaga iced"
+		]
+	},
+	{
+		"title": "0.0.2.3 released",
+		"date": "Jan 08, 2019",
+		"changes": [
+			"sound bug fixed for real this time",
+			"fix crosshair/killfeed after a map change",
+			"menu_quick console spam removed",
+			"new rocket visuals",
+			"wider lg beam effect",
+			"unspecified weapon changes"
+		]
+	},
+	{
+		"title": "0.0.2.4 released",
+		"date": "Jan 08, 2019",
+		"changes": [
+			"fix menus on old AMD GPUs",
+			"vsays nerfed",
+			"EB damage nerfed from 37.5 to 35. should have zero impact on gameplay just nicer damage numbers"
 		]
 	}
 ]
