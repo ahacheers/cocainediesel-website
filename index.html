@@ -177,12 +177,18 @@
     }
 
     .features {
-      margin: 2em 0;
+      margin: 1.75em 0;
     }
 
     .screenshots {
-      margin: 2em 0 0 0;
+      margin: 1.75em 0 0 0;
       justify-content: space-between;
+    }
+
+    
+    .screenshot {
+      height:100%;
+      width:100%;
     }
 
     .smash {
@@ -208,7 +214,6 @@
       height: 100%;
     }
 
-    .screenshot,
     .trailer {
       justify-content: center;
       align-items: center;
@@ -224,7 +229,7 @@
 
     .news>li {
       flex-flow: column;
-      padding: 2em 0;
+      padding: 1.75em 0;
       border-bottom: 1px dashed #666;
       box-sizing: border-box;
       user-select: text;
@@ -272,7 +277,7 @@
       main {
         flex-flow: column;
         align-items: center;
-        padding: 2em;
+        padding: 1.75em;
         max-width: 600px;
         margin: 0 auto;
       }
@@ -285,9 +290,6 @@
         padding: 0;
       }
 
-      .screenshot {
-        margin: 0 0.5em;
-      }
     }
 
     @media (max-width:570px) {
@@ -302,14 +304,6 @@
       .links {
         letter-spacing: 0;
         font-size: 1.2em;
-      }
-
-      .screenshot:nth-child(n+4) {
-        display: none
-      }
-
-      .screenshot:nth-child(3) {
-        margin-right: 0;
       }
     }
   </style>
@@ -329,6 +323,9 @@
 ::::::#::::::::#::::::#:::##:::#:::#:::##:::#::::::#::::::::#:::#::::::#:::::::#::::::#::::::#
 @.....@@......@@@.....@...@@...@...@...@@...@......@.......@@...@......@......@@......@......@</pre>
       </header>
+      <div class="screenshots">
+        <img src="image.png" class="screenshot" />
+      </div>
       <pre class="links">
 <span>download:  <a href="CocaineDieselInstaller.exe">windows</a> | <a href="cocaine_diesel_launcher_linux.zip">linux</a></span>
 <span>support:   <a href="https://discord.gg/5ZbV4mF">discord.gg/5ZbV4mF</a></span>
@@ -352,9 +349,6 @@
         <span class="smash"><em>“If I ever meet you in real life I will smash your face to pieces cu @ lan nerd.”</em></span>
         <span class="smash">- Huksi</span>
       </p>
-      <div class="screenshots">
-        <img src="image.png" style="height: 100%;width: 100%;" />
-      </div>
     </section>
     <section class="news">
       <ul id="news" class="news"></ul>
