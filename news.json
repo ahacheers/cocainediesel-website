@@ -526,5 +526,18 @@
 			"vsays nerfed",
 			"EB damage nerfed from 37.5 to 35. should have zero impact on gameplay just nicer damage numbers"
 		]
+	},
+	{
+		"title": "0.0.2.5 released",
+		"date": "Jan 14, 2019",
+		"changes": [
+			"this release is 100mb because you have to redownload all the maps",
+			"fix menus on old AMD GPUs aha cheers",
+			"less tacky rocket trails",
+			"try to use the good GPU when you have two of them (like nv optimus)",
+			"versioned builds. so the menu shows the correct version and doesn't show old servers etc",
+			"remove a bunch of unused textures and fix texture issues on some maps, mainly dust/summer",
+			"removed lighting from the engine/maps, we weren't using it so the game looks no different but it's smaller now"
+		]
 	}
 ]
