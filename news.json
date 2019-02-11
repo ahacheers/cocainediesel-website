@@ -539,5 +539,62 @@
 			"remove a bunch of unused textures and fix texture issues on some maps, mainly dust/summer",
 			"removed lighting from the engine/maps, we weren't using it so the game looks no different but it's smaller now"
 		]
+	},
+	{
+		"title": "0.0.2.6 released",
+		"date": "Jan 17, 2019",
+		"changes": [
+			"team colours restricted to blue/red/green/yellow. we might add other colours if people want them but we want to keep the palette small",
+			"team coloured explosions",
+			"fix silent lg bug",
+			"fix switching spec view",
+			"allow teles during countdown",
+			"remove colour correction"
+		]
+	},
+	{
+		"title": "0.0.2.7 released",
+		"date": "Jan 24, 2019",
+		"changes": [
+			"welcome dexter and obani to the dev team",
+			"unspecified weapon changes",
+			"draw one damage number for RG shots so you can actually see how much you did",
+			"remove team telefrags",
+			"green 2.0 and yellow 2.0 team colours",
+			"maybe fix dual GPU laptop setups",
+			"ship uninstall.exe updates for maximum rq efficiency"
+		]
+	},
+	{
+		"title": "0.0.2.8 released",
+		"date": "Feb 04, 2019",
+		"changes": [
+			"a new map, TRAIN, exclusive to Cocaine Diesel",
+			"vsays buffed",
+			"reduce max plant speed. should make accidental cancels happen less often",
+			"gibs tweaks. explosive weapons gib more often now. more damage = more gibs",
+			"drop support for 10 year old cpus. progress!",
+			"new console. you can select and copy text in the input box. it has a scrollbar. potentially better non-english support. this paves the way to being able to copy text from the console too but qf's renderer can't handle it atm",
+			"new sky renderer. simpler mapping, no more glitches, and faster than fastsky",
+			"please ready up announcer nuked",
+			"really ship new uninstall.exe"
+		]
+	},
+	{
+		"title": "0.0.2.9 released",
+		"date": "Feb 05, 2019",
+		"changes": [
+			"moved the game to a cdn so you should get better download speeds",
+			"console fixes"
+		]
+	},
+	{
+		"title": "0.0.2.10 released",
+		"date": "Feb 08, 2019",
+		"changes": [
+			"new launcher design",
+			"add a space after tab completing something",
+			"drop cpu requirements to SSE3 (2006 intel, last year's AMD)"
+		]
 	}
 ]
