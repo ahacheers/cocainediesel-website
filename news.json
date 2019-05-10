@@ -2,23 +2,17 @@
 	{
 		"title": "0.0.0.1 released",
 		"date": "Nov 8, 2018",
-		"changes": [
-			"wow it's finally out (linux only)"
-		]
+		"changes": ["wow it's finally out (linux only)"]
 	},
 	{
 		"title": "0.0.0.2 released",
 		"date": "Nov 8, 2018",
-		"changes": [
-			"fixed missing sdl dll"
-		]
+		"changes": ["fixed missing sdl dll"]
 	},
 	{
 		"title": "0.0.0.3 released",
 		"date": "Nov 8, 2018",
-		"changes": [
-			"this is the real deal"
-		]
+		"changes": ["this is the real deal"]
 	},
 	{
 		"title": "0.0.0.4 released",
@@ -32,9 +26,7 @@
 	{
 		"title": "0.0.0.5 released",
 		"date": "Nov 9, 2018",
-		"changes": [
-			"made some assets smaller and fixed a launcher bug iirc"
-		]
+		"changes": ["made some assets smaller and fixed a launcher bug iirc"]
 	},
 	{
 		"title": "0.0.0.6 released",
@@ -49,9 +41,7 @@
 	{
 		"title": "0.0.0.7 released",
 		"date": "Nov 9, 2018",
-		"changes": [
-			"chat fix"
-		]
+		"changes": ["chat fix"]
 	},
 	{
 		"title": "0.0.1.0 released",
@@ -140,25 +130,17 @@
 	{
 		"title": "0.0.1.7 released",
 		"date": "Nov 15, 2018",
-		"changes": [
-			"bugfix release"
-		]
+		"changes": ["bugfix release"]
 	},
 	{
 		"title": "0.0.1.8 released",
 		"date": "Nov 15, 2018",
-		"changes": [
-			"renamed maps",
-			"added carentan",
-			"removed emwarehouse"
-		]
+		"changes": ["renamed maps", "added carentan", "removed emwarehouse"]
 	},
 	{
 		"title": "0.0.1.9 released",
 		"date": "Nov 15, 2018",
-		"changes": [
-			"fixed linux cgame/game modules"
-		]
+		"changes": ["fixed linux cgame/game modules"]
 	},
 	{
 		"title": "new website",
@@ -217,16 +199,12 @@
 	{
 		"title": "0.0.1.14 released",
 		"date": "Nov 22, 2018",
-		"changes": [
-			"broken release. gg mike"
-		]
+		"changes": ["broken release. gg mike"]
 	},
 	{
 		"title": "0.0.1.15 released",
 		"date": "Nov 22, 2018",
-		"changes": [
-			"was toast too"
-		]
+		"changes": ["was toast too"]
 	},
 	{
 		"title": "0.0.1.16 released",
@@ -264,9 +242,7 @@
 	{
 		"title": "0.0.1.20 released",
 		"date": "Nov 27, 2018",
-		"changes": [
-			"fixed crash at startup"
-		]
+		"changes": ["fixed crash at startup"]
 	},
 	{
 		"title": "0.0.1.21 released",
@@ -289,16 +265,12 @@
 	{
 		"title": "0.0.1.23 released",
 		"date": "Nov 28, 2018",
-		"changes": [
-			"fix startup crash on windows"
-		]
+		"changes": ["fix startup crash on windows"]
 	},
 	{
 		"title": "0.0.1.24 released",
 		"date": "Nov 29, 2018",
-		"changes": [
-			"indicator tweaks"
-		]
+		"changes": ["indicator tweaks"]
 	},
 	{
 		"title": "0.0.1.25 released",
@@ -397,10 +369,7 @@
 	{
 		"title": "0.0.1.34 released",
 		"date": "Dec 14, 2018",
-		"changes": [
-			"revert to 2.1 lg beam",
-			"paintball eb impact decal"
-		]
+		"changes": ["revert to 2.1 lg beam", "paintball eb impact decal"]
 	},
 	{
 		"title": "0.0.1.35 released",
@@ -454,25 +423,17 @@
 	{
 		"title": "0.0.1.40 released",
 		"date": "Dec 22, 2018",
-		"changes": [
-			"lock down r_wall/floorcolor"
-		]
+		"changes": ["lock down r_wall/floorcolor"]
 	},
 	{
 		"title": "0.0.1.41 released",
 		"date": "Dec 23, 2018",
-		"changes": [
-			"fog nerfed",
-			"callvotes expire after 20s, down from 40s"
-		]
+		"changes": ["fog nerfed", "callvotes expire after 20s, down from 40s"]
 	},
 	{
 		"title": "0.0.1.42 released",
 		"date": "Dec 23, 2018",
-		"changes": [
-			"fix projectile models",
-			"50th cd release in 46 days"
-		]
+		"changes": ["fix projectile models", "50th cd release in 46 days"]
 	},
 	{
 		"title": "0.0.2.0 released (#raceto2.2)",
@@ -493,9 +454,7 @@
 	{
 		"title": "0.0.2.1 released",
 		"date": "Jan 05, 2019",
-		"changes": [
-			"fix config path on Windows"
-		]
+		"changes": ["fix config path on Windows"]
 	},
 	{
 		"title": "0.0.2.2 released",
@@ -596,5 +555,28 @@
 			"add a space after tab completing something",
 			"drop cpu requirements to SSE3 (2006 intel, last year's AMD)"
 		]
+	},
+	{
+		"title": "0.0.2.11 released",
+		"date": "Mar 17, 2019",
+		"changes": ["no changes"]
+	},
+	{
+		"title": "0.0.2.12 released",
+		"date": "Mar 21, 2019",
+		"changes": ["no changes"]
+	},
+	{
+		"title": "0.0.2.13 released",
+		"date": "Apr 06, 2019",
+		"changes": [
+			"spec bug/arm.ogg bug fixed",
+			"actually there were no changes"
+		]
+	},
+	{
+		"title": "0.0.2.14 released",
+		"date": "Apr 11, 2019",
+		"changes": ["no changes"]
 	}
 ]
