@@ -578,5 +578,16 @@
 		"title": "0.0.2.14 released",
 		"date": "Apr 11, 2019",
 		"changes": ["no changes"]
+	},
+	{
+		"title": "0.0.2.15 released",
+		"date": "May 15, 2019",
+		"changes": [
+			"GB airdash, remove auto GB",
+			"give topscorers a crown in gladiator so you know who to focus",
+			"make spikes more deadly",
+			"fix a couple crashes",
+			"buff vsays"
+		]
 	}
 ]
