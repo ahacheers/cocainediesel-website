@@ -559,25 +559,37 @@
 	{
 		"title": "0.0.2.11 released",
 		"date": "Mar 17, 2019",
-		"changes": ["no changes"]
+		"changes": [
+			"gladiator beta release",
+			"a new gametype, GLADIATOR, exclusive to cocaine diesel",
+			"a new map, GLADIATOR, exclusive to cocaine diesel",
+			"exciting environmental hazards for gladiator",
+			"non-animated GLTF model support",
+			"fix RG damage numbers"
+		]
 	},
 	{
 		"title": "0.0.2.12 released",
 		"date": "Mar 21, 2019",
-		"changes": ["no changes"]
+		"changes": [
+			"gladiator fixes"
+		]
 	},
 	{
 		"title": "0.0.2.13 released",
 		"date": "Apr 06, 2019",
 		"changes": [
-			"spec bug/arm.ogg bug fixed",
-			"actually there were no changes"
+			"fix spec bug",
+			"fix arm.ogg console spam"
 		]
 	},
 	{
 		"title": "0.0.2.14 released",
 		"date": "Apr 11, 2019",
-		"changes": ["no changes"]
+		"changes": [
+			"fix self knockback",
+			"fix gladiator weapon selection"
+		]
 	},
 	{
 		"title": "0.0.2.15 released",
