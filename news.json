@@ -601,5 +601,21 @@
 			"fix a couple crashes",
 			"buff vsays"
 		]
+	},
+	{
+		"title": "0.0.2.16 released",
+		"date": "May 20, 2019",
+		"changes": [
+			"surprise MG changes",
+			"below 140k LOC"
+		]
+	},
+	{
+		"title": "0.0.2.17 released",
+		"date": "May 21, 2019",
+		"changes": [
+			"LG sound bug fixed for real",
+			"surprise R&S features"
+		]
 	}
 ]
