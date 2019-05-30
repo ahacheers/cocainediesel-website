@@ -345,14 +345,13 @@
     </div>
     <script>
         (function detectIE() {
-            const ua = window.navigator.userAgent;
-            const msie = ua.indexOf('MSIE ');
-            const trident = ua.indexOf('Trident/');
-            const edge = ua.indexOf('Edge/');
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf('MSIE ');
+            var trident = ua.indexOf('Trident/');
+            var edge = ua.indexOf('Edge/');
             if (msie > 0 || trident > 0 || edge > 0) {
                 return document.body.innerHTML = ("<center><h1>get a proper browser you scrub</h1></center>");
             }
-            return false;
         })();
     </script>
     <script>
