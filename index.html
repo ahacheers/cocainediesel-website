@@ -1,318 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <script type="aha/cheers">
-     _____  ____   ____   _____ _    _ _____ ______ 
-    / ____|/ __ \ / __ \ / ____| |  | |_   _|  ____|
-   | |  __| |  | | |  | | |    | |__| | | | | |__   
-   | | |_ | |  | | |  | | |    |  __  | | | |  __|  
-   | |__| | |__| | |__| | |____| |  | |_| |_| |____ 
-    \_____|\____/ \____/ \_____|_|  |_|_____|______|
-    
-  </script>
-  <meta charset="UTF-8">
-  <meta name="theme-color" content="#000" />
-  <meta name="msapplication-navbutton-color" content="#000">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="COCAINE DIESEL" />
-  <meta property="og:url" content="https://cocainediesel.fun/" />
-  <meta property="og:image" content="https://cocainediesel.fun/og-image.jpg" />
-  <meta property="og:image:width" content="32" />
-  <meta property="og:image:height" content="32" />
-  <meta property="og:description" content="... is a multiplayer first person shooter with an emphasis on drug promotion and criminal lifestyles. meet the absoulute scum of the internet on your traumatizing adventure through the most squalid corner of the dark web formely known as Warsow Pickup" />
-  <title>aha cheers !</title>
-  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <style>
-    body {
-      background: #000;
-      color: #fff;
-      font-family: 'Anonymous Pro', monospace;
-      margin: 0;
-      text-transform: lowercase;
-      user-select: none;
-    }
-
-    pre,
-    p {
-      margin: 0;
-      font-family: inherit;
-    }
-
-    ul,
-    li {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    ul {
-      flex-flow: column;
-    }
-
-    a {
-      color: #ff0;
-      text-decoration: none;
-    }
-
-    a:hover {
-      font-weight: 700;
-      animation: f 0.1s linear infinite;
-    }
-
-    b {
-      color: #e8133b;
-      text-transform: uppercase;
-      font-style: italic;
-      letter-spacing: -1px;
-    }
-
-    h1 {
-      color: #00c4ff;
-      margin: 0;
-      font-family: 'VT323', monospace;
-      letter-spacing: 2px;
-      font-weight: 400;
-      font-size: 1.5em;
-    }
-
-    ul,
-    main,
-    header,
-    main>section,
-    .screenshots,
-    .screenshot,
-    .text,
-    .change,
-    .features>li,
-    .news>li,
-    .news,
-    .smash,
-    .trailer {
-      display: flex;
-    }
-
-    main {
-      padding: 2rem;
-      box-sizing: border-box;
-    }
-
-    header {
-      font-weight: 700;
-      font-size: 8px;
-      transform: translateX(-4px);
-      justify-content: center;
-    }
-
-    header>pre {
-      animation: m 0.33s cubic-bezier(0.6, -0.28, 0.74, 0.05) infinite alternate;
-    }
-
-    .news {
-      padding: 0 1.5em 1.5em 1.5em;
-      box-sizing: border-box;
-      grid-area: news;
-      max-width: 600px;
-    }
-
-    .date {
-      font-family: 'VT323', monospace;
-      margin-top: 0.5em;
-      margin-bottom: 1em;
-      color: #333;
-      font-size: 0.8em;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-    .newspost,
-    .change {
-      list-style: none;
-      line-height: 1em;
-    }
-
-    .change,
-    .feature {
-      margin-bottom: 0.5em;
-    }
-
-    .feature:before,
-    .newspost:before,
-    .change:before {
-      content: "\00d7";
-      margin-right: 1em;
-      color: #e8133b;
-    }
-
-    .newspost:before {
-      content: "\2605";
-    }
-
-    .change:last-child {
-      margin: 0
-    }
-
-    .info {
-      flex-flow:column;
-      user-select: none;
-      width: 550px;
-    }
-
-    .text {
-      flex-flow: column;
-    }
-
-    .links {
-      margin: 1.75em 0;
-      flex-flow: column;
-      color: #00c4ff;
-      letter-spacing: 2px;
-      font-size: 1em;
-    }
-
-    .features {
-      margin: 1.75em 0;
-    }
-
-    .screenshots {
-      margin: 1.75em 0 0 0;
-      justify-content: space-between;
-    }
-
-    
-    .screenshot {
-      height:100%;
-      width:100%;
-    }
-
-    .smash {
-      flex-flow: column;
-      line-height: 1em;
-      font-size: 1em;
-      letter-spacing: 0.5px;
-      color: #333;
-      text-transform: none;
-    }
-
-    .video {
-      width: 100%;
-      position: relative;
-      padding-top: 56.25%;
-    }
-
-    .trailer {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .trailer {
-      justify-content: center;
-      align-items: center;
-      color: #e8133b;
-      font-size: 12px;
-      border: 1px solid #e8133b;
-      box-sizing: border-box;
-    }
-
-    .news {
-      flex-flow: column;
-    }
-
-    .news>li {
-      flex-flow: column;
-      padding: 1.75em 0;
-      border-bottom: 1px dashed #666;
-      box-sizing: border-box;
-      user-select: text;
-    }
-
-    .old {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-    }
-
-    .old>a {
-      color: #333;
-    }
-
-    @keyframes f {
-      0% {
-        color: #f00
-      }
-
-      100% {
-        color: #ff0
-      }
-    }
-
-    @keyframes m {
-      0% {
-        color: #e8133b;
-        text-shadow: -3px 0 #00c4ff
-      }
-
-      50% {
-        color: #00c4ff;
-        text-shadow: 0px 0 #ff0
-      }
-
-      100% {
-        color: #00c4ff;
-        text-shadow: 3px 0 #e8133b
-      }
-    }
-
-    @media (max-width:1150px)
-    {
-      main {
-        flex-flow: column;
-        align-items: center;
-        padding: 1.75em;
-        max-width: 600px;
-        margin: 0 auto;
-      }
+    <script type="aha/cheers">
+      _____  ____   ____   _____ _    _ _____ ______ 
+      / ____|/ __ \ / __ \ / ____| |  | |_   _|  ____|
+    | |  __| |  | | |  | | |    | |__| | | | | |__   
+    | | |_ | |  | | |  | | |    |  __  | | | |  __|  
+    | |__| | |__| | |__| | |____| |  | |_| |_| |____ 
+      \_____|\____/ \____/ \_____|_|  |_|_____|______|
       
-      .info {
-        width:initial;
-      }
-
-      .news {
-        padding: 0;
-      }
-
-    }
-
-    @media (max-width:570px) {
-      body {
-        font-size: 12px;
-      }
-
-      header {
-        font-size: 0.4em;
-      }
-
-      .links {
-        letter-spacing: 0;
-        font-size: 1.2em;
-      }
-    }
-  </style>
+    </script>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000" />
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="COCAINE DIESEL" />
+    <meta property="og:url" content="https://cocainediesel.fun/" />
+    <meta property="og:image" content="https://cocainediesel.fun/og-image.jpg" />
+    <meta property="og:image:width" content="32" />
+    <meta property="og:image:height" content="32" />
+    <meta property="og:description" content="... is a multiplayer first person shooter with an emphasis on drug promotion and criminal lifestyles. meet the absoulute scum of the internet on your traumatizing adventure through the most squalid corner of the dark web formely known as Warsow Pickup" />
+    <title>aha cheers !</title>
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Anonymous Pro', monospace;
+            margin: 0;
+            text-transform: lowercase;
+            user-select: none;
+        }
+        
+        pre,
+        p {
+            margin: 0;
+            font-family: inherit;
+        }
+        
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        ul {
+            flex-flow: column;
+        }
+        
+        a {
+            color: #ff0;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            font-weight: 700;
+            animation: f 0.1s linear infinite;
+        }
+        
+        b {
+            color: #e8133b;
+            text-transform: uppercase;
+            font-style: italic;
+            letter-spacing: -1px;
+        }
+        
+        h1 {
+            color: #00c4ff;
+            margin: 0;
+            font-family: 'VT323', monospace;
+            letter-spacing: 2px;
+            font-weight: 400;
+            font-size: 1.5em;
+        }
+        
+        ul,
+        main,
+        header,
+        main>section,
+        .screenshots,
+        .screenshot,
+        .text,
+        .change,
+        .features>li,
+        .news>li,
+        .news,
+        .smash,
+        .trailer {
+            display: flex;
+        }
+        
+        main {
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        
+        header {
+            font-weight: 700;
+            font-size: 8px;
+            transform: translateX(-4px);
+            justify-content: center;
+        }
+        
+        header>pre {
+            animation: m 0.33s cubic-bezier(0.6, -0.28, 0.74, 0.05) infinite alternate;
+        }
+        
+        .news {
+            padding: 0 1.5em 1.5em 1.5em;
+            box-sizing: border-box;
+            grid-area: news;
+            max-width: 600px;
+        }
+        
+        .date {
+            font-family: 'VT323', monospace;
+            margin-top: 0.5em;
+            margin-bottom: 1em;
+            color: #333;
+            font-size: 0.8em;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        
+        .newspost,
+        .change {
+            list-style: none;
+            line-height: 1em;
+        }
+        
+        .change,
+        .feature {
+            margin-bottom: 0.5em;
+        }
+        
+        .feature:before,
+        .newspost:before,
+        .change:before {
+            content: "\00d7";
+            margin-right: 1em;
+            color: #e8133b;
+        }
+        
+        .newspost:before {
+            content: "\2605";
+        }
+        
+        .change:last-child {
+            margin: 0
+        }
+        
+        .info {
+            flex-flow: column;
+            user-select: none;
+            width: 550px;
+        }
+        
+        .text {
+            flex-flow: column;
+        }
+        
+        .links {
+            margin: 1.75em 0;
+            flex-flow: column;
+            color: #00c4ff;
+            letter-spacing: 2px;
+            font-size: 1em;
+        }
+        
+        .features {
+            margin: 1.75em 0;
+        }
+        
+        .screenshots {
+            margin: 1.75em 0 0 0;
+            justify-content: space-between;
+        }
+        
+        .screenshot {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .smash {
+            flex-flow: column;
+            line-height: 1em;
+            font-size: 1em;
+            letter-spacing: 0.5px;
+            color: #333;
+            text-transform: none;
+        }
+        
+        .video {
+            width: 100%;
+            position: relative;
+            padding-top: 56.25%;
+        }
+        
+        .trailer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .trailer {
+            justify-content: center;
+            align-items: center;
+            color: #e8133b;
+            font-size: 12px;
+            border: 1px solid #e8133b;
+            box-sizing: border-box;
+        }
+        
+        .news {
+            flex-flow: column;
+        }
+        
+        .news>li {
+            flex-flow: column;
+            padding: 1.75em 0;
+            border-bottom: 1px dashed #666;
+            box-sizing: border-box;
+            user-select: text;
+        }
+        
+        .old {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        
+        .old>a {
+            color: #333;
+        }
+        
+        @keyframes f {
+            0% {
+                color: #f00
+            }
+            100% {
+                color: #ff0
+            }
+        }
+        
+        @keyframes m {
+            0% {
+                color: #e8133b;
+                text-shadow: -3px 0 #00c4ff
+            }
+            50% {
+                color: #00c4ff;
+                text-shadow: 0px 0 #ff0
+            }
+            100% {
+                color: #00c4ff;
+                text-shadow: 3px 0 #e8133b
+            }
+        }
+        
+        @media (max-width:1150px) {
+            main {
+                flex-flow: column;
+                align-items: center;
+                padding: 1.75em;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .info {
+                width: initial;
+            }
+            .news {
+                padding: 0;
+            }
+        }
+        
+        @media (max-width:570px) {
+            body {
+                font-size: 12px;
+            }
+            header {
+                font-size: 0.4em;
+            }
+            .links {
+                letter-spacing: 0;
+                font-size: 1.2em;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <main>
-    <section class="info">
-      <header>
-        <pre>
+    <main>
+        <section class="info">
+            <header>
+                <pre>
 .eeeee..eeeeee...eeeee..eeeeee..eee.eeeeeee..eeeeee.eeeeeee..eee.eeeeee..eeeeee.eeeeee.eee....
 @@@@@@:@@@@@@@@:@@@@@@:@@@@@@@@:@@@:@@@@@@@@:@@@@@@:@@@@@@@@:@@@:@@@@@@:@@@@@@@:@@@@@@:@@@::::
 %%%----%%%--%%%-%%%----%%%--%%%-%%%-%%%--%%%-%%%----%%%--%%%-%%%-%%%----%%%-----%%%----%%%----
@@ -321,91 +310,100 @@
 !!!====!!!==!!!=!!!====!!!==!!!=!!!=!!!==!!!=!!!====!!!==!!!=!!!=!!!========!!!=!!!====!!!====
 ::::::#::::::::#::::::#:::##:::#:::#:::##:::#::::::#::::::::#:::#::::::#:::::::#::::::#::::::#
 @.....@@......@@@.....@...@@...@...@...@@...@......@.......@@...@......@......@@......@......@</pre>
-      </header>
-      <div class="screenshots">
-        <img src="image.png" class="screenshot" />
-      </div>
-      <pre class="links">
+            </header>
+            <div class="screenshots">
+                <img src="image.png" class="screenshot" />
+            </div>
+            <pre class="links">
 <span>download:  <a href="CocaineDieselInstaller.exe">windows</a> | <a href="cocaine_diesel_launcher_linux.tar.gz">linux</a></span>
 <span>discord:   <a href="https://discord.gg/5ZbV4mF">discord.gg/5ZbV4mF</a></span>
 <span>source:    <a href="https://github.com/mikejsavage/forksow/">engine</a> | <a href="https://github.com/mikejsavage/forksow-launcher">launcher</a> | <a href="https://github.com/mikejsavage/forksow-libs">libs</a></span>
 <span>twitter:   <a href="https://twitter.com/art_of_respect">@art_of_respect</a></span></pre>
-      <p class="text">
-        <span><b>Cocaine Diesel</b> is a social first person shooter with an emphasis on drug promotion and criminal
+            <p class="text">
+                <span><b>Cocaine Diesel</b> is a social first person shooter with an emphasis on drug promotion and criminal
           lifestyles.</span>
-        <span>meet the absolute scum of the internet on your traumatizing adventure through the most squalid corner
+                <span>meet the absolute scum of the internet on your traumatizing adventure through the most squalid corner
           of the web formely known as <b>warsow pickup</b></span>
-        <ul class="features">
-          <li class="feature">team-based tactical hooliganism webnovela</li>
-          <li class="feature">optimized for esports and aesthetics</li>
-          <li class="feature">art of respect codex</li>
-          <li class="feature">meet fun and interesting people</li>
-          <li class="feature">completely free</li>
-        </ul>
-        <span class="smash"><em>“What I love is to eat a bowl of warm shit for breakfast.”</em></span>
-        <span class="smash" style="margin-bottom:8px">- MWAGA</span>
-        <span class="smash"><em>“If I ever meet you in real life I will smash your face to pieces cu @ lan nerd.”</em></span>
-        <span class="smash">- Huksi</span>
-      </p>
-    </section>
-    <section class="news">
-      <ul id="news" class="news"></ul>
-    </section>
+                <ul class="features">
+                    <li class="feature">team-based tactical hooliganism webnovela</li>
+                    <li class="feature">optimized for esports and aesthetics</li>
+                    <li class="feature">art of respect codex</li>
+                    <li class="feature">meet fun and interesting people</li>
+                    <li class="feature">completely free</li>
+                </ul>
+                <span class="smash"><em>“What I love is to eat a bowl of warm shit for breakfast.”</em></span>
+                <span class="smash" style="margin-bottom:8px">- MWAGA</span>
+                <span class="smash"><em>“If I ever meet you in real life I will smash your face to pieces cu @ lan nerd.”</em></span>
+                <span class="smash">- Huksi</span>
+            </p>
+        </section>
+        <section class="news">
+            <ul id="news" class="news"></ul>
+        </section>
+        </div>
+    </main>
+    <div class="old">
+        <a href="https://ahacheers.github.io/cocaine-diesel-website-old">$</a>
     </div>
-  </main>
-  <div class="old">
-    <a href="https://ahacheers.github.io/cocaine-diesel-website-old">$</a>
-  </div>
-  <script>
-    const $news = document.getElementById('news');
-    let xmlhttp = new XMLHttpRequest();
+    <script>
+        (function detectIE() {
+            const ua = window.navigator.userAgent;
+            const msie = ua.indexOf('MSIE ');
+            const trident = ua.indexOf('Trident/');
+            const edge = ua.indexOf('Edge/');
+            if (msie > 0 || trident > 0 || edge > 0) {
+                return document.body.innerHTML = ("<center><h1>get a proper browser you scrub</h1></center>");
+            }
+            return false;
+        })();
+    </script>
+    <script>
+        const _news = document.getElementById('news');
+        let xmlhttp = new XMLHttpRequest();
 
-    const handleData = function(data) {
-      data.reverse().forEach(function(post) {
-        const title = post.title;
-        const date = post.date;
-        const changes = post.changes;
-        const news = post.news;
-        const $post = document.createElement('li');
-        const $title = document.createElement('h1');
-        const $date = document.createElement('span');
-        const $changes = document.createElement('ul');
+        const handleData = data => {
+            data.reverse().forEach(post => {
+                const {
+                    title, date, changes, news
+                } = post;
+                const _post = document.createElement('li');
+                const _title = document.createElement('h1');
+                const _date = document.createElement('span');
+                const _changes = document.createElement('ul');
 
-        $title.textContent = title;
-        $date.textContent = date;
+                _title.textContent = title;
+                _date.textContent = date;
+                _date.className = "date";
 
-        $date.className = "date";
+                changes.forEach(change => {
+                    const _change = document.createElement('li');
+                    _change.textContent = change;
+                    _change.className = news ? "newspost" : "change";
+                    _changes.appendChild(_change)
+                });
 
-        changes.forEach(function(change) {
-          const $change = document.createElement('li');
-          $change.textContent = change;
-          $change.className = news ? "newspost" : "change";
-          $changes.appendChild($change)
-        });
+                _post.appendChild(_title);
+                _post.appendChild(_date);
+                _post.appendChild(_changes);
+                _news.appendChild(_post);
+            })
+        }
 
-        $post.appendChild($title);
-        $post.appendChild($date);
-        $post.appendChild($changes);
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                handleData(JSON.parse(this.responseText));
+            }
+        };
 
-        $news.appendChild($post);
-      })
-    }
+        xmlhttp.open("GET", "news.json", true);
+        xmlhttp.send();
 
-    xmlhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        handleData(JSON.parse(this.responseText));
-      }
-    };
-
-    xmlhttp.open("GET", "news.json", true);
-    xmlhttp.send();
-
-    window.onload = function() {
-      const t = "aha cheers !";
-      const t2 = "thanks again !";
-      setInterval(function() { document.title = document.title == t ? t2 : t }, 500);
-    };
-  </script>
+        window.onload = () => {
+            const t = "aha cheers !";
+            const t2 = "thanks again !";
+            setInterval(() => document.title = document.title == t ? t2 : t, 500);
+        };
+    </script>
 </body>
 
 </html>
