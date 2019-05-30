@@ -360,9 +360,7 @@
 
         const handleData = data => {
             data.reverse().forEach(post => {
-                const {
-                    title, date, changes, news
-                } = post;
+                const { title, date, changes, news } = post;
                 const _post = document.createElement('li');
                 const _title = document.createElement('h1');
                 const _date = document.createElement('span');
