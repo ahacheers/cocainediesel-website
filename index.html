@@ -355,12 +355,33 @@
         })();
     </script>
     <script>
-        const _news = document.getElementById('news');
-        let xmlhttp = new XMLHttpRequest();
+		let counter = 0;
+		window.onload = () => {
+            const titles = [
+				"aha cheers !",
+				"thanks again !",
+				"spin faster !",
+				"wow ur terrible !",
+				"good game !",
+				"last game ever !",
+				"respect & sportsmanship !",
+				"gg deutschland !",
+				"ach tourette !",
+				"never again !"
+			];
+            setInterval(() => {
+				counter++;
+				document.title = titles[counter%titles.length];
+				if (counter == titles.length) counter = 0;
+			}, 500);
+		};
+		
+        const eatTheLard = data => {
+			const _news = document.getElementById('news');
 
-        const handleData = data => {
             data.reverse().forEach(post => {
-                const { title, date, changes, news } = post;
+				const { title, date, changes, news } = post;
+				
                 const _post = document.createElement('li');
                 const _title = document.createElement('h1');
                 const _date = document.createElement('span');
@@ -382,21 +403,15 @@
                 _post.appendChild(_changes);
                 _news.appendChild(_post);
             })
-        }
-
-        xmlhttp.onreadystatechange = function() {
+		}
+		
+		const req = new XMLHttpRequest();
+		req.open("GET", "news.json", true);
+        req.send();
+        req.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                handleData(JSON.parse(this.responseText));
+                eatTheLard(JSON.parse(this.responseText));
             }
-        };
-
-        xmlhttp.open("GET", "news.json", true);
-        xmlhttp.send();
-
-        window.onload = () => {
-            const t = "aha cheers !";
-            const t2 = "thanks again !";
-            setInterval(() => document.title = document.title == t ? t2 : t, 500);
         };
     </script>
 </body>
