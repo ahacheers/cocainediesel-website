@@ -571,25 +571,17 @@
 	{
 		"title": "0.0.2.12 released",
 		"date": "Mar 21, 2019",
-		"changes": [
-			"gladiator fixes"
-		]
+		"changes": ["gladiator fixes"]
 	},
 	{
 		"title": "0.0.2.13 released",
 		"date": "Apr 06, 2019",
-		"changes": [
-			"fix spec bug",
-			"fix arm.ogg console spam"
-		]
+		"changes": ["fix spec bug", "fix arm.ogg console spam"]
 	},
 	{
 		"title": "0.0.2.14 released",
 		"date": "Apr 11, 2019",
-		"changes": [
-			"fix self knockback",
-			"fix gladiator weapon selection"
-		]
+		"changes": ["fix self knockback", "fix gladiator weapon selection"]
 	},
 	{
 		"title": "0.0.2.15 released",
@@ -605,17 +597,34 @@
 	{
 		"title": "0.0.2.16 released",
 		"date": "May 20, 2019",
-		"changes": [
-			"surprise MG changes",
-			"below 140k LOC"
-		]
+		"changes": ["surprise MG changes", "below 140k LOC"]
 	},
 	{
 		"title": "0.0.2.17 released",
 		"date": "May 21, 2019",
+		"changes": ["LG sound bug fixed for real", "surprise R&S features"]
+	},
+	{
+		"title": "0.0.2.18 released",
+		"date": "May 24, 2019",
+		"changes": ["buff fog on cocaine", "compiler/library updates"]
+	},
+	{
+		"title": "0.0.2.19 released",
+		"date": "July 18, 2019",
 		"changes": [
-			"LG sound bug fixed for real",
-			"surprise R&S features"
+			"new animation engine. there shouldn't be any visible changes but the new engine is far simpler and will allow us to bring animations up to 2005 standard",
+			"nuke iqm and add animated gltf support. again there shouldn't be any visible changes but this makes it much easier to change and add player models",
+			"remove bigvic. we wanted to keep it but the original model is very messed up and none of the tools we tried could save it",
+			"remove gb airdash. we want more recovery options in gladiator but airdash was too bad and has been removed",
+			"remove gb gladi rounds",
+			"buff gb damage and range",
+			"keep bodies around on gib",
+			"tweak some sounds",
+			"remove angelscript from the client. it was used for mouse accel and stuff",
+			"fix crash when adding democams",
+			"update to vs2019/static crt for the launcher on windows",
+			"update to gcc9 on linux"
 		]
 	}
 ]
