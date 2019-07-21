@@ -626,5 +626,12 @@
 			"update to vs2019/static crt for the launcher on windows",
 			"update to gcc9 on linux"
 		]
+	},
+	{
+		"title": "0.0.2.21 released",
+		"date": "Jul 21, 2019",
+		"changes": [
+			"bigvic is back from the dead courtesy of @M S C's incredible dumpster diving talent"
+		]
 	}
 ]
