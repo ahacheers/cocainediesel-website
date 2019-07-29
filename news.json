@@ -628,6 +628,13 @@
 		]
 	},
 	{
+		"title": "0.0.2.20 released",
+		"date": "Jul 19, 2019",
+		"changes": [
+			"static libstdc++ for libgame.so. fixes running the game on decade old linux"
+		]
+	},
+	{
 		"title": "0.0.2.21 released",
 		"date": "Jul 21, 2019",
 		"changes": [
