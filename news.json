@@ -640,5 +640,15 @@
 		"changes": [
 			"bigvic is back from the dead courtesy of MSC's incredible dumpster diving talent (google.com)"
 		]
+	},
+	{
+		"title": "0.0.2.22 released",
+		"date": "Jul 31, 2019",
+		"changes": [
+			"new text renderer based on MSDF. it adds text outlines so your pileexterminations don't get lost in the sky, and subpixel positioning so site indicators don't wobble as you move",
+			"rng improvements. client effects rng is seeded every frame with entropy from a cryptographically secure psuedorandom number generator. now you can use obituaries to safely make purchases online",
+			"this release marks the start of the big renderer overhaul, stay tuned for months of flaming in #neckbeards",
+			"lots of misc cleanup. we are dancing with 135k loc but will not be able to break through until neko cleans his room"
+		]
 	}
 ]
