@@ -650,5 +650,28 @@
 			"this release marks the start of the big renderer overhaul, stay tuned for months of flaming in #neckbeards",
 			"lots of misc cleanup. we are dancing with 135k loc but will not be able to break through until neko cleans his room"
 		]
+	},
+	{
+		"title": "0.0.9.0 released",
+		"date": "Oct 09, 2019",
+		"changes": [
+			"this is a test build for the upcoming 0.1 release",
+			"0.1 will be by far the largest cd release to date and marks the completion of several long term goals",
+			"0.0.9.0 is a test release however and contains no changes",
+			"you can watch me continue to not make any changes at twitch.tv/cocainediesel"
+		]
+	},
+	{
+		"title": "0.0.9.1 released",
+		"date": "Oct 10, 2019",
+		"changes": [
+			"rename font atlases so the updater doesn't break the game. if you broke your game by updating to 0.0.9.0 you can repair it by updating again",
+			"new weapon icons",
+			"fix the hole in carfentanil (wip)",
+			"fix beams",
+			"fix weapon sounds",
+			"fix corpse darkening",
+			"lots of hud fixes"
+		]
 	}
 ]
