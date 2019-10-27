@@ -673,5 +673,33 @@
 			"fix corpse darkening",
 			"lots of hud fixes"
 		]
+	},
+	{
+		"title": "0.0.9.2 released",
+		"date": "Oct 23, 2019",
+		"changes": [
+			"replace the old loadout menu with a cash shop",
+			"new particle engine and particle editor",
+			"bring back gibs with extra gore",
+			"add callvote HUD",
+			"nuke quake style color tokens",
+			"fix UI z ordering",
+			"fix hp in gladiator",
+			"fix lean animations",
+			"fix fall sound",
+			"fix the white border around the whole screen with MSAA enabled"
+		]
+	},
+	{
+		"title": "0.0.9.3 released",
+		"date": "Oct 27, 2019",
+		"changes": [
+			"depth discontinuity outlines. they're not perfect yet but they should pick up outlines on curbs and stairs a bit better",
+			"bomb silhouette visible through walls",
+			"add mg bullet tracers and impact sparks",
+			"new explosion effect",
+			"fix scoreboard while speccing",
+			"hud fixes"
+		]
 	}
 ]
