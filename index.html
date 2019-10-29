@@ -32,7 +32,10 @@
             font-family: 'Anonymous Pro', monospace;
             margin: 0;
             text-transform: lowercase;
-            user-select: none;
+			-webkit-user-select: none;  
+			-moz-user-select: none;    
+			-ms-user-select: none;
+			user-select: none;
         }
         
         pre,
@@ -157,9 +160,16 @@
         
         .info {
             flex-flow: column;
-            user-select: none;
             width: 550px;
         }
+
+		.info > p,
+		.info > ul {
+			-webkit-user-select: text;  
+			-moz-user-select: text;    
+			-ms-user-select: text;
+			user-select: text;
+		}
         
         .text {
             flex-flow: column;
@@ -229,7 +239,10 @@
             padding: 1.75em 0;
             border-bottom: 1px dashed #666;
             box-sizing: border-box;
-            user-select: text;
+			-webkit-user-select: text;  
+			-moz-user-select: text;    
+			-ms-user-select: text;
+			user-select: text;
         }
         
         .old {
