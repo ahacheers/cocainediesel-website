@@ -701,5 +701,13 @@
 			"fix scoreboard while speccing",
 			"hud fixes"
 		]
+	},
+	{
+		"title": "0.0.9.4 released",
+		"date": "Oct 28, 2019",
+		"changes": [
+			"faster and better quality outlines, thanks msc",
+			"gunblade slashes in a wide arc and has been rebalanced accordingly"
+		]
 	}
 ]
