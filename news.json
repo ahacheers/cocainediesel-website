@@ -709,5 +709,16 @@
 			"faster and better quality outlines, thanks msc",
 			"gunblade slashes in a wide arc and has been rebalanced accordingly"
 		]
+	},
+	{
+		"title": "0.0.9.5 released",
+		"date": "Nov 1, 2019",
+		"changes": [
+			"better spatialisation for laser beam sounds",
+			"add SFX configs",
+			"add sound hotloading",
+			"properly randomise spawn point selection",
+			"remove game.dll and statically link the server"
+		]
 	}
 ]
