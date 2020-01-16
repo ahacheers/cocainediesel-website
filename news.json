@@ -720,5 +720,27 @@
 			"properly randomise spawn point selection",
 			"remove game.dll and statically link the server"
 		]
+	},
+	{
+		"title": "0.0.9.6 released",
+		"date": "Jan 14, 2020",
+		"changes": [
+			"add reloading",
+			"add recoil",
+			"fix firstperson lg sound",
+			"fix menu music",
+			"texture/material hotloading",
+			"particle system improvements",
+			"fix UI locking if you press escape with ingame menu and chat open",
+			"lots of engine cleanup, below 100k LOC",
+			"add bugs aha cheers thanks again"
+		]
+	},
+	{
+		"title": "0.0.9.7 released",
+		"date": "Jan 16, 2020",
+		"changes": [
+			"many bug fixes"
+		]
 	}
 ]
