@@ -739,8 +739,25 @@
 	{
 		"title": "0.0.9.7 released",
 		"date": "Jan 16, 2020",
+		"changes": ["many bug fixes"]
+	},
+	{
+		"title": "0.0.9.8 released",
+		"date": "Jan 26, 2020",
 		"changes": [
-			"many bug fixes"
+			"fix weapnext crash",
+			"unspecified weapon changes (old release apparently i didnt write an announcement for it)"
+		]
+	},
+	{
+		"title": "0.0.9.9 released",
+		"date": "Jan 26, 2020",
+		"changes": [
+			"fix crash with lots of players on the server",
+			"rl/lg sound tweaks",
+			"unspecified weapon changes",
+			"weapon 5/6 bindable from the menus and add",
+			"many little fixes"
 		]
 	}
 ]
