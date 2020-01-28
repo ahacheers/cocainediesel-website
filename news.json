@@ -743,10 +743,10 @@
 	},
 	{
 		"title": "0.0.9.8 released",
-		"date": "Jan 26, 2020",
+		"date": "Jan 17, 2020",
 		"changes": [
 			"fix weapnext crash",
-			"unspecified weapon changes (old release apparently i didnt write an announcement for it)"
+			"unspecified weapon changes"
 		]
 	},
 	{
@@ -758,6 +758,19 @@
 			"unspecified weapon changes",
 			"weapon 5/6 bindable from the menus and add",
 			"many little fixes"
+		]
+	},
+	{
+		"title": "0.0.9.10 released",
+		"date": "Jan 27, 2020",
+		"changes": [
+			"lots of new sounds",
+			"new skybox",
+			"add rg tracers",
+			"add rg/lg impact sparks",
+			"fix blood",
+			"unspecified weapon changes",
+			"unspecified r&s changes"
 		]
 	}
 ]
