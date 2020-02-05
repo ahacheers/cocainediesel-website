@@ -744,10 +744,7 @@
 	{
 		"title": "0.0.9.8 released",
 		"date": "Jan 17, 2020",
-		"changes": [
-			"fix weapnext crash",
-			"unspecified weapon changes"
-		]
+		"changes": ["fix weapnext crash", "unspecified weapon changes"]
 	},
 	{
 		"title": "0.0.9.9 released",
@@ -771,6 +768,19 @@
 			"fix blood",
 			"unspecified weapon changes",
 			"unspecified r&s changes"
+		]
+	},
+	{
+		"title": "0.0.9.11 released",
+		"date": "Feb 05, 2020",
+		"changes": [
+			"add two new guns, 9mm and deagle",
+			"other unspecified weapon changes",
+			"add chat obituaries",
+			"add soft rate limiting to crouch",
+			"new cinematic typing experience",
+			"louder bigvic jump sound",
+			"move chaser hud out of the way of chat"
 		]
 	}
 ]
