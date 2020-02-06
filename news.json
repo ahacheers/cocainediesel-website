@@ -782,5 +782,17 @@
 			"louder bigvic jump sound",
 			"move chaser hud out of the way of chat"
 		]
+	},
+	{
+		"title": "0.0.9.12 released",
+		"date": "Feb 07, 2020",
+		"changes": [
+			"buff sounds",
+			"add tracer anti-aliasing",
+			"better semiauto ergonomics",
+			"better damage number ergonomics",
+			"fix grenade sounds",
+			"unspecified weapon changes"
+		]
 	}
 ]
