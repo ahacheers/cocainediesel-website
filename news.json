@@ -785,7 +785,7 @@
 	},
 	{
 		"title": "0.0.9.12 released",
-		"date": "Feb 07, 2020",
+		"date": "Feb 06, 2020",
 		"changes": [
 			"buff sounds",
 			"add tracer anti-aliasing",
@@ -794,5 +794,18 @@
 			"fix grenade sounds",
 			"unspecified weapon changes"
 		]
-	}
+	},
+	{
+		"title": "0.0.9.13 released",
+		"date": "Feb 07, 2020",
+		"changes": [
+			"add sniper",
+			"add lg beam sound",
+			"remove warsow/em maps we never play",
+			"fix certain sounds not playing",
+			"fix zombies",
+			"fix vanishing bomb silhouette",
+			"fix some obituaries"
+		]
+	},
 ]
