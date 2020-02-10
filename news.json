@@ -807,5 +807,20 @@
 			"fix vanishing bomb silhouette",
 			"fix some obituaries"
 		]
+	},
+	{
+		"title": "0.0.9.14 released",
+		"date": "Feb 09, 2020",
+		"changes": [
+			"multi monitor support. we nuked sdl and replaced it with glfw, which lets us support multiple monitors properly and should also fix the other annoying window bugs",
+			"show server info in the browser\\EOT",
+			"obituary fun",
+			"fix missing sniper equip sound"
+		]
+	},
+	{
+		"title": "0.0.9.15 released",
+		"date": "Feb 10, 2020",
+		"changes": ["unbreak alt-tab in fullscreen", "readd borderless"]
 	}
 ]
