@@ -822,5 +822,20 @@
 		"title": "0.0.9.15 released",
 		"date": "Feb 10, 2020",
 		"changes": ["unbreak alt-tab in fullscreen", "readd borderless"]
+	},
+	{
+		"title": "0.0.9.16 released",
+		"date": "Feb 10, 2020",
+		"changes": ["carfentanil upgrades", "add wallbangs"]
+	},
+	{
+		"title": "0.0.9.17 released",
+		"date": "Feb 13, 2020",
+		"changes": [
+			"carfentanil upgrades",
+			"nerf trombone",
+			"make wallbangs do full damage",
+			"railgun wallbangs"
+		]
 	}
 ]
