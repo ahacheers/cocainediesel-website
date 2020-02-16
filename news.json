@@ -837,5 +837,41 @@
 			"make wallbangs do full damage",
 			"railgun wallbangs"
 		]
+	},
+	{
+		"title": "0.0.9.18 released",
+		"date": "Feb 15, 2020",
+		"changes": [
+			"dexter is back from warfork sabbatical",
+			"show binds on weapon bar",
+			"new gladiator arenas",
+			"fast arena switching",
+			"carfentanil upgrades",
+			"day/night cycle"
+		]
+	},
+	{
+		"title": "0.0.9.19 released",
+		"date": "Feb 16, 2020",
+		"changes": [
+			"fix joining servers"
+		]
+	},
+	{
+		"title": "0.0.9.20 released",
+		"date": "Feb 16, 2020",
+		"changes": [
+			"carfentanil upgrades to distract from gladiator bugs",
+			"fix disconnecting from servers",
+			"fix lg sound",
+			"resurrect postmatch scoreboard"
+		]
+	},
+	{
+		"title": "0.0.9.21 released",
+		"date": "Feb 16, 2020",
+		"changes": [
+			"mariner 1 bugfix to stop gladiator server crashes"
+		]
 	}
 ]
