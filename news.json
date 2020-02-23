@@ -853,9 +853,7 @@
 	{
 		"title": "0.0.9.19 released",
 		"date": "Feb 16, 2020",
-		"changes": [
-			"fix joining servers"
-		]
+		"changes": ["fix joining servers"]
 	},
 	{
 		"title": "0.0.9.20 released",
@@ -870,8 +868,21 @@
 	{
 		"title": "0.0.9.21 released",
 		"date": "Feb 16, 2020",
+		"changes": ["mariner 1 bugfix to stop gladiator server crashes"]
+	},
+	{
+		"title": "0.0.9.22 released",
+		"date": "Feb 23, 2020",
 		"changes": [
-			"mariner 1 bugfix to stop gladiator server crashes"
+			"fix maps dying after a match",
+			"gladiator upgrades",
+			"add assault rifle",
+			"remove zoom from everything except sniper and ar, where it replaces dash/wj instead",
+			"semi-auto ergonomics",
+			"unspecified weapon changes",
+			"fix showing outdated scoreboard in postmatch",
+			"hide players in postmatch",
+			"mwaga iced again"
 		]
 	}
 ]
