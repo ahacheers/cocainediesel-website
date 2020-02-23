@@ -884,5 +884,15 @@
 			"hide players in postmatch",
 			"mwaga iced again"
 		]
+	},
+	{
+		"title": "0.0.9.23 released",
+		"date": "Feb 16, 2020",
+		"changes": [
+			"new gladiator arenas",
+			"add option to disable hotkey messages in the hud",
+			"maybe fix chat weirdness",
+			"unspecified weapon changes"
+		]
 	}
 ]
