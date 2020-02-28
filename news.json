@@ -894,5 +894,10 @@
 			"maybe fix chat weirdness",
 			"unspecified weapon changes"
 		]
+	},
+	{
+		"title": "0.0.9.24 released",
+		"date": "Feb 27, 2020",
+		"changes": ["map fixes", "faster outlines shader, thanks msc"]
 	}
 ]
