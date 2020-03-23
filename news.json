@@ -899,5 +899,20 @@
 		"title": "0.0.9.24 released",
 		"date": "Feb 27, 2020",
 		"changes": ["map fixes", "faster outlines shader, thanks msc"]
+	},
+	{
+		"title": "0.0.9.25 released",
+		"date": "Mar 19, 2020",
+		"changes": [
+			"fix scope with msaa enabled",
+			"add rifle",
+			"readd predicted weapon switches",
+			"disable zoom during gladiator preround",
+			"bullet hisses",
+			"auto join teams when joining a server",
+			"ui improvements",
+			"ui regressions",
+			"unspecified weapon changes"
+		]
 	}
 ]
