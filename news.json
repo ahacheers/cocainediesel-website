@@ -914,5 +914,19 @@
 			"ui regressions",
 			"unspecified weapon changes"
 		]
+	},
+	{
+		"title": "0.0.9.26 released",
+		"date": "Mar 24, 2020",
+		"changes": [
+			"2020 menu theme",
+			"fix crash when bomb explodes",
+			"new rifle sound",
+			"gltf hotloading",
+			"reload progress bar until we have weapon models thanks again",
+			"maybe fix demos",
+			"maybe fix getting stuck on walls",
+			"unspecified weapon changes"
+		]
 	}
 ]
