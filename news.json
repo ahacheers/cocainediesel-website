@@ -928,5 +928,24 @@
 			"maybe fix getting stuck on walls",
 			"unspecified weapon changes"
 		]
+	},
+	{
+		"title": "0.0.9.27 released",
+		"date": "Apr 6, 2020",
+		"changes": [
+			"fix gl crash",
+			"add weapon models",
+			"rearrangeable inventory",
+			"unspecified weapon changes"
+		]
+	},
+	{
+		"title": "0.0.9.28 released",
+		"date": "Apr 12, 2020",
+		"changes": [
+			"yolo vic's collision fixes. should fix corner shooting and getting stuck on walls",
+			"optimise startup time, nearly -50% on a 6700k",
+			"fix maxfps in demos"
+		]
 	}
 ]
