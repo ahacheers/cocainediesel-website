@@ -947,5 +947,13 @@
 			"optimise startup time, nearly -50% on a 6700k",
 			"fix maxfps in demos"
 		]
+	},
+	{
+		"title": "0.0.9.29 released",
+		"date": "Apr 13, 2020",
+		"changes": [
+			"fix the game on windows 7",
+			"fix the uninstaller"
+		]
 	}
 ]
