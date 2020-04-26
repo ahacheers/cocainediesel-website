@@ -951,9 +951,19 @@
 	{
 		"title": "0.0.9.29 released",
 		"date": "Apr 13, 2020",
+		"changes": ["fix the game on windows 7", "fix the uninstaller"]
+	},
+	{
+		"title": "0.0.9.30 released",
+		"date": "Apr 26, 2020",
 		"changes": [
-			"fix the game on windows 7",
-			"fix the uninstaller"
+			"fix gladiator",
+			"palette swap",
+			"add a new gun",
+			"many demo playback fixes",
+			"unspecified weapon changes",
+			"include weapons in player silhouettes",
+			"hardcode fov and remove crouch as a social experiment"
 		]
 	}
 ]
