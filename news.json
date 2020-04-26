@@ -965,5 +965,17 @@
 			"include weapons in player silhouettes",
 			"hardcode fov and remove crouch as a social experiment"
 		]
+	},
+	{
+		"title": "0.0.9.31 released",
+		"date": "Apr 26, 2020",
+		"changes": [
+			"add a new map, krach",
+			"fix planting",
+			"fix site indicators",
+			"ladder quality of life changes",
+			"new explosion effect",
+			"unspecified weapon changes"
+		]
 	}
 ]
