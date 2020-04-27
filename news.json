@@ -977,5 +977,14 @@
 			"new explosion effect",
 			"unspecified weapon changes"
 		]
+	},
+	{
+		"title": "0.0.9.32 released",
+		"date": "Apr 27, 2020",
+		"changes": [
+			"new weapon skins",
+			"map fixes",
+			"chat window fixes"
+		]
 	}
 ]
