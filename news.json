@@ -986,5 +986,14 @@
 			"map fixes",
 			"chat window fixes"
 		]
+	},
+	{
+		"title": "0.0.9.33 released",
+		"date": "May 6, 2020",
+		"changes": [
+			"add a new map, suicide",
+			"fix scoreboard crash",
+			"little hud tweaks"
+		]
 	}
 ]
