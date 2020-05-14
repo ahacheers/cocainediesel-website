@@ -995,5 +995,15 @@
 			"fix scoreboard crash",
 			"little hud tweaks"
 		]
+	},
+	{
+		"title": "0.0.9.34 released",
+		"date": "May 14, 2020",
+		"changes": [
+			"add cosmetic headshots",
+			"deterministic vsays",
+			"nerf trombone",
+			"unspecified weapon changes"
+		]
 	}
 ]
