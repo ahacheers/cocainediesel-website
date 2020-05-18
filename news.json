@@ -1005,5 +1005,15 @@
 			"nerf trombone",
 			"unspecified weapon changes"
 		]
+	},
+	{
+		"title": "0.0.9.35 released",
+		"date": "May 18, 2020",
+		"changes": [
+			"fix significant performance regression in the client and server",
+			"fix she doesn't even go here vsay",
+			"fix reload bar border",
+			"add bugs related to vec3_t purge"
+		]
 	}
 ]
