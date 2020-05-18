@@ -1015,5 +1015,14 @@
 			"fix reload bar border",
 			"add bugs related to vec3_t purge"
 		]
+	},
+	{
+		"title": "0.0.9.36 released",
+		"date": "May 18, 2020",
+		"changes": [
+			"fix ladders",
+			"fix selfdmg crash",
+			"add m_invertY"
+		]
 	}
 ]
