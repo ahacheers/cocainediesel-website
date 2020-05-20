@@ -1024,5 +1024,15 @@
 			"fix selfdmg crash",
 			"add m_invertY"
 		]
+	},
+	{
+		"title": "0.0.9.37 released",
+		"date": "May 20, 2020",
+		"changes": [
+			"fix jumppads",
+			"fix defuse",
+			"fix memory leak",
+			"unspecified weapon changes"
+		]
 	}
 ]
