@@ -93,16 +93,15 @@
         ul,
         main,
         header,
-        main>section,
+        main > section,
         .screenshots,
         .screenshot,
         .text,
         .change,
-        .features>li,
-        .news>li,
+        .features > li,
+        .news > li,
         .news,
-        .smash,
-        .trailer {
+        .smash {
             display: flex;
         }
         
@@ -119,7 +118,7 @@
 			padding:16px 0;
         }
         
-        header>pre {
+        header > pre {
             animation: m 0.16s linear infinite alternate;
 			transform:skewX(-30deg);
         }
@@ -223,34 +222,11 @@
             text-transform: none;
         }
         
-        .video {
-            width: 100%;
-            position: relative;
-            padding-top: 56.25%;
-        }
-        
-        .trailer {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .trailer {
-            justify-content: center;
-            align-items: center;
-            color: #e8133b;
-            font-size: 12px;
-            border: 1px solid #e8133b;
-            box-sizing: border-box;
-        }
-        
         .news {
             flex-flow: column;
         }
         
-        .news>li {
+        .news > li {
             flex-flow: column;
             padding: 1.75em 0;
             border-bottom: 1px dashed #666;
@@ -267,7 +243,7 @@
             right: 0;
         }
         
-        .old>a {
+        .old > a {
             color: #333;
         }
         
@@ -275,6 +251,7 @@
             0% {
                 color: #e8133b
             }
+
             100% {
                 color: rgb(255, 217, 0)
             }
@@ -282,13 +259,14 @@
         
         @keyframes m {
             0% {
-    color: #16e813;
-    text-shadow: -4px 0 rgb(230, 255, 0);
-}
-100% {
-    color: rgb(255, 217, 0);
-    text-shadow: 4px 0 #e8133b;
-}
+				color: #16e813;
+				text-shadow: -4px 0 rgb(230, 255, 0);
+			}
+
+			100% {
+				color: rgb(255, 217, 0);
+				text-shadow: 4px 0 #e8133b;
+			}
 		}
         
         @media (max-width:1150px) {
@@ -299,9 +277,11 @@
                 max-width: 600px;
                 margin: 0 auto;
             }
+
             .info {
                 width: initial;
             }
+
             .news {
                 padding: 0;
             }
@@ -311,9 +291,11 @@
             body {
                 font-size: 12px;
             }
+
             header {
                 font-size: 0.4em;
             }
+
             .links {
                 letter-spacing: 0;
                 font-size: 1.2em;
@@ -335,7 +317,6 @@
 !!!====!!!==!!!=!!!====!!!==!!!=!!!=!!!==!!!=!!!====!!!==!!!=!!!=!!!========!!!=!!!====!!!====
 ::::::#::::::::#::::::#:::##:::#:::#:::##:::#::::::#::::::::#:::#::::::#:::::::#::::::#::::::#
 @.....@@......@@@.....@...@@...@...@...@@...@......@.......@@...@......@......@@......@......@</pre> 
-<!--<img onload="this.draggable = false" class="logo" src="cd-logo.png"  />-->
             </header>
             <div class="screenshots">
                 <img onload="this.draggable = false" src="image.jpg" class="screenshot" />
@@ -377,29 +358,24 @@
     <script>
         (function detectIE() {
             var ua = window.navigator.userAgent;
-            var msie = ua.indexOf('MSIE ');
+            var msie = ua.indexOf('MSIE');
             var trident = ua.indexOf('Trident/');
             var edge = ua.indexOf('Edge/');
-            if (msie > 0 || trident > 0 || edge > 0) {
-                return document.body.innerHTML = ("<center><h1>get a proper browser you scrub</h1></center>");
+			var isIE11 = !!window.msCrypto;
+            if (msie > 0 || trident > 0 || edge > 0 || isIE11) {
+                return document.body.innerHTML = '<center><h1>get a proper browser you scrub</h1></center>';
             }
         })();
     </script>
     <script>
 		let counter = 0;
 		window.onload = () => {
-            const titles = [
-				"⠶",
-				"⠧",
-				"⠏",
-				"⠛",
-				"⠹",
-				"⠼"
-			];
+            const titles = ['⠶','⠧','⠏','⠛','⠹','⠼'];
+			let title = '';
             setInterval(() => {
 				counter++;
-				const title = `${titles.map((r,i,titles)=>titles[(counter+i)%titles.length])}`.replace(/,/g,'');
-				document.title = `☠ ${title} ☠ ${title} ☠`;
+				title = `${titles.map((r , i, titles) => titles[(counter+i) % titles.length])}`.replace(/,/g,'');
+				document.title = `☠ ${ title } ☠ ${ title } ☠`;
 			}, 400);
 		};
 		
@@ -407,7 +383,7 @@
 			const _news = document.getElementById('news');
 
             data.reverse().forEach(post => {
-				const { title, date, changes, news } = post;
+				const {title, date, changes, news} = post;
 				
                 const _post = document.createElement('li');
                 const _title = document.createElement('h1');
@@ -416,12 +392,12 @@
 
                 _title.textContent = title;
                 _date.textContent = date;
-                _date.className = "date";
+                _date.className = 'date';
 
                 changes.forEach(change => {
                     const _change = document.createElement('li');
                     _change.textContent = change;
-                    _change.className = news ? "newspost" : "change";
+                    _change.className = news ? 'newspost' : 'change';
                     _changes.appendChild(_change)
                 });
 
@@ -433,7 +409,7 @@
 		}
 		
 		const req = new XMLHttpRequest();
-		req.open("GET", "news.json", true);
+		req.open('GET', 'news.json', true);
         req.send();
         req.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
