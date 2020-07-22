@@ -1034,5 +1034,20 @@
 			"fix memory leak",
 			"unspecified weapon changes"
 		]
+	},
+	{
+		"title": "0.0.9.38 released",
+		"date": "Jul 22, 2020",
+		"changes": [
+			"add bullet holes/explosion scorch marks etc",
+			"add sprays",
+			"add weapon switch animation",
+			"allow rearranging inventory after countdown",
+			"rename bomb map entities to use words that describe what they are",
+			"fix jumppads",
+			"fix corpse interpolation",
+			"fix corpses not keeping momentum",
+			"unspecified weapon changes"
+		]
 	}
 ]
