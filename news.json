@@ -981,11 +981,7 @@
 	{
 		"title": "0.0.9.32 released",
 		"date": "Apr 27, 2020",
-		"changes": [
-			"new weapon skins",
-			"map fixes",
-			"chat window fixes"
-		]
+		"changes": ["new weapon skins", "map fixes", "chat window fixes"]
 	},
 	{
 		"title": "0.0.9.33 released",
@@ -1019,11 +1015,7 @@
 	{
 		"title": "0.0.9.36 released",
 		"date": "May 18, 2020",
-		"changes": [
-			"fix ladders",
-			"fix selfdmg crash",
-			"add m_invertY"
-		]
+		"changes": ["fix ladders", "fix selfdmg crash", "add m_invertY"]
 	},
 	{
 		"title": "0.0.9.37 released",
@@ -1048,6 +1040,24 @@
 			"fix corpse interpolation",
 			"fix corpses not keeping momentum",
 			"unspecified weapon changes"
+		]
+	},
+	{
+		"title": "0.0.9.39 released",
+		"date": "Jul 26, 2020",
+		"changes": ["unspecified changes"]
+	},
+	{
+		"title": "0.0.9.40 released",
+		"date": "Jul 26, 2020",
+		"changes": [
+			"add sand, a goochie original map",
+			"update bomb model",
+			"push for 18+ rating",
+			"remove crosshair size cvar in response to complaints",
+			"fix crash when changing map/resizing window",
+			"fix gladiator jumppads",
+			"unspecified movement changes"
 		]
 	}
 ]
