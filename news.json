@@ -1059,5 +1059,16 @@
 			"fix gladiator jumppads",
 			"unspecified movement changes"
 		]
+	},
+	{
+		"title": "0.0.9.41 released",
+		"date": "Jul 27, 2020",
+		"changes": [
+			"sand update",
+			"retire reload progress bar",
+			"little visual upgrades and fixes",
+			"fix broken sprays and associated console spam",
+			"fix buy menu crashing the server"
+		]
 	}
 ]
