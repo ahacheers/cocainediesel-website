@@ -1070,5 +1070,18 @@
 			"fix broken sprays and associated console spam",
 			"fix buy menu crashing the server"
 		]
+	},
+	{
+		"title": "0.0.9.42 released",
+		"date": "Jul 31, 2020",
+		"changes": [
+			"primary/secondary/backup loadout selection",
+			"pbr weapon skins",
+			"bomb defuse sound",
+			"sand updates",
+			"more sprays",
+			"more vfx",
+			"fix joining white team in bomb"
+		]
 	}
 ]
