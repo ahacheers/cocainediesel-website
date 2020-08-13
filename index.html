@@ -42,6 +42,7 @@
 			color: #fff;
 			font-family: 'Anonymous Pro', monospace;
 			margin: 0;
+			padding: 32px;
 			text-transform: lowercase;
 			-webkit-user-select: none;
 			-moz-user-select: none;
@@ -97,7 +98,6 @@
 			font-size: 1.5em;
 		}
 
-		body,
 		ul,
 		main,
 		header,
@@ -114,7 +114,6 @@
 			flex-flow: column;
 			align-items: center;
 			max-width: 536px;
-			margin: 32px;
 			border: 2px solid #111;
 			background: #333;
 		}
@@ -246,6 +245,10 @@
 		}
 
 		@media (max-width:1280px) {
+			main {
+				margin: 0 auto;
+			}
+
 			body {
 				justify-content: center;
 			}
@@ -288,8 +291,8 @@
 		}
 
 		@media (max-width:450px) {
-			main {
-				margin: 16px;
+			body {
+				padding: 16px;
 			}
 
 			header {
