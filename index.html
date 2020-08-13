@@ -97,6 +97,7 @@
 			font-size: 1.5em;
 		}
 
+		body,
 		ul,
 		main,
 		header,
@@ -244,6 +245,12 @@
 			}
 		}
 
+		@media (max-width:1280px) {
+			body {
+				justify-content: center;
+			}
+		}
+
 		@media (max-width:550px) {
 			body {
 				font-size: 10px;
@@ -281,6 +288,10 @@
 		}
 
 		@media (max-width:450px) {
+			main {
+				margin: 16px;
+			}
+
 			header {
 				font-size: 0.35rem;
 			}
