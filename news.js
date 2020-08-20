@@ -1080,4 +1080,36 @@ const news = [
 			'fix joining white team in bomb',
 		],
 	},
+	{
+		title: '0.0.9.43',
+		date: 'Aug 5, 2020',
+		changes: [
+			'sand updates',
+			'nerf hit effect',
+			'new bigvic sounds',
+			'more vfx',
+			'unspecified weapon changes',
+		],
+	},
+	{
+		title: '0.0.9.44',
+		date: 'Aug 8, 2020',
+		changes: [
+			'fix map downloads',
+			'fix wj not always triggering',
+			'more logging to help find "Invalid Value" crash',
+			'unspecified weapon changes',
+		],
+	},
+	{
+		title: '0.0.9.45',
+		date: 'Aug 14, 2020',
+		changes: [
+			'sand updates',
+			'hud updates',
+			'unspecified weapon changes',
+			'fix demoget',
+			'fix screenshots',
+		],
+	},
 ];
