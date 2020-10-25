@@ -1112,4 +1112,25 @@ const news = [
 			'fix screenshots',
 		],
 	},
+	{
+		title: '0.0.9.46',
+		date: 'Oct 4, 2020',
+		changes: [
+			'gpu particles courtesy of msc',
+			'new recoil courtesy of msc',
+			'misc hud fixes',
+		],
+	},
+	{
+		title: '0.0.9.47',
+		date: 'Oct 25, 2020',
+		changes: [
+			'fix linux',
+			'fix crash when playing demos after playing a match',
+			'fix disappearing outlines on corpses',
+			'vfx buffs',
+			'decal rendering optimisations',
+			'unspecified weapon changes',
+		],
+	},
 ];
