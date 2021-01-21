@@ -1133,4 +1133,77 @@ const news = [
 			'unspecified weapon changes',
 		],
 	},
+	{
+		title: '0.0.9.48',
+		date: 'Nov 11, 2020',
+		changes: [
+			'new player model',
+			'new sky',
+			'new font',
+			'buffed vfx',
+			'fix invisible damage numbers after map change'
+		],
+	},
+	{
+		title: '0.0.9.50',
+		date: 'Dec 5, 2020',
+		changes: [
+			'broken'
+		],
+	},
+	{
+		title: '0.0.9.51',
+		date: 'Dec 5, 2020',
+		changes: [
+			'add kill assists (thanks dexter, you fat fuck)',
+			'add new void effect'
+		],
+	},
+	{
+		title: '0.0.9.52',
+		date: 'Jan 5, 2021',
+		changes: [
+			'was released 2 weeks ago but we never wrote patch notes',
+			'add krach rework',
+			'fix a config crash',
+		],
+	},
+	{
+		title: '0.0.9.52',
+		date: 'Jan 5, 2021',
+		changes: [
+			'vfx improvements',
+			'2020 obituary pack',
+			'unspecified combat changes',
+		],
+	},
+	{
+		title: '0.1',
+		date: 'Jan 13, 2021',
+		changes: [
+			'0.1 was supposed to commemorate the new renderer but it never seemed like a good time to pull the trigger. We\'ve made huge visual improvements recently, almost entirely driven by MSC, and the art style is finally something we\'re all happy to call 0.1.',
+			'add shadows and a sun light',
+			'new plasma vfx and other vfx tweaks',
+			'sfx tweaks',
+			'unspecified gameplay changes'
+		],
+	},
+	{
+		title: '0.1.0.1',
+		date: 'Jan 13, 2021',
+		changes: [
+			'fix shaders on everything that\'s not nvidia'
+		],
+	},
+	{
+		title: '0.1.0.2',
+		date: 'Jan 20, 2021',
+		changes: [
+			'add user vsay pack',
+			'add guyman vsay pack',
+			'add audio device setting',
+			'the usual sfx/vfx improvements',
+			'unspecified weapon changes'
+		],
+	},
 ];
