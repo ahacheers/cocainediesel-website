@@ -1206,4 +1206,28 @@ const news = [
 			'unspecified weapon changes'
 		],
 	},
+	{
+		title: '0.1.0.3',
+		date: 'Jan 24, 2021',
+		changes: [
+			'add a new map, TOWER',
+			'add helena vsays',
+			'fix glitchy movement through bomb and some other ents',
+			'unspecified weapon changes',
+		],
+	},
+	{
+		title: '0.1.0.4',
+		date: 'Jan 31, 2021',
+		changes: [
+			',tower updates',
+			',add yolodemo command to force load old demos',
+			',show damage numbers while spectating',
+			',make projectiles go through teammates at close range',
+			',respawn the bomb if it gets voided',
+			',fix floating name tags bug',
+			'fix invisible lg bug',
+			'unspecified weapon changes',
+		],
+	},
 ];
