@@ -1220,14 +1220,22 @@ const news = [
 		title: '0.1.0.4',
 		date: 'Jan 31, 2021',
 		changes: [
-			',tower updates',
-			',add yolodemo command to force load old demos',
-			',show damage numbers while spectating',
-			',make projectiles go through teammates at close range',
-			',respawn the bomb if it gets voided',
-			',fix floating name tags bug',
+			'tower updates',
+			'add yolodemo command to force load old demos',
+			'show damage numbers while spectating',
+			'make projectiles go through teammates at close range',
+			'respawn the bomb if it gets voided',
+			'fix floating name tags bug',
 			'fix invisible lg bug',
 			'unspecified weapon changes',
+		],
+	},
+	{
+		title: '0.1.0.5',
+		date: 'Feb 1, 2021',
+		changes: [
+			'fix plasma hang',
+			'fix assert when changing maps with players connected',
 		],
 	},
 ];
