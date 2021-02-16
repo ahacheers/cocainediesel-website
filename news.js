@@ -1264,4 +1264,11 @@ const news = [
 			'make server browser refresh at startup again',
 		],
 	},
+	{
+		title: '0.1.0.9',
+		date: 'Feb 16, 2021',
+		changes: [
+			'fix fog',
+		],
+	},
 ];
