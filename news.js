@@ -1238,4 +1238,30 @@ const news = [
 			'fix assert when changing maps with players connected',
 		],
 	},
+	{
+		title: '0.1.0.6',
+		date: 'Feb 3, 2021',
+		changes: [
+			'fix server browser query spam',
+		],
+	},
+	{
+		title: '0.1.0.7',
+		date: 'Feb 15, 2021',
+		changes: [
+			'more sprays',
+			'more obituaries',
+			'fix damage numbers in demos',
+		],
+	},
+	{
+		title: '0.1.0.8',
+		date: 'Feb 16, 2021',
+		changes: [
+			'add last weapon bind (q by default)',
+			'weapon scrolling tweaks',
+			'possibly fix the getting stuck in walls bug',
+			'make server browser refresh at startup again',
+		],
+	},
 ];
