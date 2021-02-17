@@ -1271,4 +1271,11 @@ const news = [
 			'fix fog',
 		],
 	},
+	{
+		title: '0.1.0.10',
+		date: 'Feb 17, 2021',
+		changes: [
+			'fix splash damage/defusing',
+		],
+	},
 ];
