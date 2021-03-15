@@ -1278,4 +1278,34 @@ const news = [
 			'fix splash damage/defusing',
 		],
 	},
+	{
+		title: '0.1.0.11',
+		date: 'Feb 18, 2021',
+		changes: [
+			'add a new weapon',
+			'fix hitching when moving through allied bubbles',
+			'unspecified weapon changes',
+		],
+	},
+	{
+		title: '0.1.0.12',
+		date: 'Feb 21, 2021',
+		changes: [
+			'add a new weapon',
+			'fix multiple connections from the same LAN',
+		],
+	},
+	{
+		title: '0.1.0.13',
+		date: 'Mar 6, 2021',
+		changes: [
+			'more obituaries',
+			'better sound hotloading',
+			'renamed some callvotes',
+			'fix holes in pipes',
+			'fix shotgun overloading the decal renderer',
+			'fix missing rifle material',
+			'fix sniper scope for some players',
+		],
+	},
 ];
