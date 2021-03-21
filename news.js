@@ -1308,4 +1308,20 @@ const news = [
 			'fix sniper scope for some players',
 		],
 	},
+	{
+		title: '0.1.0.14',
+		date: 'Mar 20, 2021',
+		changes: [
+			'recoil episode 3',
+			'cinematic bomb explosion',
+			'remove cocaine/kukumene/train',
+		],
+	},
+	{
+		title: '0.1.0.15',
+		date: 'Mar 21, 2021',
+		changes: [
+			'better bomb effects',
+		],
+	},
 ];
