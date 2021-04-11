@@ -1324,4 +1324,31 @@ const news = [
 			'better bomb effects',
 		],
 	},
+	{
+		title: '0.1.0.16',
+		date: 'Apr 5, 2021',
+		changes: [
+			'recoil fixes',
+			'fix winning the same round multiple times',
+		],
+	},
+	{
+		title: '0.1.0.17',
+		date: 'Apr 11, 2021',
+		changes: [
+			'huge engine changes that are mostly not user visible lol',
+			'performance and vram optimisations',
+			'integrate netflix for spectators',
+			'rtx on for player models',
+			'mostly fix the game not working with non-english folder names',
+			'fix OBS game capture',
+		],
+	},
+	{
+		title: '0.1.0.18',
+		date: 'Apr 11, 2021',
+		changes: [
+			'hotfix',
+		],
+	},
 ];
