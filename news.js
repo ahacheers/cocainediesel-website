@@ -1351,4 +1351,27 @@ const news = [
 			'hotfix',
 		],
 	},
+	{
+		title: '0.1.0.19',
+		date: 'Apr 15, 2021',
+		changes: [
+			'shiny world',
+			'shiny guns',
+			'add colourblind mode',
+			'fix gladiator',
+			'fix fresh installs not saving configs',
+		],
+	},
+	{
+		title: '0.1.0.20',
+		date: 'Apr 20, 2021',
+		changes: [
+			'add dynamic lights',
+			'rendering optimisations',
+			'fix server config path',
+			'fix demoget',
+			'fix configs not saving in some cases',
+			'retire mwaga icon',
+		],
+	},
 ];
