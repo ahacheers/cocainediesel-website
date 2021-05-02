@@ -1385,4 +1385,12 @@ const news = [
 			'change how weapons work under the hood, should not be user visible unless there are bugs cheers',
 		],
 	},
+	{
+		title: '0.1.0.22',
+		date: 'May 2, 2021',
+		changes: [
+			'fix server crash on self rl',
+			'fix knockback',
+		],
+	},
 ];
