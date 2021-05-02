@@ -1374,4 +1374,15 @@ const news = [
 			'retire mwaga icon',
 		],
 	},
+	{
+		title: '0.1.0.21',
+		date: 'May 2, 2021',
+		changes: [
+			'add road gun and minigun',
+			'bump max playing sounds so we see less too many playing sounds warnings',
+			'add sniper tracer',
+			'fix assistor colour when someone dies to world hazards',
+			'change how weapons work under the hood, should not be user visible unless there are bugs cheers',
+		],
+	},
 ];
