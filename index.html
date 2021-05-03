@@ -39,7 +39,7 @@
 			background: #444444;
 			background-image: url(noise.png), linear-gradient(180deg, #999 0%, #333 100%);
 			color: #fff;
-			font-family: 'Anonymous Pro', monospace;
+			font-family: monospace;
 			margin: 0;
 			padding: 32px;
 			box-sizing: border-box;
@@ -71,8 +71,13 @@
 		}
 
 		a {
-			color: #00ffea;
+			color: rgb(255, 217, 0);
 			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		* {
+			box-sizing: border-box;
 		}
 
 		.log-btn:hover,
@@ -91,14 +96,10 @@
 		}
 
 		h1 {
-			color: #f02147;
-			text-shadow: 2px 2px 0 #000;
+			color: #fff;
 			margin: 0;
 			font-size: 32px;
 			font-weight: 700;
-			letter-spacing: -1px;
-			text-transform: uppercase;
-			font-variant: all-small-caps;
 		}
 
 		ul,
@@ -117,9 +118,9 @@
 			flex-flow: column;
 			align-items: center;
 			min-width: 288px;
-			max-width: 500px;
+			max-width: 1124px;
 			border: 2px solid #111;
-			background: #333;
+			background: #777;
 			box-sizing: border-box;
 			position: relative;
 			margin: 0 auto;
@@ -127,28 +128,26 @@
 
 		header {
 			font-weight: 700;
-			font-size: 8px;
+			font-size: 11px;
 			justify-content: center;
 			align-items: center;
 			background: #222;
 			padding: 16px 0;
 			box-sizing: border-box;
 			width: 100%;
-			min-height: 106px;
-			height: 106px;
-			max-height: 106px;
+			height: 148px;
 		}
 
 		header>pre {
 			font-family: monospace;
-			animation: m 0.3s linear infinite alternate;
+			animation: m 1.0s linear infinite alternate;
 			transform: skewX(-30deg);
+			margin-top: -2px;
 		}
 
 		header,
 		.screenshot,
 		.latest,
-		.links,
 		.text {
 			border-bottom: 2px solid #111;
 		}
@@ -160,23 +159,29 @@
 		.change,
 		.feature {
 			margin-bottom: 0.5em;
-			font-family: 'Anonymous Pro', monospace;
-			font-size: 15px;
-			text-shadow: 2px 2px 3px #000;
-			letter-spacing: 2px;
+			font-family: monospace;
+			font-size: 16px;
+			padding-left: 22px;
+			text-shadow: 2px 2px 0 #000;
 			position: relative;
 		}
 
 		.change:before,
 		.feature:before {
-			content: "\00bb";
+			content: "\2022";
 			color: rgb(255, 217, 0);
 			text-shadow: 2px 2px 0 #000;
 			position: absolute;
-			left: -22px;
-			font-size: 21px;
+			left: 0;
+			font-size: 16px;
 			font-family: monospace;
-			top: -6px;
+			top: 0;
+		}
+
+		.feature:before {
+			left: 0px;
+			font-size: 16px;
+
 		}
 
 		.info>p,
@@ -189,72 +194,93 @@
 
 		.text {
 			flex-flow: column;
-			padding: 16px 32px;
+			padding: 20px;
 			background: #222;
-			letter-spacing: 1px;
-			line-height: 1.2rem;
-			font-size: 15px;
+			font-size: 16px;
+			margin-bottom: 32px;
 		}
 
 		.links {
 			display: flex;
-			justify-content: space-between;
+			flex-flow: column;
 			width: 100%;
-			padding: 16px 32px 22px 32px;
+			padding: 20px;
 			box-sizing: border-box;
 			color: #f02147;
 			font-size: 19px;
+			background: #222;
 			text-shadow: 2px 2px 0 #000;
+			margin-bottom: 32px;
 		}
 
 
 		.links-col {
 			display: flex;
-			flex-flow: column;
+		}
+
+		.links-col>a {
+			margin: 0 8px;
+		}
+
+		.links-col>a:first-child {
+			margin-left: 0;
 		}
 
 		.links-title {
 			margin-bottom: 2px;
 			font-size: 32px;
 			font-weight: 700;
-			letter-spacing: 3px;
 			text-transform: uppercase;
 			font-variant: all-small-caps;
 		}
 
 		.features {
 			width: 100%;
-			padding: 16px 32px;
+			padding: 20px;
 			box-sizing: border-box;
+			background: #222;
+			margin-bottom: 32px;
 		}
 
 		.screenshot {
-			min-height: 300px;
-			height: 300px;
-			max-height: 300px;
+			position: relative;
+			overflow: hidden;
+			min-height: 630px;
+			height: 630px;
+			max-height: 630px;
 			width: 100%;
 			background-image: url('image.jpg');
 			background-position: center center;
-			background-size: auto auto;
+			background-size: 100%;
+		}
+
+		.construction {
+			position: absolute;
+			white-space: nowrap;
+			display: flex;
+			align-items: center;
+			background: rgb(255, 217, 0);
+			color: #111;
+			font-size: 28px;
+			width: 400%;
+			top: 0;
+			left: -450px;
+			transform: rotate(-15deg);
+			font-family: "arial black";
 		}
 
 		.category {
 			width: 200px;
 		}
 
+		.changelog {
+			background: #222;
+			padding: 20px;
+		}
+
 		.change:last-child,
 		.feature:last-child {
 			margin-bottom: 0;
-		}
-
-		#news {
-			position: absolute;
-			margin-bottom: 32px;
-			top: 475px;
-			left: 0;
-			display: none;
-			background: #222;
-			outline: 2px solid #111;
 		}
 
 		.latest {
@@ -269,8 +295,8 @@
 			width: 100%;
 			padding: 16px 0;
 			box-sizing: border-box;
-			font-family: 'Anonymous Pro', monospace;
-			font-size: 15px;
+			font-family: monospace;
+			font-size: 21px;
 		}
 
 		.log-btn {
@@ -279,12 +305,7 @@
 		}
 
 		.post {
-			background: #333;
-			padding: 16px 32px;
 			margin-bottom: 32px;
-			border-color: #111;
-			border-width: 2px 0 2px 0;
-			border-style: solid;
 			display: flex;
 			flex-flow: column;
 		}
@@ -298,13 +319,41 @@
 		}
 
 		.date {
-			color: #00ffea;
+			color: #777;
 			text-shadow: 2px 2px 0 #000;
-			margin-bottom: 16px;
-			margin-top: 2px;
-			font-size: 0.75rem;
-			font-family: 'Anonymous Pro', monospace;
-			letter-spacing: 3px;
+			margin-bottom: 22px;
+			font-size: 24px;
+			font-family: monospace;
+			margin-top: -10px;
+			text-transform: uppercase;
+		}
+
+		#cheers {
+			top: 0;
+			left: 0;
+			height: 16px;
+			width: 100%;
+		}
+
+		.three {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr;
+			gap: 32px;
+			padding: 32px;
+			grid-template-areas:
+				". .";
+		}
+
+		.post>h1 {
+			font-family: "arial black";
+			font-size: 16px;
+			margin-bottom: 8px;
+			color: rgb(255, 217, 0);
+		}
+
+		#version {
+			text-transform: uppercase;
 		}
 
 		@keyframes f {
@@ -319,13 +368,26 @@
 
 		@keyframes m {
 			0% {
-				color: #00ffea;
-				text-shadow: 4px 0 rgb(255, 217, 0);
+				color: #00ffff;
+				text-shadow: 4px 0 #000;
+			}
+
+			50% {
+				color: rgb(255 255 255);
+				text-shadow: 4px 0 #fff;
 			}
 
 			100% {
-				color: #f02147;
-				text-shadow: -4px 0 #10ff00bd;
+				color: #ff133e;
+				text-shadow: 0 4px #000;
+			}
+		}
+
+		@media (max-width:700px) {
+			.screenshot {
+				min-height: 250px;
+				height: 250px;
+				max-height: 250px;
 			}
 		}
 
@@ -347,7 +409,6 @@
 
 			.links {
 				padding: 16px;
-				letter-spacing: 0;
 				font-size: 1rem;
 			}
 
@@ -372,12 +433,18 @@
 
 
 		@media (max-width:450px) {
+			.screenshot {
+				min-height: 250px;
+				height: 250px;
+				max-height: 250px;
+			}
+
 			body {
 				padding: 16px;
 			}
 
 			header {
-				font-size: 0.35rem;
+				font-size: 0.25rem;
 			}
 
 			.latest {
@@ -385,13 +452,19 @@
 			}
 		}
 
-		@media (max-width:400px) {
-			header {
-				font-size: 0.25rem;
+		@media (max-width:420px) {
+			.screenshot {
+				min-height: 180px;
+				height: 180px;
+				max-height: 180px;
 			}
 
 			.links {
 				font-size: 0.8rem;
+			}
+
+			.links-title {
+				font-size: 22px;
 			}
 		}
 
@@ -407,62 +480,79 @@
 	<main>
 		<header>
 			<pre>
-.ggggg..gggggg...ggggg..gggggg..ggg.ggggggg..gggggg.ggggggg..ggg.gggggg..gggggg.gggggg.ggg....
-@@@@@@:@@@@@@@@:@@@@@@:@@@@@@@@:@@@:@@@@@@@@:@@@@@@:@@@@@@@@:@@@:@@@@@@:@@@@@@@:@@@@@@:@@@::::
-%%%----%%%--%%%-%%%----%%%--%%%-%%%-%%%--%%%-%%%----%%%--%%%-%%%-%%%----%%%-----%%%----%%%----
-&&&++++&&&++&&&+&&&++++&&&&&&&&+&&&+&&&++&&&+&&&&&++&&&++&&&+&&&+&&&&&++&&&&&&++&&&&&++&&&++++
-|||****|||**|||*|||****||||||||*|||*|||**|||*|||||**|||**|||*|||*|||||***||||||*|||||**|||****
-!!!====!!!==!!!=!!!====!!!==!!!=!!!=!!!==!!!=!!!====!!!==!!!=!!!=!!!========!!!=!!!====!!!====
-::::::#::::::::#::::::#:::##:::#:::#:::##:::#::::::#::::::::#:::#::::::#:::::::#::::::#::::::#
-@.....@@......@@@.....@...@@...@...@...@@...@......@.......@@...@......@......@@......@......@</pre>
+  /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$ /$$   /$$ /$$$$$$$$       /$$$$$$$  /$$$$$$ /$$$$$$$$  /$$$$$$  /$$$$$$$$ /$$      
+ /$$__  $$ /$$__  $$ /$$__  $$ /$$__  $$|_  $$_/| $$$ | $$| $$_____/      | $$__  $$|_  $$_/| $$_____/ /$$__  $$| $$_____/| $$      
+| $$  \__/| $$  \ $$| $$  \__/| $$  \ $$  | $$  | $$$$| $$| $$            | $$  \ $$  | $$  | $$      | $$  \__/| $$      | $$      
+| $$      | $$  | $$| $$      | $$$$$$$$  | $$  | $$ $$ $$| $$$$$         | $$  | $$  | $$  | $$$$$   |  $$$$$$ | $$$$$   | $$      
+| $$      | $$  | $$| $$      | $$__  $$  | $$  | $$  $$$$| $$__/         | $$  | $$  | $$  | $$__/    \____  $$| $$__/   | $$      
+| $$    $$| $$  | $$| $$    $$| $$  | $$  | $$  | $$\  $$$| $$            | $$  | $$  | $$  | $$       /$$  \ $$| $$      | $$      
+|  $$$$$$/|  $$$$$$/|  $$$$$$/| $$  | $$ /$$$$$$| $$ \  $$| $$$$$$$$      | $$$$$$$/ /$$$$$$| $$$$$$$$|  $$$$$$/| $$$$$$$$| $$$$$$$$
+ \______/  \______/  \______/ |__/  |__/|______/|__/  \__/|________/      |_______/ |______/|________/ \______/ |________/|________/</pre>
 		</header>
-		<div onload="this.draggable = false" class="screenshot"></div>
+		<div onload="this.draggable = false" class="screenshot">
+			<div class="construction"><span>SITE UNDER CONSTRUCTION - SITE UNDER CONSTRUCTION - SITE UNDER CONSTRUCTION
+					-
+					SITE UNDER CONSTRUCTION
+					- SITE UNDER CONSTRUCTION - SITE UNDER CONSTRUCTION - SITE UNDER CONSTRUCTION - SITE UNDER
+					CONSTRUCTION
+					- SITE UNDER CONSTRUCTION - SITE UNDER CONSTRUCTION</span></div>
+		</div>
 		<div class="latest">
-			<div id="version"></div>
-			<div class="log-btn" id="log-toggle">&#187; open update log &#171;</div>
+			<h1 id="version"></h1>
 		</div>
-		<div class="links">
-			<div class="links-col">
-				<div class="links-title">download</div>
-				<a href="CocaineDieselInstaller.exe">├ windows.exe</a>
-				<a href="cocaine_diesel_launcher_linux.tar.gz">├ linux.tar.gz</a>
-				<a href="cocaine_diesel_server_linux.tar.gz">└ linux_server.tar.gz</a>
-			</div>
-			<div class="links-col" style="text-align:right">
-				<div class="links-title">community</div>
-				<a href="https://discord.gg/5ZbV4mF">discord ┤</a>
-				<a href="https://twitch.tv/cocainediesel">twitch ┤</a>
-				<a href="https://twitter.com/art_of_respect">twitter ┘</a>
-			</div>
-		</div>
-		<div class="text">
-			<span><b>Cocaine Diesel</b> is a virtual social experiment rooted in privilege and exclusion.
-				<br><br>
-				The
-				<b>celebration of criminal
-					lifestyles</b> is a central component of our strategic <b>development process</b> and will in the
-				long
-				term
-				contribute to an increase of <b>cowabunga</b> in <b>cyber athleticism</b> and <b>digital
-					sportsmanship</b>.</span><br>
-			<span>Meet the absolute scum of the <b>World Wide Web</b> on your <b></b>traumatizing adventure</b> through
-				the
-				filthiest
-				corner
-				of <b>high-octane multiplayer knee-jerking</b>.</span>
-		</div>
-		<ul class="features">
-			<li class="feature">dadaistic depressionism theme</li>
-			<li class="feature">comradery-based tactical hooliganism webnovela</li>
-			<li class="feature">romantic entanglements</li>
-			<li class="feature">optimized for cyber athleticism, timelessness and aestheticism</li>
-			<li class="feature">art of respect codex</li>
-			<li class="feature">meet fun and fun people</li>
-			<li class="feature">completely free</li>
+		<div class="three">
+			<div class="game">
+				<div class="links">
+					<h1 style="color:#fff;text-transform: uppercase;margin-bottom:16px;text-align:center">JOIN THE FUN!
+					</h1>
+					<div class="links-title">download</div>
+					<div class="links-col">
+						<a href="CocaineDieselInstaller.exe">windows</a>
+						<a href="cocaine_diesel_launcher_linux.tar.gz">linux</a>
+						<a href="cocaine_diesel_server_linux.tar.gz">linux_server</a>
+					</div>
+					<div class="links-title">community</div>
+					<div class="links-col">
+						<a href="https://discord.gg/5ZbV4mF">discord</a>
+						<a href="https://instagram.com/cocainediesel">instagram</a>
+						<a href="https://twitch.tv/cocainediesel">twitch</a>
+						<a href="https://twitter.com/art_of_respect">twitter</a>
+					</div>
+				</div>
 
-		</ul>
+				<div class="text">
+					<h1 style="color:#fff;text-transform: uppercase;margin-bottom:16px;text-align:center">GAMEPLAY</h1>
+					<p><b>Cocaine Diesel</b> is a virtual social experiment rooted in privilege and exclusion.
+						The <b>celebration of criminal lifestyles</b> is a central component of our strategic
+						<b>development process</b> and will in the long term contribute to an increase of
+						<b>cowabunga</b> in <b>cyber athleticism</b> and <b>digital sportsmanship</b>.
+					</p>
+					<p>Meet the absolute scum of the <b>World Wide Web</b> on your <b></b>traumatizing adventure</b>
+						through the filthiest corner of <b>high-octane multiplayer knee-jerking</b>.</p>
+				</div>
+				<ul class="features">
+					<h1 style="color:#fff;text-transform: uppercase;margin-bottom:16px;text-align:center">FEATURES</h1>
+					<li class="feature">free to play</li>
+					<li class="feature">chaotic first-person shooter</li>
+					<li class="feature">team-based bomb & defuse mode</li>
+					<li class="feature">huge variety of weapons, utility items and perks</li>
+					<li class="feature">vandalism, flex and disrespect mechanics</li>
+					<li class="feature">art of respect codex</li>
+					<li class="feature">meet fun and fun people</li>
+					<li class="feature">not every listed feature might be implemented yet</li>
+					<li class="feature">aha cheers</li>
+
+				</ul>
+			</div>
+
+			<div class="changelog">
+				<h1 style="color:#fff;text-transform: uppercase;margin-bottom:16px;text-align:center">CHANGELOG
+				</h1>
+				<ul id="news"></ul>
+			</div>
+
+
 		</div>
-		<ul id="news"></ul>
 	</main>
 	<script>
 		(function detectIE() {
@@ -489,39 +579,36 @@
 			}, 400);
 		};
 		const _news = document.getElementById('news');
-		let expanded = false;
+		// let expanded = false;
 
-		const _toggle = document.getElementById('log-toggle');
+		// const _toggle = document.getElementById('log-toggle');
 
-		const logToggle = _ => {
-			if (expanded) {
-				_news.style.display = "none";
-				_toggle.innerHTML = `&#187; open update log &#171;`;
-			} else {
-				_news.style.display = "flex";
-				_toggle.innerHTML = `&#187; go back to main site &#171;`;
-			}
-			expanded = !expanded;
-		}
+		// const logToggle = _ => {
+		// 	if (expanded) {
+		// 		_news.style.display = "none";
+		// 		_toggle.innerHTML = `&#187; open update log &#171;`;
+		// 	} else {
+		// 		_news.style.display = "flex";
+		// 		_toggle.innerHTML = `&#187; go back to main site &#171;`;
+		// 	}
+		// 	expanded = !expanded;
+		// }
 
-		_toggle.addEventListener("click", logToggle);
+		// _toggle.addEventListener("click", logToggle);
 
 		const eatTheLard = data => {
 			data.reverse().forEach((post, i) => {
 				const { title, date, changes, news } = post;
 
 				if (i === 0) {
-					document.getElementById('version').innerHTML = `Current version: ${title} / ${date}`;
+					document.getElementById('version').innerHTML = `Current version: ${title} - released: ${date}`;
 				}
 
 				const _post = document.createElement('li');
 				const _title = document.createElement('h1');
-				const _date = document.createElement('span');
 				const _changes = document.createElement('ul');
 
 				_title.textContent = title;
-				_date.textContent = date;
-				_date.className = 'date';
 				_changes.className = 'changes';
 				_post.className = 'post';
 
@@ -533,7 +620,6 @@
 				});
 
 				_post.appendChild(_title);
-				_post.appendChild(_date);
 				_post.appendChild(_changes);
 				_news.appendChild(_post);
 			})
@@ -541,14 +627,14 @@
 
 		eatTheLard(news);
 
-		// const req = new XMLHttpRequest();
-		// req.open('GET', 'news.json', true);
-		// req.send();
-		// req.onreadystatechange = function () {
-		// 	if (this.readyState == 4 && this.status == 200) {
-		// 		eatTheLard(JSON.parse(this.responseText));
-		// 	}
-		// };
+		const req = new XMLHttpRequest();
+		req.open('GET', 'news.json', true);
+		req.send();
+		req.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				eatTheLard(JSON.parse(this.responseText));
+			}
+		};
 	</script>
 </body>
 
