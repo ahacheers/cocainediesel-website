@@ -1393,4 +1393,37 @@ const news = [
 			'fix knockback',
 		],
 	},
+	{
+		title: '0.1.0.23',
+		date: 'May 9, 2021',
+		changes: [
+			'temporarily remove minigun until we do it right',
+			'add map hotloading',
+			'allow directly loading gladiator arenas',
+			'fix laggy scoreboard',
+			'fix spread',
+			'fix stake/bouncy bullets dealing damage more than once',
+			'fix players not carrying guns',
+			'fix scrolling weapons',
+			'fix flickering laser',
+
+		],
+	},
+	{
+		title: '0.1.0.24',
+		date: 'May 11, 2021',
+		changes: [
+			'fix gladiator',
+			'fix spectators having guns',
+			'fix semi-auto guns rocking forever',
+			'unspecified weapon changes',
+		],
+	},
+	{
+		title: '0.1.0.25',
+		date: 'May 11, 2021',
+		changes: [
+			'fix picking up the bomb post-plant',
+		],
+	},
 ];
