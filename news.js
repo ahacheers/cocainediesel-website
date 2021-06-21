@@ -1426,4 +1426,25 @@ const news = [
 			'fix picking up the bomb post-plant',
 		],
 	},
+	{
+		title: '0.1.0.26',
+		date: 'Jun 21, 2021',
+		changes: [
+			'add chargeable railgun',
+			'optimise particle rendering',
+			'don\'t hardcode spray list',
+			'map entity hotloading',
+			'fix semi-auto guns rocking back and forth',
+			'fix switching teams one round too late',
+			'fix some vfx bugs',
+			'possibly fix random missing entities',
+		],
+	},
+	{
+		title: '0.1.0.27',
+		date: 'Jun 21, 2021',
+		changes: [
+			'all my homies hate AMD drivers',
+		],
+	},
 ];
