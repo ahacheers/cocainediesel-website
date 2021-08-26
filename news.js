@@ -1464,7 +1464,7 @@ const news = [
 		title: '0.1.0.29',
 		date: 'Aug 7, 2021',
 		changes: [
-			'fix the game thinking it's a debug build i.e. fix configs',
+			'fix the game thinking it\'s a debug build i.e. fix configs',
 			'fix mouse drifting',
 			'fix eb cooking animation',
 		],
