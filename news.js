@@ -1447,4 +1447,43 @@ const news = [
 			'all my homies hate AMD drivers',
 		],
 	},
+	{
+		title: '0.1.0.28',
+		date: 'Aug 7, 2021',
+		changes: [
+			'unspecified weapon changes',
+			'fix demoget',
+			'fix map downloads',
+			'fix spec weapon bar glitch',
+			'fix hotloading partially written files',
+			'live++ integration for devs',
+			'much cleanup',
+		],
+	},
+	{
+		title: '0.1.0.29',
+		date: 'Aug 7, 2021',
+		changes: [
+			'fix the game thinking it's a debug build i.e. fix configs',
+			'fix mouse drifting',
+			'fix eb cooking animation',
+		],
+	},
+	{
+		title: '0.1.0.30',
+		date: 'Aug 14, 2021',
+		changes: [
+			'juice shadows and add a quality setting',
+			'add telemetry to evaluate the feasibility of mining bitcoin on player gpus',
+			'fix the game getting stuck at overtime',
+			'add blurry weapon icons',
+		],
+	},
+	{
+		title: '0.1.0.31',
+		date: 'Aug 15, 2021',
+		changes: [
+			'amd',
+		],
+	},
 ];
