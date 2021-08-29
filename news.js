@@ -1486,4 +1486,16 @@ const news = [
 			'amd',
 		],
 	},
+	{
+		title: '0.1.0.32',
+		date: 'Aug 29, 2021',
+		changes: [
+			'the end of an era: move the gametypes in engine and delete angelscript',
+			'in an ideal world you guys wouldn\'t be able to tell the difference but this isn\'t an ideal world',
+			'nerf the explosion light',
+			'unspecified weapon changes',
+			'i accidentally moved the demo dir a couple of releases ago, now the client looks in the right place',
+			'move demos from My Games/CD/base/demos to My Games/CD/demos if you want to yolodemo them',
+		],
+	},
 ];
