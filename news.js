@@ -1533,5 +1533,4 @@ const news = [
 			'fix planting in special circumstances',
 		],
 	},
-
 ];
