@@ -1498,4 +1498,40 @@ const news = [
 			'move demos from My Games/CD/base/demos to My Games/CD/demos if you want to yolodemo them',
 		],
 	},
+	{
+		title '0.1.0.33',
+		date: 'Sep 3, 2021',
+		changes: [
+			'fix defusing',
+			'fix plant message not having a letter',
+			'fix gladiator',
+		],
+	},
+	{
+		title '0.1.0.34',
+		date: 'Oct 30, 2021',
+		changes: [
+			'unspecified gameplay changes',
+			'add a default easy loadout',
+			'fix loadouts resetting after a map change',
+			'fix many gladiator bugs',
+		],
+	},
+	{
+		title '0.1.0.35',
+		date: 'Oct 30, 2021',
+		changes: [
+			'fix server browser',
+			'fix void death sound in special circumstances',
+		],
+	},
+	{
+		title '0.1.0.36',
+		date: 'Oct 30, 2021',
+		changes: [
+			'fix loadouts resetting every round',
+			'fix planting in special circumstances',
+		],
+	},
+
 ];
