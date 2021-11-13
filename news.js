@@ -1533,4 +1533,33 @@ const news = [
 			'fix planting in special circumstances',
 		],
 	},
+	{
+		title '0.1.0.37',
+		date: 'Nov 8, 2021',
+		changes: [
+			'fixed rounds ending when they shouldn't',
+			'fixed winning rounds multiple times when people switch teams in post-round',
+			'fix site indicators always saying attack',
+			'fix stake sound',
+			'unspecified gameplay changes',
+		],
+	},
+	{
+		title '0.1.0.38',
+		date: 'Nov 11, 2021',
+		changes: [
+			'twitch.tv/denmsc weapon models',
+			'maybe fix the callvote map crash',
+		],
+	},
+	{
+		title '0.1.0.39',
+		date: 'Nov 12, 2021',
+		changes: [
+			'nerf sticky explosion vfx',
+			'fix not having guns after a match',
+			'really fix the callvote map crash',
+			'fix missing round winning obituaries',
+		],
+	},
 ];
