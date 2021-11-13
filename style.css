@@ -93,6 +93,7 @@ main > section {
 	white-space: nowrap;
 	flex: 1;
 	font-weight: bold;
+	min-height: 3.625rem;
 }
 
 .text,
@@ -166,9 +167,6 @@ ul {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 1.125rem;
-	display: flex;
-	flex-flow: column;
-	padding-left: 0.25rem;
 }
 
 ul:last-child {
@@ -194,9 +192,6 @@ li:last-child {
 	width: 900px;
 	text-transform: none;
 	font-style: normal;
-	white-space: pre-wrap;
-	display: flex;
-	flex-flow: column;
 }
 
 #changes h1 {
@@ -345,6 +340,7 @@ a:hover i.right {
 		white-space: break-spaces;
 		justify-content: flex-start;
 		padding: 0.75rem;
+		min-height: 2.75rem;
 	}
 
 	#changes {

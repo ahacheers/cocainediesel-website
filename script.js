@@ -69,5 +69,6 @@ const MarkDown = (text) => {
 };
 
 window.onload = () => {
+	document.getElementById("changes").style.whiteSpace = "normal";
 	document.getElementById("changes").innerHTML = MarkDown(document.getElementById("changes").innerHTML);
 };
