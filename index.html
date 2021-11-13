@@ -1,642 +1,1056 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<script type="aha/cheers">
-	     _/_/_/    _/_/      _/_/      _/_/_/  _/    _/  _/_/_/  _/_/_/_/   
-	  _/        _/    _/  _/    _/  _/        _/    _/    _/    _/          
-	 _/  _/_/  _/    _/  _/    _/  _/        _/_/_/_/    _/    _/_/_/       
-	_/    _/  _/    _/  _/    _/  _/        _/    _/    _/    _/            
-	 _/_/_/    _/_/      _/_/      _/_/_/  _/    _/  _/_/_/  _/_/_/_/       
-    </script>
-	<meta charset="UTF-8">
-	<meta name="theme-color" content="#000" />
-	<meta name="msapplication-navbutton-color" content="#000">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="COCAINE DIESEL" />
-	<meta property="og:url" content="https://cocainediesel.fun/" />
-	<meta property="og:image" content="https://cocainediesel.fun/og-image.jpg" />
-	<meta property="og:image:width" content="32" />
-	<meta property="og:image:height" content="32" />
-	<meta property="og:description"
-		content="... is a multiplayer first person shooter with an emphasis on drug promotion and criminal lifestyles. meet the absoulute scum of the internet on your traumatizing adventure through the most squalid corner of the dark web formely known as Warsow Pickup" />
-	<title>☠ ⠶⠧⠏⠛⠹⠼ ☠ ⠶⠧⠏⠛⠹⠼ ☠</title>
-	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<style>
-		::selection {
-			background: #a2a2a2;
-		}
-
-		::-moz-selection {
-			background: #a2a2a2;
-		}
-
-		body {
-			background: #444444;
-			background-image: url(noise.png), linear-gradient(180deg, #000 0%, #555 100%);
-			color: #fff;
-			font-family: monospace;
-			margin: 0;
-			padding: 0 32px;
-			box-sizing: border-box;
-			text-transform: lowercase;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-			cursor: default;
-			background-repeat: repeat;
-			background-attachment: fixed;
-		}
-
-		pre,
-		p {
-			margin: 0;
-			font-family: inherit;
-		}
-
-		ul,
-		li {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-		}
-
-		ul {
-			flex-flow: column;
-		}
-
-		a {
-			color: rgb(255, 217, 0);
-			text-decoration: none;
-			text-transform: uppercase;
-		}
-
-		* {
-			box-sizing: border-box;
-		}
-
-		.log-btn:hover,
-		a:hover {
-			font-weight: 700;
-			animation: f 0.1s linear infinite;
-			cursor: pointer;
-		}
-
-		b {
-			color: rgb(255, 217, 0);
-			text-transform: uppercase;
-			font-style: italic;
-			letter-spacing: 2px;
-			text-shadow: 1px 1px 0 #000;
-		}
-
-		h1 {
-			color: #fff;
-			margin: 0;
-			font-size: 32px;
-			font-weight: 700;
-		}
-
-		ul,
-		main,
-		header,
-		main>section,
-		.screenshot,
-		.text,
-		.features>li,
-		.changes>li {
-			display: flex;
-		}
-
-		main {
-			box-sizing: border-box;
-			flex-flow: column;
-			align-items: center;
-			min-width: 288px;
-			max-width: 1124px;
-			border: 2px solid #111;
-			background: #191919;
-			box-sizing: border-box;
-			position: relative;
-			margin: 0 auto;
-		}
-
-		header {
-			font-weight: 700;
-			font-size: 11px;
-			justify-content: center;
-			align-items: center;
-			background: #090909;
-			padding: 16px 0;
-			box-sizing: border-box;
-			width: 100%;
-			height: 148px;
-		}
-
-		header>pre {
-			font-family: monospace;
-			animation: m 1.0s linear infinite alternate;
-			transform: skewX(-30deg);
-			margin-top: -2px;
-		}
-
-		header,
-		.screenshot,
-		.latest,
-		.text {
-			border-bottom: 2px solid #111;
-		}
-
-		.logo {
-			width: 400px;
-		}
-
-		.change,
-		.feature {
-			margin-bottom: 0.5em;
-			font-family: monospace;
-			font-size: 16px;
-			padding-left: 22px;
-			text-shadow: 2px 2px 0 #000;
-			position: relative;
-		}
-
-		.change:before,
-		.feature:before {
-			content: "\2022";
-			color: rgb(255, 217, 0);
-			text-shadow: 2px 2px 0 #000;
-			position: absolute;
-			left: 0;
-			font-size: 16px;
-			font-family: monospace;
-			top: 0;
-		}
-
-		.feature:before {
-			left: 0px;
-			font-size: 16px;
-
-		}
-
-		.info>p,
-		.info>ul {
-			-webkit-user-select: text;
-			-moz-user-select: text;
-			-ms-user-select: text;
-			user-select: text;
-		}
-
-		.text {
-			flex-flow: column;
-			padding: 20px;
-			background: #222;
-			font-size: 16px;
-			margin-bottom: 32px;
-		}
-
-		.links {
-			display: flex;
-			flex-flow: column;
-			width: 100%;
-			padding: 20px;
-			box-sizing: border-box;
-			color: #f02147;
-			font-size: 19px;
-			background: #222;
-			text-shadow: 2px 2px 0 #000;
-			margin-bottom: 32px;
-		}
-
-
-		.links-col {
-			display: flex;
-		}
-
-		.links-col>a {
-			margin: 0 8px;
-		}
-
-		.links-col>a:first-child {
-			margin-left: 0;
-		}
-
-		.links-title {
-			margin-bottom: 2px;
-			font-size: 32px;
-			font-weight: 700;
-			text-transform: uppercase;
-			font-variant: all-small-caps;
-		}
-
-		.features {
-			width: 100%;
-			padding: 20px;
-			box-sizing: border-box;
-			background: #222;
-			margin-bottom: 32px;
-		}
-
-		.screenshot {
-			position: relative;
-			overflow: hidden;
-			min-height: 630px;
-			height: 630px;
-			max-height: 630px;
-			width: 100%;
-			background-image: url('image.jpg');
-			background-position: center center;
-			background-size: 100%;
-		}
-
-		.construction {
-			position: absolute;
-			white-space: nowrap;
-			display: flex;
-			align-items: center;
-			background: rgb(255, 217, 0);
-			color: #111;
-			font-size: 28px;
-			width: 400%;
-			top: 0;
-			left: -450px;
-			transform: rotate(-15deg);
-			font-family: "arial black";
-			text-transform: uppercase;
-		}
-
-		.category {
-			width: 200px;
-		}
-
-		.changelog {
-			background: #222;
-			padding: 20px;
-		}
-
-		.change:last-child,
-		.feature:last-child {
-			margin-bottom: 0;
-		}
-
-		.latest {
-			min-height: 67px;
-			height: 67px;
-			max-height: 67px;
-			display: flex;
-			flex-flow: column;
-			align-items: center;
-			justify-content: center;
-			background: #191919;
-			width: 100%;
-			padding: 16px 0;
-			box-sizing: border-box;
-			font-family: monospace;
-			font-size: 21px;
-		}
-
-		.log-btn {
-			color: #666;
-			font-family: monospace;
-		}
-
-		.post {
-			margin-bottom: 32px;
-			display: flex;
-			flex-flow: column;
-		}
-
-		.post:first-child {
-			border-width: 0px 0 2px 0;
-		}
-
-		.post:last-child {
-			border-width: 2px 0 0 0;
-		}
-
-		.date {
-			color: #777;
-			text-shadow: 2px 2px 0 #000;
-			margin-bottom: 22px;
-			font-size: 24px;
-			font-family: monospace;
-			margin-top: -10px;
-			text-transform: uppercase;
-		}
-
-		#cheers {
-			top: 0;
-			left: 0;
-			height: 16px;
-			width: 100%;
-		}
-
-		.three {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1fr;
-			gap: 32px;
-			padding: 32px;
-			grid-template-areas:
-				". .";
-		}
-
-		.post>h1 {
-			font-family: "arial black";
-			font-size: 16px;
-			margin-bottom: 8px;
-			color: rgb(255, 217, 0);
-		}
-
-		#version {
-			text-transform: uppercase;
-		}
-
-		@keyframes f {
-			0% {
-				color: #e8133b
-			}
-
-			100% {
-				color: rgb(255, 217, 0)
-			}
-		}
-
-		@keyframes m {
-			0% {
-				color: #00ffff;
-				text-shadow: 4px 0 #000;
-			}
-
-			50% {
-				color: rgb(255 255 255);
-				text-shadow: 4px 0 #fff;
-			}
-
-			100% {
-				color: #ff133e;
-				text-shadow: 0 4px #000;
-			}
-		}
-
-		@media (max-width:700px) {
-			.screenshot {
-				min-height: 250px;
-				height: 250px;
-				max-height: 250px;
-			}
-		}
-
-		@media (max-width:550px) {
-			body {
-				font-size: 10px;
-			}
-
-			header {
-				padding: 16px;
-				font-size: 0.4rem;
-			}
-
-			.text {
-				padding: 16px;
-				font-size: 0.75rem;
-				line-height: 1rem;
-			}
-
-			.links {
-				padding: 16px;
-				font-size: 1rem;
-			}
-
-			.features {
-				padding: 16px 32px;
-			}
-
-			.change,
-			.feature {
-				font-size: 0.75rem;
-			}
-
-			.change:before,
-			.feature:before {
-				top: -7px;
-			}
-
-			.post {
-				padding: 16px 32px;
-			}
-		}
-
-
-		@media (max-width:450px) {
-			.screenshot {
-				min-height: 250px;
-				height: 250px;
-				max-height: 250px;
-			}
-
-			body {
-				padding: 16px;
-			}
-
-			header {
-				font-size: 0.25rem;
-			}
-
-			.latest {
-				font-size: 11px;
-			}
-		}
-
-		@media (max-width:420px) {
-			.screenshot {
-				min-height: 180px;
-				height: 180px;
-				max-height: 180px;
-			}
-
-			.links {
-				font-size: 0.8rem;
-			}
-
-			.links-title {
-				font-size: 22px;
-			}
-		}
-
-		@media (max-width:330px) {
-			.links {
-				font-size: 0.65rem;
-			}
-		}
-	</style>
-</head>
-
-<body>
-	<main>
-		<header>
-			<pre>
-  /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$ /$$   /$$ /$$$$$$$$       /$$$$$$$  /$$$$$$ /$$$$$$$$  /$$$$$$  /$$$$$$$$ /$$      
- /$$__  $$ /$$__  $$ /$$__  $$ /$$__  $$|_  $$_/| $$$ | $$| $$_____/      | $$__  $$|_  $$_/| $$_____/ /$$__  $$| $$_____/| $$      
-| $$  \__/| $$  \ $$| $$  \__/| $$  \ $$  | $$  | $$$$| $$| $$            | $$  \ $$  | $$  | $$      | $$  \__/| $$      | $$      
-| $$      | $$  | $$| $$      | $$$$$$$$  | $$  | $$ $$ $$| $$$$$         | $$  | $$  | $$  | $$$$$   |  $$$$$$ | $$$$$   | $$      
-| $$      | $$  | $$| $$      | $$__  $$  | $$  | $$  $$$$| $$__/         | $$  | $$  | $$  | $$__/    \____  $$| $$__/   | $$      
-| $$    $$| $$  | $$| $$    $$| $$  | $$  | $$  | $$\  $$$| $$            | $$  | $$  | $$  | $$       /$$  \ $$| $$      | $$      
-|  $$$$$$/|  $$$$$$/|  $$$$$$/| $$  | $$ /$$$$$$| $$ \  $$| $$$$$$$$      | $$$$$$$/ /$$$$$$| $$$$$$$$|  $$$$$$/| $$$$$$$$| $$$$$$$$
- \______/  \______/  \______/ |__/  |__/|______/|__/  \__/|________/      |_______/ |______/|________/ \______/ |________/|________/</pre>
-		</header>
-		<div onload="this.draggable = false" class="screenshot">
-			<div class="construction"><span>SITE UNDER CONSTRUCTION - SITE UNDER CONSTRUCTION - SITE UNDER CONSTRUCTION
-					-
-					SITE UNDER CONSTRUCTION
-					- SITE UNDER CONSTRUCTION - SITE UNDER CONSTRUCTION - SITE UNDER CONSTRUCTION - SITE UNDER
-					CONSTRUCTION
-					- SITE UNDER CONSTRUCTION - SITE UNDER CONSTRUCTION</span></div>
-		</div>
-		<div class="latest">
-			<h1 id="version"></h1>
-		</div>
-		<div class="three">
-			<div class="game">
-				<div class="links">
-					<h1 style="color:#fff;text-transform: uppercase;margin-bottom:16px;text-align:center">JOIN THE FUN!
-					</h1>
-					<div class="links-title">download</div>
-					<div class="links-col">
-						<a href="CocaineDieselInstaller.exe">windows</a>
-						<a href="cocaine_diesel_launcher_linux.tar.gz">linux</a>
-						<a href="cocaine_diesel_server_linux.tar.gz">linux_server</a>
-					</div>
-					<div class="links-title">community</div>
-					<div class="links-col">
-						<a href="https://discord.gg/5ZbV4mF">discord</a>
-						<a href="https://instagram.com/cocainediesel">instagram</a>
-						<a href="https://twitch.tv/cocainediesel">twitch</a>
-						<a href="https://twitter.com/art_of_respect">twitter</a>
-					</div>
-				</div>
-
-				<div class="text">
-					<h1 style="color:#fff;text-transform: uppercase;margin-bottom:16px;text-align:center">GAMEPLAY</h1>
-					<p><b>Cocaine Diesel</b> is a virtual social experiment rooted in privilege and exclusion.
-						The <b>celebration of criminal lifestyles</b> is a central component of our strategic
-						<b>development process</b> and will in the long term contribute to an increase of
-						<b>cowabunga</b> in <b>cyber athleticism</b> and <b>digital sportsmanship</b>.
+	<head>
+		<script type="aha/cheers">
+			 _/_/_/    _/_/      _/_/      _/_/_/  _/    _/  _/_/_/  _/_/_/_/
+		  _/        _/    _/  _/    _/  _/        _/    _/    _/    _/
+		 _/  _/_/  _/    _/  _/    _/  _/        _/_/_/_/    _/    _/_/_/
+		_/    _/  _/    _/  _/    _/  _/        _/    _/    _/    _/
+		 _/_/_/    _/_/      _/_/      _/_/_/  _/    _/  _/_/_/  _/_/_/_/
+		</script>
+		<meta charset="UTF-8">
+		<meta name="theme-color" content="#000" />
+		<meta name="msapplication-navbutton-color" content="#000">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+		<meta name="msapplication-TileColor" content="#666666">
+		<meta name="theme-color" content="#000000">
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="COCAINE DIESEL" />
+		<meta property="og:url" content="https://cocainediesel.fun/" />
+		<meta property="og:image" content="https://cocainediesel.fun/og-image.jpg" />
+		<meta property="og:image:width" content="32" />
+		<meta property="og:image:height" content="32" />
+		<meta property="og:description" content="... is a multiplayer first person shooter with an emphasis on drug promotion and criminal lifestyles. meet the absoulute scum of the internet on your traumatizing adventure through the most squalid corner of the dark web formely known as Warsow Pickup" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>COCAINE DIESEL</title>
+		<link href="https://css.gg/css?=arrow-down|details-more|smile" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffffff">
+	</head>
+	<body>
+		<h1 class="logo">cocaine diesel</h1>
+		<main>
+			<div class="row text"><i class="gg-smile"></i><span>cocaine diesel is a game!</span></div>
+			<a class="row button download" href="CocaineDieselInstaller.exe"><i class="gg-arrow-down"></i>windows download</a>
+			<a class="row button download" href="cocaine_diesel_launcher_linux.tar.gz"><i class="gg-arrow-down"></i>linux download</a>
+			<a class="row button" href="https://discord.gg/5ZbV4mF"><i class="gg-details-more"></i>join discord</a>
+			<div class="marquee top">
+				<div class="marquee-back">
+					<p class="marquee-front">
+						희망은 때로 응급처치를 해주기도 하지만, 희망의 응급처치를 싫어하는 인간도 때로 있을 수 있네,
+						아마 그럴 수 있네, 절망이 더 위안이 된다고 하면서, 바람에 흔들리는 찬란한 햇빛 한 줄기를 따라,
+						약을 구하러 멀리서 왔는데, 약이 잘 듣지 않는다는 것을 미리 믿을 정도로, 당신은 이제 병이 깊었나.
 					</p>
-					<p>Meet the absolute scum of the <b>World Wide Web</b> on your <b></b>traumatizing adventure</b>
-						through the filthiest corner of <b>high-octane multiplayer knee-jerking</b>.</p>
 				</div>
-				<ul class="features">
-					<h1 style="color:#fff;text-transform: uppercase;margin-bottom:16px;text-align:center">FEATURES</h1>
-					<li class="feature">free to play</li>
-					<li class="feature">chaotic first-person shooter</li>
-					<li class="feature">team-based bomb & defuse mode</li>
-					<li class="feature">huge variety of weapons, utility items and perks</li>
-					<li class="feature">vandalism, flex and disrespect mechanics</li>
-					<li class="feature">art of respect codex</li>
-					<li class="feature">meet fun and fun people</li>
-					<li class="feature">not every listed feature might be implemented yet</li>
-					<li class="feature">aha cheers</li>
-
-				</ul>
 			</div>
-
-			<div class="changelog">
-				<h1 style="color:#fff;text-transform: uppercase;margin-bottom:16px;text-align:center">CHANGELOG
-				</h1>
-				<ul id="news"></ul>
+			<div class="marquee bottom">
+				<div class="marquee-back">
+					<p class="marquee-front">
+						در بادیه سوسماری با من راه می سپرد و به هر قدم نانی از من می طلبید و من که انبانی فراخ داشتم به
+						مزاح به او می گفتم که انبان من بی پایان است، بیا!... بادیه را پیمودم انبان های نان را به پایان
+						بردم و انبان روزها را پرداختم و چه پرورانیدم مگر هیولایی که هم اینک بر درگاه خفته است.
+					</p>
+				</div>
 			</div>
+			<img src="puppies.png" />
+		</main>
+		<div id="changes">
+# 0.1.0.39
 
+- nerf sticky explosion vfx
+- fix not having guns after a match
+- really fix the callvote map crash
+- fix missing round winning obituaries
 
+# 0.1.0.38
+- twitch.tv/denmsc weapon models
+- maybe fix the callvote map crash
+
+# 0.1.0.37
+- fixed rounds ending when they shouldn't
+- fixed winning rounds multiple times when people switch teams in post-round
+- fix site indicators always saying attack
+- fix stake sound
+- unspecified gameplay changes
+
+# 0.1.0.36
+- fix loadouts resetting every round
+- fix planting in special circumstances
+
+# 0.1.0.35
+- fix server browser
+- fix void death sound in special circumstances
+
+# 0.1.0.34
+- unspecified gameplay changes
+- add a default easy loadout
+- fix loadouts resetting after a map change
+- fix many gladiator bugs
+
+# 0.1.0.33
+- fix defusing
+- fix plant message not having a letter
+- fix gladiator
+
+# 0.1.0.32
+- the end of an era: move the gametypes in engine and delete angelscript
+- in an ideal world you guys wouldn't be able to tell the difference but this isn't an ideal world
+- nerf the explosion light
+- unspecified weapon changes
+- i accidentally moved the demo dir a couple of releases ago, now the client looks in the right place
+- move demos from my games/cd/base/demos to my games/cd/demos if you want to yolodemo them
+
+# 0.1.0.31
+- amd
+
+# 0.1.0.30
+- juice shadows and add a quality setting
+- add telemetry to evaluate the feasibility of mining bitcoin on player gpus
+- fix the game getting stuck at overtime
+- add blurry weapon icons
+
+# 0.1.0.29
+- fix the game thinking it's a debug build i.e. fix configs
+- fix mouse drifting
+- fix eb cooking animation
+
+# 0.1.0.28
+- unspecified weapon changes
+- fix demoget
+- fix map downloads
+- fix spec weapon bar glitch
+- fix hotloading partially written files
+- live++ integration for devs
+- much cleanup
+
+# 0.1.0.27
+- all my homies hate amd drivers
+
+# 0.1.0.26
+- add chargeable railgun
+- optimise particle rendering
+- don't hardcode spray list
+- map entity hotloading
+- fix semi-auto guns rocking back and forth
+- fix switching teams one round too late
+- fix some vfx bugs
+- possibly fix random missing entities
+
+# 0.1.0.25
+- fix picking up the bomb post-plant
+
+# 0.1.0.24
+- fix gladiator
+- fix spectators having guns
+- fix semi-auto guns rocking forever
+- unspecified weapon changes
+
+# 0.1.0.23
+- temporarily remove minigun until we do it right
+- add map hotloading
+- allow directly loading gladiator arenas
+- fix laggy scoreboard
+- fix spread
+- fix stake/bouncy bullets dealing damage more than once
+- fix players not carrying guns
+- fix scrolling weapons
+- fix flickering laser
+
+# 0.1.0.22
+- fix server crash on self rl
+- fix knockback
+
+# 0.1.0.21
+- add road gun and minigun
+- bump max playing sounds so we see less too many playing sounds warnings
+- add sniper tracer
+- fix assistor colour when someone dies to world hazards
+- change how weapons work under the hood, should not be user visible unless there are bugs cheers
+
+# 0.1.0.20
+- add dynamic lights
+- rendering optimisations
+- fix server config path
+- fix demoget
+- fix configs not saving in some cases
+- retire mwaga icon
+
+# 0.1.0.19
+- shiny world
+- shiny guns
+- add colourblind mode
+- fix gladiator
+- fix fresh installs not saving configs
+
+# 0.1.0.18
+- hotfix
+
+# 0.1.0.17
+- huge engine changes that are mostly not user visible lol
+- performance and vram optimisations
+- integrate netflix for spectators
+- rtx on for player models
+- mostly fix the game not working with non-english folder names
+- fix obs game capture
+
+# 0.1.0.16
+- recoil fixes
+- fix winning the same round multiple times
+
+# 0.1.0.15
+- better bomb effects
+
+# 0.1.0.14
+- recoil episode 3
+- cinematic bomb explosion
+- remove cocaine/kukumene/train
+
+# 0.1.0.13
+- more obituaries
+- better sound hotloading
+- renamed some callvotes
+- fix holes in pipes
+- fix shotgun overloading the decal renderer
+- fix missing rifle material
+- fix sniper scope for some players
+
+# 0.1.0.12
+- add a new weapon
+- fix multiple connections from the same lan
+
+# 0.1.0.11
+- add a new weapon
+- fix hitching when moving through allied bubbles
+- unspecified weapon changes
+
+# 0.1.0.10
+- fix splash damage/defusing
+
+# 0.1.0.9
+- fix fog
+
+# 0.1.0.8
+- add last weapon bind (q by default)
+- weapon scrolling tweaks
+- possibly fix the getting stuck in walls bug
+- make server browser refresh at startup again
+
+# 0.1.0.7
+- more sprays
+- more obituaries
+- fix damage numbers in demos
+
+# 0.1.0.6
+- fix server browser query spam
+
+# 0.1.0.5
+- fix plasma hang
+- fix assert when changing maps with players connected
+
+# 0.1.0.4
+- tower updates
+- add yolodemo command to force load old demos
+- show damage numbers while spectating
+- make projectiles go through teammates at close range
+- respawn the bomb if it gets voided
+- fix floating name tags bug
+- fix invisible lg bug
+- unspecified weapon changes
+
+# 0.1.0.3
+- add a new map, tower
+- add helena vsays
+- fix glitchy movement through bomb and some other ents
+- unspecified weapon changes
+
+# 0.1.0.2
+- add user vsay pack
+- add guyman vsay pack
+- add audio device setting
+- the usual sfx/vfx improvements
+- unspecified weapon changes
+
+# 0.1.0.1
+- fix shaders on everything that's not nvidia
+
+# 0.1
+- 0.1 was supposed to commemorate the new renderer but it never seemed like a good time to pull the trigger. we've made huge visual improvements recently, almost entirely driven by msc, and the art style is finally something we're all happy to call 0.1.
+- add shadows and a sun light
+- new plasma vfx and other vfx tweaks
+- sfx tweaks
+- unspecified gameplay changes
+
+# 0.0.9.52
+- vfx improvements
+- 2020 obituary pack
+- unspecified combat changes
+
+# 0.0.9.52
+- was released 2 weeks ago but we never wrote patch notes
+- add krach rework
+- fix a config crash
+
+# 0.0.9.51
+- add kill assists (thanks dexter, you fat fuck)
+- add new void effect
+
+# 0.0.9.50
+- broken
+
+# 0.0.9.48
+- new player model
+- new sky
+- new font
+- buffed vfx
+- fix invisible damage numbers after map change
+
+# 0.0.9.47
+- fix linux
+- fix crash when playing demos after playing a match
+- fix disappearing outlines on corpses
+- vfx buffs
+- decal rendering optimisations
+- unspecified weapon changes
+
+# 0.0.9.46
+- gpu particles courtesy of msc
+- new recoil courtesy of msc
+- misc hud fixes
+
+# 0.0.9.45
+- sand updates
+- hud updates
+- unspecified weapon changes
+- fix demoget
+- fix screenshots
+
+# 0.0.9.44
+- fix map downloads
+- fix wj not always triggering
+- more logging to help find "invalid value" crash
+- unspecified weapon changes
+
+# 0.0.9.43
+- sand updates
+- nerf hit effect
+- new bigvic sounds
+- more vfx
+- unspecified weapon changes
+
+# 0.0.9.42
+- primary/secondary/backup loadout selection
+- pbr weapon skins
+- bomb defuse sound
+- sand updates
+- more sprays
+- more vfx
+- fix joining white team in bomb
+
+# 0.0.9.41
+- sand update
+- retire reload progress bar
+- little visual upgrades and fixes
+- fix broken sprays and associated console spam
+- fix buy menu crashing the server
+
+# 0.0.9.40
+- add sand, a goochie original map
+- update bomb model
+- push for 18+ rating
+- remove crosshair size cvar in response to complaints
+- fix crash when changing map/resizing window
+- fix gladiator jumppads
+- unspecified movement changes
+
+# 0.0.9.39
+- unspecified changes
+
+# 0.0.9.38
+- add bullet holes/explosion scorch marks etc
+- add sprays
+- add weapon switch animation
+- allow rearranging inventory after countdown
+- rename bomb map entities to use words that describe what they are
+- fix jumppads
+- fix corpse interpolation
+- fix corpses not keeping momentum
+- unspecified weapon changes
+
+# 0.0.9.37
+- fix jumppads
+- fix defuse
+- fix memory leak
+- unspecified weapon changes
+
+# 0.0.9.36
+- fix ladders
+- fix selfdmg crash
+- add m_inverty
+
+# 0.0.9.35
+- fix significant performance regression in the client and server
+- fix she doesn't even go here vsay
+- fix reload bar border
+- add bugs related to vec3_t purge
+
+# 0.0.9.34
+- add cosmetic headshots
+- deterministic vsays
+- nerf trombone
+- unspecified weapon changes
+
+# 0.0.9.33
+- add a new map, suicide
+- fix scoreboard crash
+- little hud tweaks
+
+# 0.0.9.32
+- new weapon skins
+- map fixes
+- chat window fixes
+
+# 0.0.9.31
+- add a new map, krach
+- fix planting
+- fix site indicators
+- ladder quality of life changes
+- new explosion effect
+- unspecified weapon changes
+
+# 0.0.9.30
+- fix gladiator
+- palette swap
+- add a new gun
+- many demo playback fixes
+- unspecified weapon changes
+- include weapons in player silhouettes
+- hardcode fov and remove crouch as a social experiment
+
+# 0.0.9.29
+- fix the game on windows 7
+- fix the uninstaller
+
+# 0.0.9.28
+- yolo vic's collision fixes. should fix corner shooting and getting stuck on walls
+- optimise startup time, nearly -50% on a 6700k
+- fix maxfps in demos
+
+# 0.0.9.27
+- fix gl crash
+- add weapon models
+- rearrangeable inventory
+- unspecified weapon changes
+
+# 0.0.9.26
+- 2020 menu theme
+- fix crash when bomb explodes
+- new rifle sound
+- gltf hotloading
+- reload progress bar until we have weapon models thanks again
+- maybe fix demos
+- maybe fix getting stuck on walls
+- unspecified weapon changes
+
+# 0.0.9.25
+- fix scope with msaa enabled
+- add rifle
+- readd predicted weapon switches
+- disable zoom during gladiator preround
+- bullet hisses
+- auto join teams when joining a server
+- ui improvements
+- ui regressions
+- unspecified weapon changes
+
+# 0.0.9.24
+- map fixes
+- faster outlines shader, thanks msc
+
+# 0.0.9.23
+- new gladiator arenas
+- add option to disable hotkey messages in the hud
+- maybe fix chat weirdness
+- unspecified weapon changes
+
+# 0.0.9.22
+- fix maps dying after a match
+- gladiator upgrades
+- add assault rifle
+- remove zoom from everything except sniper and ar, where it replaces dash/wj instead
+- semi-auto ergonomics
+- unspecified weapon changes
+- fix showing outdated scoreboard in postmatch
+- hide players in postmatch
+- mwaga iced again
+
+# 0.0.9.21
+- mariner 1 bugfix to stop gladiator server crashes
+
+# 0.0.9.20
+- carfentanil upgrades to distract from gladiator bugs
+- fix disconnecting from servers
+- fix lg sound
+- resurrect postmatch scoreboard
+
+# 0.0.9.19
+- fix joining servers
+
+# 0.0.9.18
+- dexter is back from warfork sabbatical
+- show binds on weapon bar
+- new gladiator arenas
+- fast arena switching
+- carfentanil upgrades
+- day/night cycle
+
+# 0.0.9.17
+- carfentanil upgrades
+- nerf trombone
+- make wallbangs do full damage
+- railgun wallbangs
+
+# 0.0.9.16
+- carfentanil upgrades
+- add wallbangs
+
+# 0.0.9.15
+- unbreak alt-tab in fullscreen
+- readd borderless
+
+# 0.0.9.14
+- multi monitor support. we nuked sdl and replaced it with glfw, which lets us support multiple monitors properly and should also fix the other annoying window bugs
+- show server info in the browser\eot
+- obituary fun
+- fix missing sniper equip sound
+
+# 0.0.9.13
+- add sniper
+- add lg beam sound
+- remove warsow/em maps we never play
+- fix certain sounds not playing
+- fix zombies
+- fix vanishing bomb silhouette
+- fix some obituaries
+
+# 0.0.9.12
+- buff sounds
+- add tracer anti-aliasing
+- better semiauto ergonomics
+- better damage number ergonomics
+- fix grenade sounds
+- unspecified weapon changes
+
+# 0.0.9.11
+- add two new guns, 9mm and deagle
+- other unspecified weapon changes
+- add chat obituaries
+- add soft rate limiting to crouch
+- new cinematic typing experience
+- louder bigvic jump sound
+- move chaser hud out of the way of chat
+
+# 0.0.9.10
+- lots of new sounds
+- new skybox
+- add rg tracers
+- add rg/lg impact sparks
+- fix blood
+- unspecified weapon changes
+- unspecified r&s changes
+
+# 0.0.9.9
+- fix crash with lots of players on the server
+- rl/lg sound tweaks
+- unspecified weapon changes
+- weapon 5/6 bindable from the menus and add
+- many little fixes
+
+# 0.0.9.8
+- fix weapnext crash
+- unspecified weapon changes
+
+# 0.0.9.7
+- many bug fixes
+
+# 0.0.9.6
+- add reloading
+- add recoil
+- fix firstperson lg sound
+- fix menu music
+- texture/material hotloading
+- particle system improvements
+- fix ui locking if you press escape with ingame menu and chat open
+- lots of engine cleanup, below 100k loc
+- add bugs aha cheers thanks again
+
+# 0.0.9.5
+- better spatialisation for laser beam sounds
+- add sfx configs
+- add sound hotloading
+- properly randomise spawn point selection
+- remove game.dll and statically link the server
+
+# 0.0.9.4
+- faster and better quality outlines, thanks msc
+- gunblade slashes in a wide arc and has been rebalanced accordingly
+
+# 0.0.9.3
+- depth discontinuity outlines. they're not perfect yet but they should pick up outlines on curbs and stairs a bit better
+- bomb silhouette visible through walls
+- add mg bullet tracers and impact sparks
+- new explosion effect
+- fix scoreboard while speccing
+- hud fixes
+
+# 0.0.9.2
+- replace the old loadout menu with a cash shop
+- new particle engine and particle editor
+- bring back gibs with extra gore
+- add callvote hud
+- nuke quake style color tokens
+- fix ui z ordering
+- fix hp in gladiator
+- fix lean animations
+- fix fall sound
+- fix the white border around the whole screen with msaa enabled
+
+# 0.0.9.1
+- rename font atlases so the updater doesn't break the game. if you broke your game by updating to 0.0.9.0 you can repair it by updating again
+- new weapon icons
+- fix the hole in carfentanil (wip)
+- fix beams
+- fix weapon sounds
+- fix corpse darkening
+- lots of hud fixes
+
+# 0.0.9.0
+- this is a test build for the upcoming 0.1 release
+- 0.1 will be by far the largest cd release to date and marks the completion of several long term goals
+
+# 0.0.9.0 is a test release however and contains no changes
+- you can watch me continue to not make any changes at twitch.tv/cocainediesel
+
+# 0.0.2.22
+- new text renderer based on msdf. it adds text outlines so your pileexterminations don't get lost in the sky, and subpixel positioning so site indicators don't wobble as you move
+- rng improvements. client effects rng is seeded every frame with entropy from a cryptographically secure psuedorandom number generator. now you can use obituaries to safely make purchases online
+- this release marks the start of the big renderer overhaul, stay tuned for months of flaming in #neckbeards
+- lots of misc cleanup. we are dancing with 135k loc but will not be able to break through until neko cleans his room
+
+# 0.0.2.21
+- bigvic is back from the dead courtesy of msc's incredible dumpster diving talent (google.com)
+
+# 0.0.2.20
+- static libstdc++ for libgame.so. fixes running the game on decade old linux
+
+# 0.0.2.19
+- new animation engine. there shouldn't be any visible changes but the new engine is far simpler and will allow us to bring animations up to 2005 standard
+- nuke iqm and add animated gltf support. again there shouldn't be any visible changes but this makes it much easier to change and add player models
+- remove bigvic. we wanted to keep it but the original model is very messed up and none of the tools we tried could save it
+- remove gb airdash. we want more recovery options in gladiator but airdash was too bad and has been removed
+- remove gb gladi rounds
+- buff gb damage and range
+- keep bodies around on gib
+- tweak some sounds
+- remove angelscript from the client. it was used for mouse accel and stuff
+- fix crash when adding democams
+- update to vs2019/static crt for the launcher on windows
+- update to gcc9 on linux
+
+# 0.0.2.18
+- buff fog on cocaine
+- compiler/library updates
+
+# 0.0.2.17
+- lg sound bug fixed for real
+- surprise r&s features
+
+# 0.0.2.16
+- surprise mg changes
+- below 140k loc
+
+# 0.0.2.15
+- gb airdash, remove auto gb
+- give topscorers a crown in gladiator so you know who to focus
+- make spikes more deadly
+- fix a couple crashes
+- buff vsays
+
+# 0.0.2.14
+- fix self knockback
+- fix gladiator weapon selection
+
+# 0.0.2.13
+- fix spec bug
+- fix arm.ogg console spam
+
+# 0.0.2.12
+- gladiator fixes
+
+# 0.0.2.11
+- gladiator beta release
+- a new gametype, gladiator, exclusive to cocaine diesel
+- a new map, gladiator, exclusive to cocaine diesel
+- exciting environmental hazards for gladiator
+- non-animated gltf model support
+- fix rg damage numbers
+
+# 0.0.2.10
+- new launcher design
+- add a space after tab completing something
+- drop cpu requirements to sse3 (2006 intel, last year's amd)
+
+# 0.0.2.9
+- moved the game to a cdn so you should get better download speeds
+- console fixes
+
+# 0.0.2.8
+- a new map, train, exclusive to cocaine diesel
+- vsays buffed
+- reduce max plant speed. should make accidental cancels happen less often
+- gibs tweaks. explosive weapons gib more often now. more damage = more gibs
+- drop support for 10 year old cpus. progress!
+- new console. you can select and copy text in the input box. it has a scrollbar. potentially better non-english support. this paves the way to being able to copy text from the console too but qf's renderer can't handle it atm
+- new sky renderer. simpler mapping, no more glitches, and faster than fastsky
+- please ready up announcer nuked
+- really ship new uninstall.exe
+
+# 0.0.2.7
+- welcome dexter and obani to the dev team
+- unspecified weapon changes
+- draw one damage number for rg shots so you can actually see how much you did
+- remove team telefrags
+- green 2.0 and yellow 2.0 team colours
+- maybe fix dual gpu laptop setups
+- ship uninstall.exe updates for maximum rq efficiency
+
+# 0.0.2.6
+- team colours restricted to blue/red/green/yellow. we might add other colours if people want them but we want to keep the palette small
+- team coloured explosions
+- fix silent lg bug
+- fix switching spec view
+- allow teles during countdown
+- remove colour correction
+
+# 0.0.2.5
+- this release is 100mb because you have to redownload all the maps
+- fix menus on old amd gpus aha cheers
+- less tacky rocket trails
+- try to use the good gpu when you have two of them (like nv optimus)
+- versioned builds. so the menu shows the correct version and doesn't show old servers etc
+- remove a bunch of unused textures and fix texture issues on some maps, mainly dust/summer
+- removed lighting from the engine/maps, we weren't using it so the game looks no different but it's smaller now
+
+# 0.0.2.4
+- fix menus on old amd gpus
+- vsays nerfed
+- eb damage nerfed from 37.5 to 35. should have zero impact on gameplay just nicer damage numbers
+
+# 0.0.2.3
+- sound bug fixed for real this time
+- fix crosshair/killfeed after a map change
+- menu_quick console spam removed
+- new rocket visuals
+- wider lg beam effect
+- unspecified weapon changes
+
+# 0.0.2.2
+- fix the game for opengl2
+- fix kukumene sky
+- mwaga iced
+
+# 0.0.2.1
+- fix config path on windows
+
+# 0.0.2.0 (#raceto2.2)
+- this release took longer than usual thanks to christmas and the 2.2 beta, and some larger changes. unfortunately one project was unsuccessful and is not being shipped today, but we will get around to it.
+- new ui. librocket is in the dumpster where it belongs. the new ui looks like the default skin for some developer tool because that's exactly what it is. it's not pretty yet and some non-critical stuff is missing
+- shop hotkeys. b26 picks rl/lg/gl
+- sound fix? the code behind looping sounds has been simplified a little. this one is a little tricky because it doesn't seem to happen with low ping, e.g. when testing locally on my machine. fingers crossed things have improved
+- video mode cleanup. the vid_ cvars got merged into one vid_mode cvar. the video mode gets reset when you exit the game. the video mode code is a lot more robust overall, but you should still restart after changing resolution
+- screenshots have been moved from cd/base/screenshots to cd/screenshots. same with demos/demoavi/etc
+- most dlls removed. cgame/angelwrap/ui are now just part of client.exe
+- many cvars removed. i forgot the list i just went and deleted some easy ones
+- 160k lines of code. more than half of the qfusion codebase has been nuked. this is important and good because it's less work for us to maintain and makes it easier for hypothetical new contributors to get up to speed
+- lots of random stuff. misc cleanup, updates should be smaller now, ...
+
+# 0.0.1.42
+- fix projectile models
+- 50th cd release in 46 days
+
+# 0.0.1.41
+- fog nerfed
+- callvotes expire after 20s, down from 40s
+
+# 0.0.1.40
+- lock down r_wall/floorcolor
+
+# 0.0.1.39
+- graphical fixes
+- fix respawning if you change loadouts while dead in warmup
+
+# 0.0.1.38
+- fix lg sound bug
+- try out a new visual style. we are rushing this out so we can try it and revert if it sucks. lots of stuff is ugly
+- plant time 5s -> 1s, round time 30s -> 45s. nobody likes carrying the bomb in warsow, this should help remedy that
+- play a noise when you start planting
+- unspecified weapon changes
+- remove the ugly grate on town a spot
+
+# 0.0.1.37
+- possible fix for terrible gl drivers
+- show chat messages for longer
+- fix callvotes with g_inactivity_maxtime 0
+- plant time reduced to 5s
+
+# 0.0.1.36
+- fix explosions
+- fix saving loadout in warmup
+- remove callvote rebalance/restart/shuffle
+
+# 0.0.1.35
+- autoplant removed
+- plant stops and you get the bomb back if you move too far away
+- defuse resets if you move too far away
+- corpses don't block projectiles
+
+# 0.0.1.34
+- revert to 2.1 lg beam
+- paintball eb impact decal
+
+# 0.0.1.33
+- delete callvote announcer
+- game should feel smoother now (this got added silently a few releases ago, people noticed so i guess it worked heh)
+- rg nerfed
+- lg tweaked
+- fix bicubic lightmaps being offset slightly
+
+# 0.0.1.32
+- don't wait 5mins for first server heartbeat
+- headlessupdater compatibility fixes for older linux systems
+
+# 0.0.1.31
+- add a headless updater for servers
+- fs_usehomedir 0 by default for servers
+- remove coaches
+
+# 0.0.1.30
+- cg_damagenumbers so you can turn them off
+- fix future of europe after changing maps
+- rename sites to a/b
+- fix teamcolours while spectating
+- add 'weapon #' command to select weapons by slot, now bound to 1-4 by default
+- tweak explosive knockback a bit
+
+# 0.0.1.29
+- fix 0 ammo bug
+- rename cg_teamalphacolor etc cvars to cg_ally* and cg_enemy*. so you need to set teamcolours again
+- force models by default, shoot at pigs
+- show 'press b to change loadout prompt'
+- allow loadout changes during warmup
+
+# 0.0.1.28
+- new lg model
+- new weapon icons
+- remove carrier frag messages
+- remove scoreboard loadouts
+- remove lg shooting through people
+- diesel:// handler so you can click links to start the game. run the installer to get it, no need to uninstall
+- fixed mini obituary color for beta players
+
+# 0.0.1.27
+- fix the console ^ bug, germans rejoice
+- floating mini obituaries when you kill someone
+- remove autoswitch when you run out of ammo cuz it's cheesy
+- scr_conspeed 0 for instant console
+- unspecified combat changes
+
+# 0.0.1.26
+- damage numbers when you shoot someone
+- respawn sound removed
+- nerfed chat protection penalty
+- don't show who has the bomb on the scoreboard
+- maybe fix alt + enter
+
+# 0.0.1.25
+- shitty wip discord integration in the launcher
+- install the game over https
+
+# 0.0.1.24
+- indicator tweaks
+
+# 0.0.1.23
+- fix startup crash on windows
+
+# 0.0.1.22
+- add instructions to bomb site indicators
+- add a bomb indicator
+- fix bomb spinning forever if it ever gets dropped
+- fix map change crash
+
+# 0.0.1.21
+- better bomb carrier assignment
+- don't bongo for less than 3 kills
+
+# 0.0.1.20
+- fixed crash at startup
+
+# 0.0.1.19
+- bomb site indicators should be more stable
+- removed most awards and some hud text from bomb
+- removed black bars when speccing a dead gay
+- fixed one of the window resizing bugs
+- try opengl 3.3 before falling back to 2.1 because it makes my life easier
+- also segfaults at launch on linux heh
+
+# 0.0.1.18
+- what happened to 0.0.1.17?
+- tweaked rocket launcher model and muzzle flash
+- site indicators are always visible and guide you to the site
+- this is the first iteration and we plan to expand on this a lot!
+- add match point/overtime to the hud
+- show dead players on the hud
+- don't award bongos when people leave
+
+# 0.0.1.16
+- launcher retries failed downloads
+- some menu tweaks that don't matter
+
+# 0.0.1.15
+- was toast too
+
+# 0.0.1.14
+- broken release. gg mike
+
+# 0.0.1.13
+- you're now able change your weapons with mousewheel and set your name in the menu. wow!
+
+# 0.0.1.12
+- buffed rg
+- slightly better lg/pg/blood effects
+- rolled back yolo server changes
+- fixed rockets going through the floor
+- next level obituaries
+- instagibbed instagib
+- a lot of trash taking out
+
+# 0.0.1.11
+- fixed rockets and plasma magic
+- server tweaks that might help a bit or might fuck up the whole game
+- explosion fx tweaks
+- another gl2 fix
+- rolled back to 2.1 lg beam
+- just kidding cheers
+- mike's a funny boi
+
+# 0.0.1.10
+- reverted walljump to warsow 2.1 state
+- added cg_crosshair_size, cg_crosshair_size 0 for a dot
+- removed randomness from rg spread
+- stopped bombsite indicator from tricking people
+- fixed glsl version detection for opengl2 losers
+- game remembers your loadout
+- removed reactors
+- new website
+- canned the gif-laden 90s site for a leet 90s site built from scratch. posts are stored in json now despite mike and msc recommending a shitty markdown approach, but screw them. website is responsive so you can download the launcher on your android phone and use the claw grip technique to fail miserably. aha cheers! use tor!
+
+# 0.0.1.9
+- fixed linux cgame/game modules
+
+# 0.0.1.8
+- renamed maps
+- added carentan
+- removed emwarehouse
+
+# 0.0.1.7
+- bugfix release
+
+# 0.0.1.6
+- put the shop back in esc menu
+- added opengl 2 support
+- fixed crosshair. now draws on top of other hud elements
+- fixed server browser
+- added new bomb site indicator
+
+# 0.0.1.5
+- illuminati gibs trashed
+- vsay shutup readded
+- banding fixed. shit is smooth as lard now
+- top secret lg beam cvars! expect more news soon!
+- some callvotes stuff
+- misc fixes
+- ofc we removed more trash. like & subscribe
+
+# 0.0.1.4
+- removed stun
+- better player shadows
+- removed pointless vsays
+- fixed drug fueled doppler effect
+- fixed menu stuff
+- fixed round timer
+- added team colored gibs
+- the trash purge is still on
+
+# 0.0.1.3
+- increased max name length
+- dropped snd_qf and added hrtf positional sound
+- added option to disable bicubic filtering
+- fixed obituaries misalignment
+- remade levelshots
+- removed delay on kill command
+- removed chat beep
+- removed more unused crap
+
+# 0.0.1.2
+- fresh weapon icons
+- upped the font game
+- removed mg and strong gb from shop
+- more ui fixes
+- daily trash removal
+
+# 0.0.1.1
+- fixed lots of ui shit
+- fixed server browser
+- drained the swamp some more
+
+# 0.0.1.0
+- new hud
+- new grenades
+- new menu background
+- fixed lava texture
+- readded missing sounds
+- nuked a bunch of trash
+
+# 0.0.0.7
+- chat fix
+
+# 0.0.0.6
+- no team blocking and team knockback
+- added moto maps
+- normalize health to 100
+- fixed the texture bug revealed by 0.0.0.5
+
+# 0.0.0.5
+- made some assets smaller and fixed a launcher bug iirc
+
+# 0.0.0.4
+- was some bugfixe
+- fixed the linux build
+- i don't remember what else went in
+
+# 0.0.0.3
+- this is the real deal
+
+# 0.0.0.2
+- fixed missing sdl dll
+
+# 0.0.0.1
+- wow it's finally out (linux only)
 		</div>
-	</main>
-	<script>
-		(function detectIE() {
-			var ua = window.navigator.userAgent;
-			var msie = ua.indexOf('MSIE');
-			var trident = ua.indexOf('Trident/');
-			var edge = ua.indexOf('Edge/');
-			var isIE11 = !!window.msCrypto;
-			if (msie > 0 || trident > 0 || edge > 0 || isIE11) {
-				return document.body.innerHTML = '<center><h1>get a proper browser you scrub</h1></center>';
-			}
-		})();
-	</script>
-	<script src='news.js'></script>
-	<script>
-		let counter = 0;
-		window.onload = () => {
-			const titles = ['⠶', '⠧', '⠏', '⠛', '⠹', '⠼'];
-			let title = '';
-			setInterval(() => {
-				counter++;
-				title = `${titles.map((r, i, titles) => titles[(counter + i) % titles.length])}`.replace(/,/g, '');
-				document.title = `☠ ${title} ☠ ${title} ☠`;
-			}, 400);
-		};
-		const _news = document.getElementById('news');
-		// let expanded = false;
-
-		// const _toggle = document.getElementById('log-toggle');
-
-		// const logToggle = _ => {
-		// 	if (expanded) {
-		// 		_news.style.display = "none";
-		// 		_toggle.innerHTML = `&#187; open update log &#171;`;
-		// 	} else {
-		// 		_news.style.display = "flex";
-		// 		_toggle.innerHTML = `&#187; go back to main site &#171;`;
-		// 	}
-		// 	expanded = !expanded;
-		// }
-
-		// _toggle.addEventListener("click", logToggle);
-
-		const eatTheLard = data => {
-			data.reverse().forEach((post, i) => {
-				const { title, date, changes, news } = post;
-
-				if (i === 0) {
-					document.getElementById('version').innerHTML = `Current version: ${title} - released: ${date}`;
-				}
-
-				const _post = document.createElement('li');
-				const _title = document.createElement('h1');
-				const _changes = document.createElement('ul');
-
-				_title.textContent = title;
-				_changes.className = 'changes';
-				_post.className = 'post';
-
-				changes.forEach(change => {
-					const _change = document.createElement('li');
-					_change.textContent = change;
-					_change.className = news ? 'newspost' : 'change';
-					_changes.appendChild(_change)
-				});
-
-				_post.appendChild(_title);
-				_post.appendChild(_changes);
-				_news.appendChild(_post);
-			})
-		}
-
-		eatTheLard(news);
-
-		const req = new XMLHttpRequest();
-		req.open('GET', 'news.json', true);
-		req.send();
-		req.onreadystatechange = function () {
-			if (this.readyState == 4 && this.status == 200) {
-				eatTheLard(JSON.parse(this.responseText));
-			}
-		};
-	</script>
-</body>
-
+		<script src="script.js"></script>
+	</body>
 </html>
