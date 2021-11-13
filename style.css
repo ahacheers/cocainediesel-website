@@ -217,8 +217,7 @@ li:last-child {
 }
 
 a:hover {
-	text-shadow: 1px 2px #000;
-	color: #fff !important;
+	color: #111 !important;
 	animation: flicker 0.2s linear forwards infinite;
 }
 
