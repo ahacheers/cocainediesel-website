@@ -160,6 +160,10 @@ img:hover {
 	cursor: grab;
 }
 
+img:active {
+	cursor: grabbing;
+}
+
 ul {
 	list-style: "-  ";
 	margin: 0;
