@@ -242,8 +242,11 @@ li:last-child {
 	}
 
 	main {
-		flex-flow: column;
 		width: 100%;
+	}
+
+	main > section {
+		flex-flow: column;
 	}
 
 	.row {
