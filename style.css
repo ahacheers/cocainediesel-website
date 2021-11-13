@@ -162,6 +162,7 @@ img:hover {
 
 img:active {
 	cursor: grabbing;
+	animation: wobble 0.15s linear infinite;
 }
 
 ul {
@@ -231,13 +232,32 @@ a:hover i.right {
 	animation: right 0.2s linear forwards infinite;
 }
 
+@keyframes wobble {
+	16.65% {
+		transform: skew(-12deg);
+	}
+	33.3% {
+		transform: skew(10deg);
+	}
+	49.95% {
+		transform: skew(-6deg);
+	}
+	66.6% {
+		transform: skew(4deg);
+	}
+	83.25% {
+		transform: skew(-2deg);
+	}
+	100% {
+		transform: skew(0);
+	}
+}
+
 @keyframes buzz {
 	50% {
-		-webkit-transform: translateX(3px) rotate(2deg);
 		transform: translateX(3px) rotate(2deg);
 	}
 	100% {
-		-webkit-transform: translateX(-3px) rotate(-2deg);
 		transform: translateX(-3px) rotate(-2deg);
 	}
 }
