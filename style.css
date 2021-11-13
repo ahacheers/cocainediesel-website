@@ -218,7 +218,14 @@ li:last-child {
 
 a:hover {
 	color: #111 !important;
-	animation: flicker 0.2s linear forwards infinite;
+}
+
+a.download:hover {
+	animation: red 0.2s linear forwards infinite;
+}
+
+a:hover {
+	animation: green 0.2s linear forwards infinite;
 }
 
 .text:hover i.spin {
@@ -302,12 +309,21 @@ a:hover i.right {
 	}
 }
 
-@keyframes flicker {
+@keyframes red {
 	from {
 		background: red;
 	}
 	to {
 		background: #ffcc26;
+	}
+}
+
+@keyframes green {
+	from {
+		background: rgb(85, 226, 57);
+	}
+	to {
+		background: green;
 	}
 }
 
