@@ -1508,7 +1508,7 @@ const news = [
 		],
 	},
 	{
-		title '0.1.0.34',
+		title: '0.1.0.34',
 		date: 'Oct 30, 2021',
 		changes: [
 			'unspecified gameplay changes',
@@ -1518,7 +1518,7 @@ const news = [
 		],
 	},
 	{
-		title '0.1.0.35',
+		title: '0.1.0.35',
 		date: 'Oct 30, 2021',
 		changes: [
 			'fix server browser',
@@ -1526,7 +1526,7 @@ const news = [
 		],
 	},
 	{
-		title '0.1.0.36',
+		title: '0.1.0.36',
 		date: 'Oct 30, 2021',
 		changes: [
 			'fix loadouts resetting every round',
@@ -1534,10 +1534,10 @@ const news = [
 		],
 	},
 	{
-		title '0.1.0.37',
+		title: '0.1.0.37',
 		date: 'Nov 8, 2021',
 		changes: [
-			'fixed rounds ending when they shouldn't',
+			'fixed rounds ending when they shouldn\'t',
 			'fixed winning rounds multiple times when people switch teams in post-round',
 			'fix site indicators always saying attack',
 			'fix stake sound',
@@ -1545,7 +1545,7 @@ const news = [
 		],
 	},
 	{
-		title '0.1.0.38',
+		title: '0.1.0.38',
 		date: 'Nov 11, 2021',
 		changes: [
 			'twitch.tv/denmsc weapon models',
@@ -1553,7 +1553,7 @@ const news = [
 		],
 	},
 	{
-		title '0.1.0.39',
+		title: '0.1.0.39',
 		date: 'Nov 12, 2021',
 		changes: [
 			'nerf sticky explosion vfx',
