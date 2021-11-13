@@ -70,11 +70,15 @@ a {
 main {
 	position: relative;
 	display: flex;
+	flex-flow: column;
 	justify-content: center;
-	padding: 3.625rem 0;
 	margin: 0 auto;
 	background: #666;
 	width: 900px;
+}
+
+main > section {
+	display: flex;
 }
 
 .row {
@@ -106,9 +110,7 @@ main {
 }
 
 .marquee {
-	position: absolute;
-	right: 0;
-	left: 0;
+	width: 100%;
 	height: 3.625rem;
 	overflow: hidden;
 	transform: translateZ(0);
