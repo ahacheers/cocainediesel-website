@@ -1499,7 +1499,7 @@ const news = [
 		],
 	},
 	{
-		title '0.1.0.33',
+		title: '0.1.0.33',
 		date: 'Sep 3, 2021',
 		changes: [
 			'fix defusing',
