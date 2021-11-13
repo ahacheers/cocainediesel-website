@@ -335,6 +335,7 @@ a:hover i.right {
 
 	main > section {
 		flex-flow: column;
+		min-height: 11.375rem;
 	}
 
 	.row {
