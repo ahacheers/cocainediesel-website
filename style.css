@@ -65,9 +65,7 @@ a {
 	max-height: 5.125rem;
 	display: flex;
 	align-items: center;
-	text-align: center;
-	text-shadow: 1px 1px #000, -1px 1px #000, 1px -1px #000, -1px -1px #000, 0 1px #000, 0 -1px #000, -1px 0 #000,
-		1px 0 #000;
+	justify-content: center;
 }
 
 main {
@@ -78,6 +76,9 @@ main {
 	margin: 0 auto;
 	background: #666;
 	width: 900px;
+	height: 100%;
+	overflow: hidden;
+	margin-bottom: 82px;
 }
 
 main > section {
@@ -114,7 +115,8 @@ main > section {
 
 .marquee {
 	width: 100%;
-	height: 3.625rem;
+	height: 1.625rem;
+	min-height: 1.625rem;
 	overflow: hidden;
 	transform: translateZ(0);
 	background: #ff5522;
@@ -122,16 +124,8 @@ main > section {
 	font-weight: 900;
 }
 
-.marquee.top {
-	top: 0;
-}
-
-.marquee.bottom {
-	bottom: 0;
-}
-
 .marquee-back {
-	height: 3.625rem;
+	height: 1.625rem;
 	width: 200%;
 	position: absolute;
 	right: 0;
@@ -200,7 +194,6 @@ li:last-child {
 	width: 900px;
 	text-transform: none;
 	font-style: normal;
-	margin-bottom: 82px;
 	white-space: pre-wrap;
 	display: flex;
 	flex-flow: column;
@@ -351,6 +344,7 @@ a:hover i.right {
 	.row {
 		white-space: break-spaces;
 		justify-content: flex-start;
+		padding: 0.75rem;
 	}
 
 	#changes {
@@ -360,5 +354,14 @@ a:hover i.right {
 
 	#changes h1 {
 		font-size: 13px;
+	}
+}
+
+@media (max-height: 750px) {
+	main {
+		margin-bottom: 0;
+	}
+	img {
+		display: none;
 	}
 }
