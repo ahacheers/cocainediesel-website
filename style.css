@@ -33,6 +33,7 @@ i {
 	min-width: 1.25rem;
 	max-width: 1.25rem;
 	width: 1.25rem;
+	transform: translate3d(0, 0, 0);
 }
 
 html,
@@ -152,7 +153,11 @@ img {
 	width: 150px;
 	bottom: 0;
 	right: 0;
-	z-index: -1;
+}
+
+img:hover {
+	animation: buzz 0.15s linear infinite;
+	cursor: grab;
 }
 
 ul {
@@ -206,6 +211,60 @@ li:last-child {
 	display: none;
 }
 
+a:hover {
+	animation: flicker 0.2s linear forwards infinite;
+}
+
+.text:hover i.spin {
+	animation: spin 1s linear forwards infinite;
+}
+
+a:hover i.down {
+	animation: down 0.2s linear forwards infinite;
+}
+
+a:hover i.right {
+	animation: right 0.2s linear forwards infinite;
+}
+
+@keyframes buzz {
+	50% {
+		-webkit-transform: translateX(3px) rotate(2deg);
+		transform: translateX(3px) rotate(2deg);
+	}
+	100% {
+		-webkit-transform: translateX(-3px) rotate(-2deg);
+		transform: translateX(-3px) rotate(-2deg);
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes down {
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		transform: translate3d(0, -4px, 0);
+	}
+}
+
+@keyframes right {
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+
 @keyframes back {
 	0% {
 		transform: translateX(0);
@@ -227,6 +286,15 @@ li:last-child {
 	}
 	100% {
 		transform: translateX(0);
+	}
+}
+
+@keyframes flicker {
+	from {
+		background: red;
+	}
+	to {
+		background: #ffcc26;
 	}
 }
 
