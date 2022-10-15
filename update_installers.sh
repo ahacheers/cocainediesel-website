@@ -1,8 +1,8 @@
 #! /bin/sh
 
-wget -O CocaineDieselInstaller.exe https://ci.appveyor.com/api/projects/mikejsavage/forksow-launcher/artifacts/installer/CocaineDieselInstaller.exe
+wget -O CocaineDieselInstaller.exe https://ci.appveyor.com/api/projects/mikejsavage/cocainediesel-launcher-windows/artifacts/installer/CocaineDieselInstaller.exe
 
-wget https://ci.appveyor.com/api/projects/mikejsavage/forksow-launcher-jbg0q/artifacts/launcher_linux.zip
+wget https://ci.appveyor.com/api/projects/mikejsavage/cocainediesel-launcher-linux/artifacts/launcher_linux.zip
 unzip launcher_linux.zip
 
 chmod 755 cocainediesel
